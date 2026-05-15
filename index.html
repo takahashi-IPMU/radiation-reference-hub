@@ -6,34 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="月面放射線環境・放射線試験機関・素粒子実験耐放射線・耐放射線標準文書・RadPC 文献データベース">
   <style>
+
     :root{--bg:#f2f4f7;--surface:#fff;--surface2:#f8f9fb;--text:#1a2332;--text2:#5a6a7e;--text3:#9aaabb;--border:#dde3ec;--accent:#2563eb;--accent-bg:rgba(37,99,235,.08);--radius:12px;--radius-lg:20px;--shadow:0 2px 8px rgba(15,23,42,.07);--shadow-lg:0 16px 40px rgba(15,23,42,.13);--font:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic UI",system-ui,sans-serif}
     @media(prefers-color-scheme:dark){:root{--bg:#080f1a;--surface:#111827;--surface2:#0d1520;--text:#e8edf5;--text2:#8899bb;--text3:#445566;--border:#1e2d42;--accent:#60a5fa;--accent-bg:rgba(96,165,250,.12);--shadow:0 2px 8px rgba(0,0,0,.4);--shadow-lg:0 16px 40px rgba(0,0,0,.6)}}
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     html{scroll-behavior:smooth}
     body{font-family:var(--font);background:var(--bg);color:var(--text);font-size:14px;line-height:1.65}
-    /* header */
     .site-header{background:var(--surface);border-bottom:1px solid var(--border);padding:0 clamp(16px,4vw,48px);position:sticky;top:0;z-index:40;box-shadow:var(--shadow)}
     .header-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:16px;height:54px}
     .header-logo{display:flex;align-items:center;gap:8px;font-weight:700;font-size:15px;white-space:nowrap;color:inherit;text-decoration:none}
     .header-sub{font-size:11px;font-weight:400;color:var(--text2);margin-top:1px}
     .header-stats{margin-left:auto;font-size:11px;color:var(--text2);white-space:nowrap}
-    /* hero */
     .hero{max-width:1200px;margin:0 auto;padding:clamp(28px,5vw,52px) clamp(16px,4vw,48px) 16px}
     .hero-eyebrow{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--text2);margin-bottom:8px}
     .hero h1{font-size:clamp(20px,4vw,32px);font-weight:800;letter-spacing:-.03em;line-height:1.2;margin-bottom:8px}
     .hero-sub{font-size:13px;color:var(--text2);max-width:660px;line-height:1.7;margin-bottom:16px}
-    /* nav pills */
     .nav-pills{display:flex;flex-wrap:wrap;gap:7px}
-    .nav-pill{font-size:12px;font-weight:500;padding:5px 13px;border-radius:999px;background:color-mix(in srgb,var(--pill-color) 12%,transparent);color:var(--pill-color);text-decoration:none;transition:background .15s,transform .1s;border:1px solid color-mix(in srgb,var(--pill-color) 22%,transparent)}
-    .nav-pill:hover{background:color-mix(in srgb,var(--pill-color) 22%,transparent);transform:translateY(-1px)}
-    /* search */
+    .nav-pill{font-size:12px;font-weight:500;padding:5px 13px;border-radius:999px;color:var(--accent);text-decoration:none;border:1px solid rgba(37,99,235,0.3);background:rgba(37,99,235,0.08);transition:background .15s,transform .1s}
+    .nav-pill:hover{background:rgba(37,99,235,0.18);transform:translateY(-1px)}
     .search-wrap{max-width:1200px;margin:0 auto;padding:20px clamp(16px,4vw,48px) 16px}
-    .search-box{width:100%;max-width:440px;padding:9px 14px 9px 36px;border:1px solid var(--border);border-radius:999px;background:var(--surface);color:var(--text);font-size:13px;font-family:inherit;outline:none;transition:border-color .15s,box-shadow .15s;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%239aaabb' stroke-width='2.5'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cpath d='m21 21-4.35-4.35'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:12px center}
-    .search-box:focus{border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 15%,transparent)}
+    .search-box{width:100%;max-width:440px;padding:9px 14px;border:1px solid var(--border);border-radius:999px;background:var(--surface);color:var(--text);font-size:13px;font-family:inherit;outline:none;transition:border-color .15s,box-shadow .15s}
+    .search-box:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(37,99,235,.15)}
     .search-hint{font-size:11px;color:var(--text3);margin-top:6px;min-height:16px}
-    /* body */
     .page-body{max-width:1200px;margin:0 auto;padding:0 clamp(16px,4vw,48px) 64px}
-    /* group */
     .group-section{margin-bottom:48px}
     .group-section.hidden{display:none}
     .group-header{display:flex;align-items:stretch;margin-bottom:16px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow)}
@@ -42,26 +37,22 @@
     .group-title{font-size:15px;font-weight:700;letter-spacing:-.01em;margin-bottom:2px}
     .group-desc{font-size:12px;color:var(--text2)}
     .group-count{padding:0 20px;display:flex;align-items:center;font-size:13px;font-weight:600;color:var(--text2);border-left:1px solid var(--border);white-space:nowrap}
-    /* subsection */
     .subsection{margin-bottom:22px}
     .subsection.hidden{display:none}
     .subsec-header{display:flex;align-items:baseline;gap:12px;margin:0 2px 8px}
     .subsec-title{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text2)}
     .subsec-note{font-size:11px;color:var(--text3)}
-    /* cards */
     .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(285px,1fr));gap:12px}
-    .card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:16px 18px;box-shadow:var(--shadow);display:flex;flex-direction:column;transition:transform 150ms,box-shadow 150ms,border-color 150ms;position:relative;overflow:hidden}
-    .card::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 0 0,var(--accent-bg),transparent 65%);opacity:0;transition:opacity 200ms;pointer-events:none}
-    .card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);border-color:color-mix(in srgb,var(--accent) 35%,transparent)}
-    .card:hover::before{opacity:1}
+    .card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:16px 18px;box-shadow:var(--shadow);display:flex;flex-direction:column;transition:transform 150ms,box-shadow 150ms,border-color 150ms}
+    .card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);border-color:rgba(37,99,235,.4)}
     .card.hidden{display:none}
     .card-tag{display:flex;align-items:center;gap:6px;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:6px}
     .tag-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0}
     .card-title{font-size:13px;font-weight:600;line-height:1.45;margin-bottom:4px}
     .card-meta{font-size:11px;color:var(--text2);margin-bottom:7px}
     .card-desc{font-size:12px;color:var(--text2);line-height:1.65;flex:1;margin-bottom:10px}
-    .card-link{display:inline-flex;align-items:center;gap:5px;font-size:11px;color:var(--accent);text-decoration:none;padding:4px 10px;border-radius:999px;background:var(--accent-bg);border:1px solid color-mix(in srgb,var(--accent) 20%,transparent);transition:background .15s,transform .1s;width:fit-content;max-width:100%;margin-top:auto}
-    .card-link:hover{background:color-mix(in srgb,var(--accent) 18%,transparent);transform:translateY(-1px)}
+    .card-link{display:inline-flex;align-items:center;gap:5px;font-size:11px;color:var(--accent);text-decoration:none;padding:4px 10px;border-radius:999px;background:var(--accent-bg);border:1px solid rgba(37,99,235,.2);transition:background .15s,transform .1s;width:fit-content;max-width:100%;margin-top:auto}
+    .card-link:hover{background:rgba(37,99,235,.18);transform:translateY(-1px)}
     .card-link svg{width:13px;height:13px;flex-shrink:0}
     .url-text{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:230px}
     mark.hl{background:#fef08a;border-radius:2px;color:#1a2332;padding:0 1px}
@@ -71,14 +62,14 @@
     footer{text-align:center;padding:20px 16px;font-size:11px;color:var(--text3);border-top:1px solid var(--border);max-width:1200px;margin:0 auto}
     footer a{color:var(--text2);text-decoration:none}
     footer a:hover{color:var(--accent)}
-</style>
+  
+  </style>
 </head>
 <body>
-
 <header class="site-header">
   <div class="header-inner">
     <div class="header-logo">
-      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
         <rect x="2" y="3" width="7" height="9" rx="1.5" fill="#2563eb"/>
         <rect x="11" y="3" width="7" height="5" rx="1.5" fill="#2563eb" opacity="0.5"/>
         <rect x="11" y="10" width="7" height="7" rx="1.5" fill="#2563eb" opacity="0.7"/>
@@ -92,42 +83,30 @@
     <div class="header-stats">96 文献 &nbsp;·&nbsp; 7 グループ &nbsp;·&nbsp; 20 セクション</div>
   </div>
 </header>
-
 <div class="hero">
   <div class="hero-eyebrow">Reference Hub</div>
   <h1>Space Mission Reference Hub</h1>
   <p class="hero-sub">月面放射線環境・放射線試験機関・素粒子実験における耐放射線・耐放射線標準文書・耐放射線部品・RadPC レファレンス・月面ミッション設計に関する文献データベース</p>
-  <nav class="nav-pills" aria-label="グループ一覧">
-    <a href="#g-lunar-rad" class="nav-pill" style="--pill-color:#2563eb">月面放射線環境</a>
-    <a href="#g-facilities" class="nav-pill" style="--pill-color:#7c3aed">放射線試験機関</a>
-    <a href="#g-hep" class="nav-pill" style="--pill-color:#dc2626">素粒子実験における耐放射線</a>
-    <a href="#g-standards" class="nav-pill" style="--pill-color:#059669">耐放射線関係標準文書</a>
-    <a href="#g-parts" class="nav-pill" style="--pill-color:#d97706">耐放射線部品</a>
-    <a href="#g-radpc" class="nav-pill" style="--pill-color:#0891b2">RadPC レファレンス</a>
-    <a href="#g-mission" class="nav-pill" style="--pill-color:#9333ea">月面ミッション設計・運用</a>
+  <nav class="nav-pills">
+    <a href="#g-lunar-rad" class="nav-pill" data-color="#2563eb">月面放射線環境</a>
+    <a href="#g-facilities" class="nav-pill" data-color="#7c3aed">放射線試験機関</a>
+    <a href="#g-hep" class="nav-pill" data-color="#dc2626">素粒子実験における耐放射線</a>
+    <a href="#g-standards" class="nav-pill" data-color="#059669">耐放射線関係標準文書</a>
+    <a href="#g-parts" class="nav-pill" data-color="#d97706">耐放射線部品</a>
+    <a href="#g-radpc" class="nav-pill" data-color="#0891b2">RadPC レファレンス</a>
+    <a href="#g-mission" class="nav-pill" data-color="#9333ea">月面ミッション設計・運用</a>
   </nav>
 </div>
-
 <div class="search-wrap">
-  <input class="search-box" id="search" type="search"
-         placeholder="タイトル・著者・キーワードで絞り込み…" aria-label="文献を検索">
+  <input class="search-box" id="search" type="search" placeholder="タイトル・著者・キーワードで絞り込み…">
   <div class="search-hint" id="search-hint"></div>
 </div>
-
 <div class="page-body">
 
     <section class="group-section" id="g-lunar-rad">
-      <div class="group-header">
-        <div class="group-color-bar" style="background:#2563eb"></div>
-        <div class="group-header-text">
-          <div class="group-title">月面放射線環境</div><div class="group-desc">月面・NRHO・LEO 軌道での放射線環境仕様・測定・モデリングに関する文献</div>
-        </div>
-        <div class="group-count">10 件</div>
-      </div>
+      <div class="group-header"><div class="group-color-bar" style="background:#2563eb"></div><div class="group-header-text"><div class="group-title">月面放射線環境</div><div class="group-desc">月面・NRHO・LEO 軌道での放射線環境仕様・測定・モデリングに関する文献</div></div><div class="group-count">10 件</div></div>
       <div class="subsection" id="env-specs">
-        <div class="subsec-header">
-          <div class="subsec-title">環境仕様・設計基準文書</div><div class="subsec-note">DSNE / Lunar Surface Data Book / JAXA 宇宙環境標準 / Gateway 適用解説</div>
-        </div>
+        <div class="subsec-header"><div class="subsec-title">環境仕様・設計基準文書</div><div class="subsec-note">DSNE / Lunar Surface Data Book / JAXA 宇宙環境標準 / Gateway 適用解説</div></div>
         <div class="cards">
           <article class="card" data-text="nasa – environment spec sls-spec-159 cross-program design specification for natural environments (dsne), rev h nasa · natural environments · see（gcr / spe / trapped） nasa の自然環境設計基準書。iss クラス leo と geomagnetic-unshielded 環境（nrho 等）における see 環境（gcr, spe, trapped protons）や帯電環境が体系的に定義されている。nrho / leo / 月面の放射線比較のベース文書。">
             <div class="card-tag"><span class="tag-dot" style="background:#2563eb"></span>NASA – Environment Spec</div>
@@ -153,9 +132,7 @@
         </div>
       </div>
       <div class="subsection" id="lnd-models">
-        <div class="subsec-header">
-          <div class="subsec-title">月面線量測定（LND）&amp; モデリング</div><div class="subsec-note">Chang'e-4 LND measurements · Lunar dose modelling · REDMoon · GEANT4</div>
-        </div>
+        <div class="subsec-header"><div class="subsec-title">月面線量測定（LND）&amp; モデリング</div><div class="subsec-note">Chang'e-4 LND measurements · Lunar dose modelling · REDMoon · GEANT4</div></div>
         <div class="cards">
           <article class="card" data-text="chang'e-4 lnd – measurement first measurements of the radiation dose on the lunar surface zhang et al. · science advances · 2020 嫦娥4号着陸機の lnd による、史上初の月面直接線量測定。月面平均線量率は約 0.55 mgy/day、線量当量 ~1.37 msv/day を示し、月面 tid 見積もりやシールド検討の基準となる一次データ。">
             <div class="card-tag"><span class="tag-dot" style="background:#2563eb"></span>Chang'e-4 LND – Measurement</div>
@@ -209,17 +186,9 @@
       </div>
     </section>
     <section class="group-section" id="g-facilities">
-      <div class="group-header">
-        <div class="group-color-bar" style="background:#7c3aed"></div>
-        <div class="group-header-text">
-          <div class="group-title">放射線試験機関</div><div class="group-desc">CERN / BNL / Fermilab / SLAC / KEK / J-PARC における SEE・TID 試験環境と施設ガイド</div>
-        </div>
-        <div class="group-count">16 件</div>
-      </div>
+      <div class="group-header"><div class="group-color-bar" style="background:#7c3aed"></div><div class="group-header-text"><div class="group-title">放射線試験機関</div><div class="group-desc">CERN / BNL / Fermilab / SLAC / KEK / J-PARC における SEE・TID 試験環境と施設ガイド</div></div><div class="group-count">16 件</div></div>
       <div class="subsection" id="japan-facilities">
-        <div class="subsec-header">
-          <div class="subsec-title">日本の放射線試験施設</div><div class="subsec-note">QST高崎 TIARA · 大阪大学 RCNP · 若狭湾エネルギー研究センター · 東北大学 RARiS · KEK / J-PARC</div>
-        </div>
+        <div class="subsec-header"><div class="subsec-title">日本の放射線試験施設</div><div class="subsec-note">QST高崎 TIARA · 大阪大学 RCNP · 若狭湾エネルギー研究センター · 東北大学 RARiS · KEK / J-PARC</div></div>
         <div class="cards">
           <article class="card" data-text="kek – radiation science center radiation damage in detectors and electronics at high-intensity accelerators kek 放射線科学センター · j-parc / superkekb 周辺 j-parc や superkekb でのビームロスに伴う中性子場・ガンマ線場が検出器・電子機器に与える影響を概説した kek の解説資料。ビームロスモニタや電源・制御装置への see / ソフトエラー事例が紹介されている。">
             <div class="card-tag"><span class="tag-dot" style="background:#7c3aed"></span>KEK – Radiation Science Center</div>
@@ -272,9 +241,7 @@
         </div>
       </div>
       <div class="subsection" id="overseas-facilities">
-        <div class="subsec-header">
-          <div class="subsec-title">海外の放射線試験施設</div><div class="subsec-note">BNL（NSRL / SEUTF / HEET）· LBNL / RADEF · Texas A&amp;M など主要海外施設</div>
-        </div>
+        <div class="subsec-header"><div class="subsec-title">海外の放射線試験施設</div><div class="subsec-note">BNL（NSRL / SEUTF / HEET）· LBNL / RADEF · Texas A&amp;M など主要海外施設</div></div>
         <div class="cards">
           <article class="card" data-text="bnl – seutf tandem van de graaff accelerator facility – fact sheet (seutf) bnl · tandem van de graaff · single event upset test facility 1 mev プロトンから 337 mev 金イオンまで 50 種類以上のイオン種を提供。let 0.01–91 mev·cm²/mg をカバーする重イオン see 試験専用施設（seutf）として広く利用されている。nsrl とは独立した施設。">
             <div class="card-tag"><span class="tag-dot" style="background:#7c3aed"></span>BNL – SEUTF</div>
@@ -318,9 +285,7 @@
         </div>
       </div>
       <div class="subsection" id="see-facilities">
-        <div class="subsec-header">
-          <div class="subsec-title">SEE 試験施設サーベイ &amp; 利用ガイド</div><div class="subsec-note">複数ラボにまたがる施設比較 · 宇宙環境と加速器ビームの対応づけ</div>
-        </div>
+        <div class="subsec-header"><div class="subsec-title">SEE 試験施設サーベイ &amp; 利用ガイド</div><div class="subsec-note">複数ラボにまたがる施設比較 · 宇宙環境と加速器ビームの対応づけ</div></div>
         <div class="cards">
           <article class="card" data-text="survey – us / europe overview of single-event effects test facilities and beam characteristics radnext / esa / nasa · facility survey cern, bnl, lbnl, radef など世界各地の see 試験施設のビームパラメータ（粒子種・let・エネルギー・フルエンス）をまとめたサーベイ。宇宙ミッション・加速器実験のどちらの rha にも有用な「カタログ」。">
             <div class="card-tag"><span class="tag-dot" style="background:#7c3aed"></span>Survey – US / Europe</div>
@@ -346,17 +311,9 @@
       </div>
     </section>
     <section class="group-section" id="g-hep">
-      <div class="group-header">
-        <div class="group-color-bar" style="background:#dc2626"></div>
-        <div class="group-header-text">
-          <div class="group-title">素粒子実験における耐放射線</div><div class="group-desc">LHC / テバトロン / リニアック周辺の混合放射線場が電子機器に与える影響・R2E プログラム・CHARM 試験施設</div>
-        </div>
-        <div class="group-count">10 件</div>
-      </div>
+      <div class="group-header"><div class="group-color-bar" style="background:#dc2626"></div><div class="group-header-text"><div class="group-title">素粒子実験における耐放射線</div><div class="group-desc">LHC / テバトロン / リニアック周辺の混合放射線場が電子機器に与える影響・R2E プログラム・CHARM 試験施設</div></div><div class="group-count">10 件</div></div>
       <div class="subsection" id="cern-see">
-        <div class="subsec-header">
-          <div class="subsec-title">CERN – R2E / CHARM / LHC</div><div class="subsec-note">LHC トンネル混合場 · R2E プログラム · CHARM 施設</div>
-        </div>
+        <div class="subsec-header"><div class="subsec-title">CERN – R2E / CHARM / LHC</div><div class="subsec-note">LHC トンネル混合場 · R2E プログラム · CHARM 施設</div></div>
         <div class="cards">
           <article class="card" data-text="cern – see review single event effects in high-energy accelerators d. garcía alía · cern yellow reports · 2017 高エネルギー加速器における混合場（高エネルギーハドロン＋中性子＋ガンマ線）が電子機器に与える see を体系的にレビュー。lhc・ps・sps における see の起源、断面積、実機トリップ事例、宇宙線起因の see との違いなどを詳しく解説。">
             <div class="card-tag"><span class="tag-dot" style="background:#dc2626"></span>CERN – SEE Review</div>
@@ -396,9 +353,7 @@
         </div>
       </div>
       <div class="subsection" id="fermilab-slac">
-        <div class="subsec-header">
-          <div class="subsec-title">Fermilab / SLAC – Detectors &amp; Electronics</div><div class="subsec-note">ハドロン・電子リニアック環境での放射線損傷と SEE</div>
-        </div>
+        <div class="subsec-header"><div class="subsec-title">Fermilab / SLAC – Detectors &amp; Electronics</div><div class="subsec-note">ハドロン・電子リニアック環境での放射線損傷と SEE</div></div>
         <div class="cards">
           <article class="card" data-text="fermilab – overview radiation damage in detectors and electronics r. lipton · beam instrumentation workshop (biw08, slac) · 2008 テバトロンや lhc などのコライダー実験を念頭に、シリコン検出器や前置増幅器、fpga/asic に対する tid / niel / see の影響と実験での障害事例をまとめた講演スライド。ハドロンコライダーにおける「現場の放射線問題」の全体像をつかむのに適している。">
             <div class="card-tag"><span class="tag-dot" style="background:#dc2626"></span>Fermilab – Overview</div>
@@ -431,9 +386,7 @@
         </div>
       </div>
       <div class="subsection" id="kek-hep">
-        <div class="subsec-header">
-          <div class="subsec-title">KEK – 素粒子実験における放射線損傷</div><div class="subsec-note">カロリメータ・検出器周辺の中性子場による半導体・電子機器の放射線損傷</div>
-        </div>
+        <div class="subsec-header"><div class="subsec-title">KEK – 素粒子実験における放射線損傷</div><div class="subsec-note">カロリメータ・検出器周辺の中性子場による半導体・電子機器の放射線損傷</div></div>
         <div class="cards">
           <article class="card" data-text="kek – silicon detectors / calorimeter radiation damage effects on semiconductor detectors and electronics by neutrons produced in calorimeters kaken 報告 · 高エネルギー実験 · neutron-induced damage カロリメータで生成される中性子によるシリコン検出器および読み出し電子回路の放射線損傷を評価した日本の研究プロジェクト報告。calorimeter 近傍に設置される半導体検出器・asic の寿命評価の具体例として有用。kek の素粒子実験環境における耐放射線設計の参考文献。">
             <div class="card-tag"><span class="tag-dot" style="background:#dc2626"></span>KEK – Silicon Detectors / Calorimeter</div>
@@ -446,17 +399,9 @@
       </div>
     </section>
     <section class="group-section" id="g-standards">
-      <div class="group-header">
-        <div class="group-color-bar" style="background:#059669"></div>
-        <div class="group-header-text">
-          <div class="group-title">耐放射線関係標準文書</div><div class="group-desc">NASA / ECSS / JAXA / JEDEC による RHA・EEE Parts・宇宙環境に関する標準規格・設計ガイドライン</div>
-        </div>
-        <div class="group-count">13 件</div>
-      </div>
+      <div class="group-header"><div class="group-color-bar" style="background:#059669"></div><div class="group-header-text"><div class="group-title">耐放射線関係標準文書</div><div class="group-desc">NASA / ECSS / JAXA / JEDEC による RHA・EEE Parts・宇宙環境に関する標準規格・設計ガイドライン</div></div><div class="group-count">13 件</div></div>
       <div class="subsection" id="rha-standards">
-        <div class="subsec-header">
-          <div class="subsec-title">RHA・放射線設計 標準規格</div><div class="subsec-note">NASA-STD / ECSS / JAXA-JERG / JEDEC – RHA・TID・SEE 設計要求</div>
-        </div>
+        <div class="subsec-header"><div class="subsec-title">RHA・放射線設計 標準規格</div><div class="subsec-note">NASA-STD / ECSS / JAXA-JERG / JEDEC – RHA・TID・SEE 設計要求</div></div>
         <div class="cards">
           <article class="card" data-text="ecss – rha ecss-q-st-60-15c – radiation hardness assurance (eee components) esa / ecss · rha · eee components eee 部品に対する radiation hardness assurance（rha）の標準。see / tid を踏まえた部品選定・試験・保証の枠組みを与え、cots 利用時の追加評価プロセスも規定する。">
             <div class="card-tag"><span class="tag-dot" style="background:#059669"></span>ECSS – RHA</div>
@@ -527,9 +472,7 @@
         </div>
       </div>
       <div class="subsection" id="eee-parts-std">
-        <div class="subsec-header">
-          <div class="subsec-title">EEE Parts 保証標準</div><div class="subsec-note">NASA-STD-8739.10 · EEE 部品選定・調達・トレーサビリティ</div>
-        </div>
+        <div class="subsec-header"><div class="subsec-title">EEE Parts 保証標準</div><div class="subsec-note">NASA-STD-8739.10 · EEE 部品選定・調達・トレーサビリティ</div></div>
         <div class="cards">
           <article class="card" data-text="nasa – eee parts standard nasa-std-8739.10 – electrical, electronic, and electromechanical (eee) parts assurance standard nasa · eee parts assurance · cots / pems nasa の eee 部品保証標準。cots 品やプラスチック封止品（pems）を含めた選定・調達・トレーサビリティ・試験・保管・適用方法を定める。cots メモリ／マイコン利用時のリスク管理とパーツアシュアランスの前提文書。">
             <div class="card-tag"><span class="tag-dot" style="background:#059669"></span>NASA – EEE Parts Standard</div>
@@ -554,17 +497,9 @@
       </div>
     </section>
     <section class="group-section" id="g-parts">
-      <div class="group-header">
-        <div class="group-color-bar" style="background:#d97706"></div>
-        <div class="group-header-text">
-          <div class="group-title">耐放射線部品</div><div class="group-desc">COTS 評価・RHA 研究論文・低温エレクトロニクス・シールド技術に関する文献</div>
-        </div>
-        <div class="group-count">8 件</div>
-      </div>
+      <div class="group-header"><div class="group-color-bar" style="background:#d97706"></div><div class="group-header-text"><div class="group-title">耐放射線部品</div><div class="group-desc">COTS 評価・RHA 研究論文・低温エレクトロニクス・シールド技術に関する文献</div></div><div class="group-count">8 件</div></div>
       <div class="subsection" id="cots-research">
-        <div class="subsec-header">
-          <div class="subsec-title">COTS 評価・RHA 研究論文</div><div class="subsec-note">COTS 利用・TID/SEE 耐性評価・ADC 等デバイス評価の研究論文</div>
-        </div>
+        <div class="subsec-header"><div class="subsec-title">COTS 評価・RHA 研究論文</div><div class="subsec-note">COTS 利用・TID/SEE 耐性評価・ADC 等デバイス評価の研究論文</div></div>
         <div class="cards">
           <article class="card" data-text="cots – radiation (pioneer) use of cots microelectronics in radiation environments p. s. winokur et al. · ieee trans. nucl. sci. 46 · 1999 放射線環境下での民生品（cots）利用に関する先駆的な研究と保証手法。">
             <div class="card-tag"><span class="tag-dot" style="background:#d97706"></span>COTS – Radiation (Pioneer)</div>
@@ -605,9 +540,7 @@
         </div>
       </div>
       <div class="subsection" id="cold-electronics">
-        <div class="subsec-header">
-          <div class="subsec-title">低温・月夜エレクトロニクス</div><div class="subsec-note">Cold Electronics · Lunar Night Survival · 極低温動作評価</div>
-        </div>
+        <div class="subsec-header"><div class="subsec-title">低温・月夜エレクトロニクス</div><div class="subsec-note">Cold Electronics · Lunar Night Survival · 極低温動作評価</div></div>
         <div class="cards">
           <article class="card" data-text="nasa – cold electronics cold electronics for lunar missions (nesc-rp-23-01873 / nasa tm-20250008583) nasa engineering &amp; safety center (nesc) · 2025 月夜・極低温環境で動作する電子機器に関する包括的な技術評価レポート。コールドエレクトロニクス、パッケージング、材料、tid/see、サーマルサイクル、信頼性評価、qualification 推奨など、極域ローバーや月夜運用機器に直接役立つ一次資料。">
             <div class="card-tag"><span class="tag-dot" style="background:#d97706"></span>NASA – Cold Electronics</div>
@@ -627,17 +560,9 @@
       </div>
     </section>
     <section class="group-section" id="g-radpc">
-      <div class="group-header">
-        <div class="group-color-bar" style="background:#0891b2"></div>
-        <div class="group-header-text">
-          <div class="group-title">RadPC レファレンス</div><div class="group-desc">Montana State University LaMeres Lab による RadPC（放射線耐性コンピュータ）研究</div>
-        </div>
-        <div class="group-count">18 件</div>
-      </div>
+      <div class="group-header"><div class="group-color-bar" style="background:#0891b2"></div><div class="group-header-text"><div class="group-title">RadPC レファレンス</div><div class="group-desc">Montana State University LaMeres Lab による RadPC（放射線耐性コンピュータ）研究</div></div><div class="group-count">18 件</div></div>
       <div class="subsection" id="radpc-web">
-        <div class="subsec-header">
-          <div class="subsec-title">Web Resources</div><div class="subsec-note">プロジェクト概要・論文リスト・リポジトリ</div>
-        </div>
+        <div class="subsec-header"><div class="subsec-title">Web Resources</div><div class="subsec-note">プロジェクト概要・論文リスト・リポジトリ</div></div>
         <div class="cards">
           <article class="card" data-text="project page radpc – msu's moon computer lameres lab · radpc-lunar プロジェクトページ 月面着陸ミッション（blue ghost mission 1）に搭載される radpc の概要ページ。ミッション目的、放射線環境、搭載ドシメータ、教育アウトリーチ向け説明などが掲載されている。">
             <div class="card-tag"><span class="tag-dot" style="background:#0891b2"></span>Project Page</div>
@@ -670,9 +595,7 @@
         </div>
       </div>
       <div class="subsection" id="radpc-papers">
-        <div class="subsec-header">
-          <div class="subsec-title">RadPC / RadPC@Scale – 代表的論文</div><div class="subsec-note">アーキテクチャ・月面ミッション・高高度気球実験</div>
-        </div>
+        <div class="subsec-header"><div class="subsec-title">RadPC / RadPC@Scale – 代表的論文</div><div class="subsec-note">アーキテクチャ・月面ミッション・高高度気球実験</div></div>
         <div class="cards">
           <article class="card" data-text="journal paper radpc: a novel single-event upset mitigation strategy for fpga-based space computing c. m. major et al. · journal of aerospace information systems · 2021 radpc のコアアーキテクチャ（タイル化 soft processor, qmr, dms, cmm, partial reconfiguration）を包括的に解説した代表論文。radpc-lunar ミッションや月面での see 実証についても概要が触れられている。">
             <div class="card-tag"><span class="tag-dot" style="background:#0891b2"></span>Journal Paper</div>
@@ -712,9 +635,7 @@
         </div>
       </div>
       <div class="subsection" id="radpc-phd">
-        <div class="subsec-header">
-          <div class="subsec-title">PhD Theses</div><div class="subsec-note">RadPC の理論的バックボーンとなる博士論文</div>
-        </div>
+        <div class="subsec-header"><div class="subsec-title">PhD Theses</div><div class="subsec-note">RadPC の理論的バックボーンとなる博士論文</div></div>
         <div class="cards">
           <article class="card" data-text="phd thesis reconfigurable hardware accelerators for high performance radiation tolerant computers raymond j. weber · phd · montana state university · 2014 タイル化 soft processor＋spare＋部分再構成を用いた高性能ラドトレコンピュータを体系化した博士論文。radpc の前身となる many-core アーキテクチャと、fpga 上のハードウェアアクセラレータの構成が詳細に議論されている。">
             <div class="card-tag"><span class="tag-dot" style="background:#0891b2"></span>PhD Thesis</div>
@@ -740,9 +661,7 @@
         </div>
       </div>
       <div class="subsection" id="radpc-msee">
-        <div class="subsec-header">
-          <div class="subsec-title">MSEE Theses</div><div class="subsec-note">RadPC アーキテクチャと実証ミッションの詳細</div>
-        </div>
+        <div class="subsec-header"><div class="subsec-title">MSEE Theses</div><div class="subsec-note">RadPC アーキテクチャと実証ミッションの詳細</div></div>
         <div class="cards">
           <article class="card" data-text="msee thesis radiation tolerant many-core computing system for aerospace applications clinton f. gauer · msee · montana state university · 2010 タイル状 soft-core プロセッサと fpga 部分再構成を用いた many-core ラドトレシステムを提案。故障したタイル領域を空間的に回避する「spatial avoidance」の基本概念が示され、radpc の原型となっている。">
             <div class="card-tag"><span class="tag-dot" style="background:#0891b2"></span>MSEE Thesis</div>
@@ -790,17 +709,9 @@
       </div>
     </section>
     <section class="group-section" id="g-mission">
-      <div class="group-header">
-        <div class="group-color-bar" style="background:#9333ea"></div>
-        <div class="group-header-text">
-          <div class="group-title">月面ミッション設計・運用</div><div class="group-desc">EPS・熱設計・ローバー・CLPS・LuSEE-Night など月面ミッション全般の設計・運用に関する文献</div>
-        </div>
-        <div class="group-count">21 件</div>
-      </div>
+      <div class="group-header"><div class="group-color-bar" style="background:#9333ea"></div><div class="group-header-text"><div class="group-title">月面ミッション設計・運用</div><div class="group-desc">EPS・熱設計・ローバー・CLPS・LuSEE-Night など月面ミッション全般の設計・運用に関する文献</div></div><div class="group-count">21 件</div></div>
       <div class="subsection" id="power-eps">
-        <div class="subsec-header">
-          <div class="subsec-title">Power / EPS / Cold Electronics</div><div class="subsec-note">Electrical Power System · Cold Survival · ECSS / NASA</div>
-        </div>
+        <div class="subsec-header"><div class="subsec-title">Power / EPS / Cold Electronics</div><div class="subsec-note">Electrical Power System · Cold Survival · ECSS / NASA</div></div>
         <div class="cards">
           <article class="card" data-text="ecss – power systems ecss-e-st-20-20c – spacecraft electrical power design european cooperation for space standardization · 2020 宇宙機電源（eps）の設計要求を定義する ecss の主要標準。電源バス電圧、冗長構成、lcl（latching current limiter）、電力制御・保護回路など、ローバーの電源設計にも直接適用可能な設計指針を提供。">
             <div class="card-tag"><span class="tag-dot" style="background:#9333ea"></span>ECSS – Power Systems</div>
@@ -838,9 +749,7 @@
         </div>
       </div>
       <div class="subsection" id="lunar-rover">
-        <div class="subsec-header">
-          <div class="subsec-title">Lunar Rover Architecture / Micro Rover</div><div class="subsec-note">Rover System Design · Mobility · Mission Architecture</div>
-        </div>
+        <div class="subsec-header"><div class="subsec-title">Lunar Rover Architecture / Micro Rover</div><div class="subsec-note">Rover System Design · Mobility · Mission Architecture</div></div>
         <div class="cards">
           <article class="card" data-text="cmu – day/night rover design of a day / night lunar rover (cmu-ri-tr-95-24) p. berkelman et al. · carnegie mellon university robotics institute · 1995 月昼夜を通して稼働可能なローバーのシステム設計を網羅した古典的レポート。電源、熱、運用モード、機械設計、通信などローバー設計の基本要素を体系化。">
             <div class="card-tag"><span class="tag-dot" style="background:#9333ea"></span>CMU – Day/Night Rover</div>
@@ -887,9 +796,7 @@
         </div>
       </div>
       <div class="subsection" id="clps">
-        <div class="subsec-header">
-          <div class="subsec-title">CLPS / Lunar Payload Delivery</div><div class="subsec-note">NASA CLPS · Astrobotic · Intuitive Machines · Firefly · ESA BSGN</div>
-        </div>
+        <div class="subsec-header"><div class="subsec-title">CLPS / Lunar Payload Delivery</div><div class="subsec-note">NASA CLPS · Astrobotic · Intuitive Machines · Firefly · ESA BSGN</div></div>
         <div class="cards">
           <article class="card" data-text="nasa – clps program nasa commercial lunar payload services (clps) nasa · lunar delivery program · industry partners nasa が民間企業と連携して、科学ペイロードや技術実証機器を月面に配送するための clps の公式ページ。">
             <div class="card-tag"><span class="tag-dot" style="background:#9333ea"></span>NASA – CLPS Program</div>
@@ -929,9 +836,7 @@
         </div>
       </div>
       <div class="subsection" id="lusee-night">
-        <div class="subsec-header">
-          <div class="subsec-title">LuSEE-Night / Lunar Night Pathfinder</div><div class="subsec-note">月面裏側・夜間の極低周波観測ミッション – 電気設計・電源・熱設計の参考</div>
-        </div>
+        <div class="subsec-header"><div class="subsec-title">LuSEE-Night / Lunar Night Pathfinder</div><div class="subsec-note">月面裏側・夜間の極低周波観測ミッション – 電気設計・電源・熱設計の参考</div></div>
         <div class="cards">
           <article class="card" data-text="nasa / doe – news nasa, department of energy join forces on innovative lunar experiment (lusee-night) nasa · doe · lusee-night overview · lunar night survival nasa と doe による lusee-night の公式紹介記事。月の裏側での 14 日間の月面夜を生き抜くための電源・熱・電子機器設計に関する要件が概説されている。">
             <div class="card-tag"><span class="tag-dot" style="background:#9333ea"></span>NASA / DOE – News</div>
@@ -972,63 +877,55 @@
       </div>
     </section>
 </div>
-
 <a class="back-top" href="#" title="トップへ">↑</a>
-
 <footer>
   <p>Space Mission Reference Hub &nbsp;·&nbsp; 96 文献 &nbsp;·&nbsp; 最終更新: 2026年5月15日</p>
 </footer>
-
 <script>
 (function(){
-  var search = document.getElementById('search');
-  var hint   = document.getElementById('search-hint');
-  function escRe(s){ return s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'); }
-  function strip(el){
-    el.querySelectorAll('mark.hl').forEach(function(m){
-      m.outerHTML = m.textContent;
-    });
-  }
-  function addMarks(el, re){
+  var search=document.getElementById('search');
+  var hint=document.getElementById('search-hint');
+  function escRe(s){return s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');}
+  function strip(el){el.innerHTML=el.innerHTML.replace(/<mark class="hl">([^<]*)<\/mark>/g,'$1');}
+  function addMarks(el,re){
     ['.card-title','.card-meta','.card-desc','.card-tag'].forEach(function(sel){
-      var node = el.querySelector(sel); if(!node) return;
-      var html = node.innerHTML.replace(/<[^>]*>/g,''); // plain text only
-      node.innerHTML = node.innerHTML; // reset
-      // walk text nodes
-      var tw = document.createTreeWalker(node, NodeFilter.SHOW_TEXT);
-      var nodes = []; var n;
-      while((n=tw.nextNode())) nodes.push(n);
+      var node=el.querySelector(sel);if(!node)return;
+      var tw=document.createTreeWalker(node,NodeFilter.SHOW_TEXT);
+      var nodes=[];var n;while((n=tw.nextNode()))nodes.push(n);
       nodes.forEach(function(tn){
-        var parts = tn.nodeValue.split(re);
-        if(parts.length < 2) return;
-        var frag = document.createDocumentFragment();
+        var parts=tn.nodeValue.split(re);if(parts.length<2)return;
+        var frag=document.createDocumentFragment();
         parts.forEach(function(p,i){
-          if(i%2===0){ frag.appendChild(document.createTextNode(p)); }
-          else{ var m=document.createElement('mark');m.className='hl';m.textContent=p;frag.appendChild(m); }
+          if(i%2===0){frag.appendChild(document.createTextNode(p));}
+          else{var m=document.createElement('mark');m.className='hl';m.textContent=p;frag.appendChild(m);}
         });
         tn.parentNode.replaceChild(frag,tn);
       });
     });
   }
-  search.addEventListener('input', function(){
-    var q  = this.value.trim();
-    var ql = q.toLowerCase();
-    var re = q ? new RegExp('('+escRe(q)+')','gi') : null;
-    var cards = document.querySelectorAll('.card');
-    var shown = 0;
+  search.addEventListener('input',function(){
+    var q=this.value.trim();var ql=q.toLowerCase();
+    var re=q?new RegExp('('+escRe(q)+')','gi'):null;
+    var cards=document.querySelectorAll('.card');var shown=0;
     cards.forEach(function(card){
       strip(card);
-      var match = !q || (card.dataset.text||'').includes(ql);
+      var match=!q||(card.dataset.text||'').includes(ql);
       card.classList.toggle('hidden',!match);
-      if(match){ shown++; if(re) addMarks(card,re); }
+      if(match){shown++;if(re)addMarks(card,re);}
     });
     document.querySelectorAll('.subsection').forEach(function(s){
-      s.classList.toggle('hidden', s.querySelectorAll('.card:not(.hidden)').length===0);
+      s.classList.toggle('hidden',s.querySelectorAll('.card:not(.hidden)').length===0);
     });
     document.querySelectorAll('.group-section').forEach(function(g){
-      g.classList.toggle('hidden', g.querySelectorAll('.card:not(.hidden)').length===0);
+      g.classList.toggle('hidden',g.querySelectorAll('.card:not(.hidden)').length===0);
     });
-    hint.textContent = q ? shown+' 件が一致' : '';
+    hint.textContent=q?shown+' 件が一致':'';
+  });
+  document.querySelectorAll('.nav-pill[data-color]').forEach(function(pill){
+    var c=pill.dataset.color;
+    pill.style.color=c;pill.style.borderColor=c+'55';pill.style.background=c+'18';
+    pill.addEventListener('mouseenter',function(){this.style.background=c+'30';});
+    pill.addEventListener('mouseleave',function(){this.style.background=c+'18';});
   });
 })();
 </script>
