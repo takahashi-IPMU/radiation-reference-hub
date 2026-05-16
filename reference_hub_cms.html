@@ -221,60 +221,26 @@ const INITIAL = {
             {id:"q04",tag:"BNL – NSRL Beam Transfer",title:"Results from the Commissioning of the NSRL Beam Transfer Line at BNL",meta:"N. Tsoupas et al. · Proceedings of EPAC 2004",desc:"NSRL のビーム輸送ラインと照射野の均一性技術に関する技術報告。",url:"https://accelconf.web.cern.ch/e04/papers/TUPLT180.pdf"},
             {id:"q05",tag:"BNL – GCR Simulator",title:"NASA's First Ground-Based Galactic Cosmic Ray Simulator",meta:"L. C. Simonsen et al. · PLOS Biol. 18 · 2020",desc:"BNL NSRL における「GCR シミュレーター（銀河宇宙線模擬装置）」の開発と運用に関する重要論文。GCR スペクトルを模擬した多イオン種シーケンス照射プロトコルを確立し、電子機器試験への応用可能性を示している。",url:"https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000669"},
             {id:"b03",tag:"BNL – HEET 構想",title:"Proposal for a High-Energy Effects Testing Facility (HEET) at RHIC",meta:"BNL · RHIC · RADNEXT / ESA Workshop",desc:"RHIC ビームを利用して、高エネルギー二次ハドロン場による SEE 試験を行う HEET 構想を説明した資料。HL-LHC / FCC など将来コライダーで必要となる高エネルギーハドロン SEE 試験の要求を議論。",url:"https://indico.cern.ch/event/1007775/contributions/4224412/attachments/2187033/3696709/RADNEXT_HEET_BNL.pdf"},
-            {id:"mgh01",tag:"MGH Francis Burr – 陽子線 SEE 試験",title:"Francis H. Burr Proton Therapy Center, Massachusetts General Hospital",meta:"MGH / Harvard · IBA サイクロトロン · Boston, MA",desc:"医療用陽子線治療施設だが、70–230 MeV の陽子ビームを SEE 試験にも提供。NASA NSREC データワークショップの複数論文で試験施設として引用されている。サリー大学の OSSAT プロセッサ試験（SAMV71/STM32H7/SAMA5D3）でも利用された REEF と同様に、医療施設を SEE 試験に転用する代表例。",url:"https://www.mgh.harvard.edu/radiationoncology/BurrProtonCenter.aspx"}
+            {id:"mgh01",tag:"MGH Francis Burr – 陽子線 SEE 試験",title:"Francis H. Burr Proton Therapy Center, Massachusetts General Hospital",meta:"MGH / Harvard · IBA サイクロトロン · Boston, MA",desc:"医療用陽子線治療施設だが、70–230 MeV の陽子ビームを SEE 試験にも提供。NASA NSREC データワークショップの複数論文で試験施設として引用されている。サリー大学の OSSAT プロセッサ試験（SAMV71/STM32H7/SAMA5D3）でも利用された REEF と同様に、医療施設を SEE 試験に転用する代表例。",url:"https://www.massgeneral.org/cancer-center/radiation-oncology/treatments-and-services/proton-therapy/"}
           ]
         },
         { id:"eu-facilities", label:"ヨーロッパの放射線試験施設",
           note:"CERN（CHARM / VESPER / H8）· PSI PIF · UCL HIF · RADEF · Surrey REEF · ESTEC CASE · Trento",
           refs:[
-            {id:"pif01",tag:"PSI – PIF（陽子照射施設）",title:"Proton Irradiation Facility (PIF) – Paul Scherrer Institut",meta:"Paul Scherrer Institut (PSI) · スイス・ビリゲン · 最大 230 MeV 陽子",desc:"PSI のアイソクロナスサイクロトロンに接続した専用陽子照射施設。100 MeV および 230 MeV の陽子ビームを提供し、宇宙用電子機器の SEE（陽子誘起）試験に広く利用される。RADEF・UCL HIF と並んで欧州 ESA ECIF に認定された主要施設の一つ。ZU3EG 試験（JUICE 論文）でも使用。",url:"https://www.psi.ch/en/ltp/proton-irradiation-facility"},
-            {id:"hif01",tag:"UCL HIF – 重イオン照射施設",title:"Heavy Ion Facility (HIF) – Université catholique de Louvain",meta:"UCL Cyclotron Resource Centre · ベルギー・ルーバン＝ラ＝ヌーヴ · サイクロトロン",desc:"UCL のサイクロトロンを利用した重イオン照射施設（HIF）および軽イオン施設（LIF）。標準的な重イオンカクテル（H〜Xe）によるSEE試験を提供。多くの ESA ミッション機器試験に使用されており、SEFUW 2018 の ZU3EG 試験（Glorieux 2018）でも利用。",url:"http://www.cyc.ucl.ac.be/HIF/HIF.html"},
+            {id:"pif01",tag:"PSI – PIF（陽子照射施設）",title:"Proton Irradiation Facility (PIF) – Paul Scherrer Institut",meta:"Paul Scherrer Institut (PSI) · スイス・ビリゲン · 最大 230 MeV 陽子",desc:"PSI のアイソクロナスサイクロトロンに接続した専用陽子照射施設。100 MeV および 230 MeV の陽子ビームを提供し、宇宙用電子機器の SEE（陽子誘起）試験に広く利用される。RADEF・UCL HIF と並んで欧州 ESA ECIF に認定された主要施設の一つ。ZU3EG 試験（JUICE 論文）でも使用。",url:"https://www.psi.ch/en/pif"},
+            {id:"hif01",tag:"UCL HIF – 重イオン照射施設",title:"Heavy Ion Facility (HIF) – Université catholique de Louvain",meta:"UCL Cyclotron Resource Centre · ベルギー・ルーバン＝ラ＝ヌーヴ · サイクロトロン",desc:"UCL のサイクロトロンを利用した重イオン照射施設（HIF）および軽イオン施設（LIF）。標準的な重イオンカクテル（H〜Xe）によるSEE試験を提供。多くの ESA ミッション機器試験に使用されており、SEFUW 2018 の ZU3EG 試験（Glorieux 2018）でも利用。",url:"https://www.uclouvain.be/en/research-institutes/irmp/heavy-ion-facility-hif"},
             {id:"radef01",tag:"RADEF – 放射線効果施設（フィンランド）",title:"RADiation Effects Facility (RADEF) – University of Jyväskylä",meta:"University of Jyväskylä (JYFL) · フィンランド · ESA ECIF 認定（2005年〜）",desc:"K-130 サイクロトロン + ECR イオン源による高透過重イオンカクテル（10 / 16.3 / 22 MeV/n、最大 Au イオン）・陽子・電子（LINAC）を提供する ESA 認定欧州部品照射施設（ECIF）。2005年から ESA との契約を継続中（2027年まで延長）。NASA・JAXA・CNES も利用。ZU3EG 試験（低エネルギー陽子・重イオン）や JUICE ミッション機器評価でも使用。",url:"https://www.jyu.fi/en/science/accelerator-laboratory/facilities-and-instruments/radiation-effects-facility"},
             {id:"reef01",tag:"Surrey REEF – 電子線 TID・内部帯電試験",title:"Realistic Electron Environment Facility (REEF) – University of Surrey",meta:"Surrey Space Centre · University of Surrey · イギリス",desc:"Sr-90（半減期 28 年）ベータ線源を用いた電子線照射施設。GEO 放射線帯の電子環境を真空チャンバー内で長期間模擬し、TID 試験および内部帯電（IEDEP）試験を実施。OSSAT の SAMV71/STM32H7/SAMA5D3 試験（KISPE 2021）で使用された試験装置「REEF」がこれに相当する。",url:"https://www.surrey.ac.uk/surrey-space-centre"},
-            {id:"estec-case",tag:"ESA ESTEC – CASE（Californium-252 線源）",title:"The CASE System – Californium-252 Radiation Facility at ESA ESTEC",meta:"ESA ESTEC · TEC-QEC · オランダ・ノールドウェイク · Cf-252 線源",desc:"ESA の ESTEC（欧州宇宙研究技術センター）に設置された Californium-252 中性子・ガンマ線照射施設 CASE。宇宙用部品の放射線特性評価に使用される。ESCIES（欧州宇宙部品情報交換システム）で詳細情報が公開されている。",url:"https://escies.org/ReadArticle?docId=252"},
+            {id:"estec-case",tag:"ESA ESTEC – CASE（Californium-252 線源）",title:"The CASE System – Californium-252 Radiation Facility at ESA ESTEC",meta:"ESA ESTEC · TEC-QEC · オランダ・ノールドウェイク · Cf-252 線源",desc:"ESA の ESTEC（欧州宇宙研究技術センター）に設置された Californium-252 中性子・ガンマ線照射施設 CASE。宇宙用部品の放射線特性評価に使用される。ESCIES（欧州宇宙部品情報交換システム）で詳細情報が公開されている。",url:"https://escies.org/webdocument/showArticle?id=252&groupid=6"},
             {id:"trento01",tag:"Protonterapia Trento – 陽子線試験施設",title:"Centro di Protonterapia – Trento（イタリア）",meta:"APSS / Trento · イタリア · 陽子線治療施設 · ESA 試験実績あり",desc:"イタリア・トレント県の陽子線治療施設。MGH Francis Burr と同様に医療用陽子ビームを宇宙用電子機器の放射線試験（SEE / TID）にも提供。ESA の試験プロジェクトで利用実績があり、ヨーロッパにおける陽子線 SEE 試験のオルタナティブ施設として機能している。",url:"https://www.apss.tn.it/servizi/Centro-di-Protonterapia"}
           ]
         },
         { id:"see-facilities", label:"SEE 試験施設サーベイ & 利用ガイド",
           note:"複数ラボにまたがる施設比較 · 宇宙環境と加速器ビームの対応づけ",
           refs:[
-            {id:"g01",tag:"Survey – US / Europe",title:"Overview of Single-Event Effects Test Facilities and Beam Characteristics",meta:"RADNEXT / ESA / NASA · Facility Survey",desc:"CERN, BNL, LBNL, RADEF など世界各地の SEE 試験施設のビームパラメータ（粒子種・LET・エネルギー・フルエンス）をまとめたサーベイ。宇宙ミッション・加速器実験のどちらの RHA にも有用な「カタログ」。",url:"https://radnext.web.cern.ch/sites/default/files/2021-03/RADNEXT_Facility_Survey.pdf"},
+            {id:"g01",tag:"Survey – US / Europe",title:"Overview of Single-Event Effects Test Facilities and Beam Characteristics",meta:"RADNEXT / ESA / NASA · Facility Survey",desc:"CERN, BNL, LBNL, RADEF など世界各地の SEE 試験施設のビームパラメータ（粒子種・LET・エネルギー・フルエンス）をまとめたサーベイ。宇宙ミッション・加速器実験のどちらの RHA にも有用な「カタログ」。",url:"https://radnext.web.cern.ch/"},
             {id:"g02",tag:"Guide – Space & Accelerators",title:"Using Accelerator Facilities for Space Radiation Effects Testing of Electronics",meta:"NASA / ESA Joint Guides · SEE / TID / NIEL",desc:"宇宙環境（GCR / SPE / トラップ帯）を加速器ビームでどう模擬し、半導体・LSI の SEE / TID / NIEL 試験に用いるかを解説したガイド文書。ビーム条件と宇宙環境との対応づけの考え方を整理するのに適している。",url:"https://trs.jpl.nasa.gov/bitstream/handle/2014/45022/10-1415_A1b.pdf"},
             {id:"q08",tag:"SEE Facility – SRHEC AoA",title:"Strategic Radiation-Hardened Electronics Council (SRHEC) Public Summary from Analysis of Alternatives for Domestic SEE Test Facilities",meta:"J. Franco and J. Ross · 2021",desc:"米国内の SEE 試験施設の不足と、高エネルギー重イオン照射施設の必要性に関する分析。",url:"https://nepp.nasa.gov/workshops/dhesee2021/talks/6a_SEE%20AoA%20summary%20Nov%202020%20approved%20for%20release.pdf"}
-          ]
-        }
-      ]
-    },
-    /* ═══════════════════════════════════════════════════
-       GROUP NEW: 素粒子実験における耐放射線
-       ═══════════════════════════════════════════════════ */
-    { id:"g-hep", label:"素粒子実験における耐放射線", color:"#dc2626",
-      desc:"LHC / テバトロン / リニアック周辺の混合放射線場が電子機器に与える影響・R2E プログラム・CHARM 試験施設",
-      collapsed: false,
-      sections: [
-        { id:"cern-see", label:"CERN – R2E / CHARM / LHC",
-          note:"LHC トンネル混合場 · R2E プログラム · CHARM 施設",
-          refs:[
-            {id:"c01",tag:"CERN – SEE Review",title:"Single Event Effects in High-Energy Accelerators",meta:"D. García Alía · CERN Yellow Reports · 2017",desc:"高エネルギー加速器における混合場（高エネルギーハドロン＋中性子＋ガンマ線）が電子機器に与える SEE を体系的にレビュー。LHC・PS・SPS における SEE の起源、断面積、実機トリップ事例、宇宙線起因の SEE との違いなどを詳しく解説。",url:"https://cds.cern.ch/record/2320261/files/SEEs_in_high_energy_accelerators.pdf"},
-            {id:"c02",tag:"CERN – Mixed Field",title:"Method for Measuring Mixed-Field Radiation Levels Relevant for SEEs at the LHC",meta:"K. Røed et al. · IEEE Trans. Nucl. Sci. · 2010",desc:"LHC 実機における高エネルギーハドロン由来の SEE 評価に向けて、トンネル内混合場の線量・フルエンス・スペクトルを測定するための RadMon システムと解析手法を解説。実機環境での SEU レート推定の基盤となる手法。",url:"https://www.jlab.org/accel/RadCon/opsgraphs/CERN_radmon_docs/RadMonPaper_final.pdf"},
-            {id:"c03",tag:"CERN – CHARM Facility",title:"A Mixed Field Facility at CERN for Radiation Test: CHARM",meta:"A. Brugger et al. · J. Phys.: Conf. Ser. 1046, 012004 · 2018",desc:"CERN SPS を用いた混合場試験施設 CHARM の概要紹介。プロトン・パイオン・中性子・ガンマ線からなる広いエネルギー分布を持つ場で、宇宙機や LHC 用電子機器の SEE / TID 試験が行える。",url:"https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/237395/1/1742-6596_1046_1_012004.pdf"},
-            {id:"c04",tag:"CERN – CHARM Characterization",title:"Mixed-Field Radiation Monitoring and Beam Characterization at the CERN CHARM Facility",meta:"D. Lacarrère et al. · EPJ Web Conf. · 2024",desc:"CHARM での混合場の線量・スペクトルを実測と FLUKA シミュレーションで比較し、SEE 試験ビームとしての特性を詳述。重イオン相当 LET 分布や線量率など、試験条件の具体的な数値が示されている。",url:"https://cds.cern.ch/record/2900883/files/document.pdf"},
-            {id:"c05",tag:"CERN – R2E",title:"Radiation to Electronics: Impact on CERN LHC Operation (Run 2 Overview & HL-LHC Outlook)",meta:"D. Wollmann et al. · RADECS / R2E Project · 2019",desc:"LHC Run 2 における電子機器の SEE 起因トリップ統計と対策（シールド・配置換え・冗長化・機器交換など）を総括したレビュー。HL-LHC に向けた R2E 戦略の概要も述べられている。",url:"https://www.academia.edu/80349687/Radiation_to_Electronics_Impact_on_CERN_LHC_Operation_Run_2_Overview_and_HL_LHC_Outlook"}
-          ]
-        },
-        { id:"fermilab-slac", label:"Fermilab / SLAC – Detectors & Electronics",
-          note:"ハドロン・電子リニアック環境での放射線損傷と SEE",
-          refs:[
-            {id:"f01",tag:"Fermilab – Overview",title:"Radiation Damage in Detectors and Electronics",meta:"R. Lipton · Beam Instrumentation Workshop (BIW08, SLAC) · 2008",desc:"テバトロンや LHC などのコライダー実験を念頭に、シリコン検出器や前置増幅器、FPGA/ASIC に対する TID / NIEL / SEE の影響と実験での障害事例をまとめた講演スライド。ハドロンコライダーにおける「現場の放射線問題」の全体像をつかむのに適している。",url:"https://epaper.kek.jp/BIW2008/papers/tuiotio02.pdf"},
-            {id:"f02",tag:"Fermilab – Mixed Field",title:"Radiation Effects and Fault Studies in Accelerator Electronics",meta:"Fermilab internal notes · Tevatron / Main Injector",desc:"ビームロスモニタ、電源、制御系などの電子回路に発生した SEU/SEL 事例と、その発生条件・対策をまとめた Fermilab の技術ノート群。どの程度の線束でどのような故障が出るかの感覚をつかむ参考になる。",url:"https://lss.fnal.gov/archive/2001/conf/Conf-01-328.pdf"},
-            {id:"f03",tag:"SLAC – Linac Environment",title:"Radiation Levels and Shielding for Electronics in High-Energy Electron Linacs",meta:"SLAC Reports · LCLS / FACET 周辺",desc:"高エネルギー電子リニアック周辺の二次中性子・フォトン場を評価し、電子機器の配置とシールド設計指針を与える SLAC のレポート。主に TID / NIEL を扱うが、リニアック由来の中性子場を理解する上で有用。",url:"https://www.slac.stanford.edu/cgi-wrap/getdoc/slac-r-732.pdf"},
-            {id:"f04",tag:"SLAC – Beam Diagnostics",title:"Radiation Damage Considerations in Accelerator Beam Instrumentation",meta:"D. W. Storey · IBIC 2015 · KEK / Tsukuba",desc:"ビーム位置モニタやプロファイルモニタなどのビーム計測器における放射線損傷・SEE を概説した IBIC 2015 の招待講演。電子機器の配置・ケーブリング・シャドーイングなど、実務的な対策が整理されている。",url:"https://ibic2015.kek.jp/IBIC2015/papers/weaua3.pdf"}
-          ]
-        },
-        { id:"kek-hep", label:"KEK – 素粒子実験における放射線損傷",
-          note:"カロリメータ・検出器周辺の中性子場による半導体・電子機器の放射線損傷",
-          refs:[
-            {id:"k03",tag:"KEK – Silicon Detectors / Calorimeter",title:"Radiation Damage Effects on Semiconductor Detectors and Electronics by Neutrons Produced in Calorimeters",meta:"KAKEN 報告 · 高エネルギー実験 · Neutron-Induced Damage",desc:"カロリメータで生成される中性子によるシリコン検出器および読み出し電子回路の放射線損傷を評価した日本の研究プロジェクト報告。Calorimeter 近傍に設置される半導体検出器・ASIC の寿命評価の具体例として有用。KEK の素粒子実験環境における耐放射線設計の参考文献。",url:"https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-17340070/"}
           ]
         }
       ]
@@ -358,12 +324,28 @@ const INITIAL = {
           refs:[
             {id:"q12",tag:"SmallSat – Shielding Demo",title:"Shields-1, A SmallSat Radiation Shielding Technology Demonstration",meta:"D. L. I. Thomsen et al. · 29th Annual AIAA/USU Conference on Small Satellites · 2015",desc:"小型衛星（SmallSat）における放射線遮蔽技術の実証例。原子番号（Z）グレーデッドシールドが同じ厚みのアルミシールドより電子遮蔽性能で約30%向上することを SPENVIS モデリングで示し、COTS 部品の耐放射線寿命延長を目的とした CubeSat ミッション。",url:"https://digitalcommons.usu.edu/smallsat/2015/all2015/84/"}
           ]
-        },
-        { id:"cold-electronics", label:"低温・月夜エレクトロニクス",
-          note:"Cold Electronics · Lunar Night Survival · 極低温動作評価",
+        }
+      ]
+    },
+    /* ═══════════════════════════════════════════════════
+       GROUP NEW: 部品放射線データベース
+       ═══════════════════════════════════════════════════ */
+    { id:"g-partdb", label:"部品放射線データベース", color:"#be185d",
+      desc:"NASA GSFC・NEPP・ESA・IEEE・DLA・TI が公開する宇宙用部品の放射線試験データ・規格品検索サービス",
+      collapsed: false,
+      sections: [
+        { id:"partdb-main", label:"主要部品放射線データベース",
+          note:"試験レポート・部品データ・認定品リストへのリンク集",
           refs:[
-            {id:"s05",tag:"NASA – Cold Electronics",title:"Cold Electronics for Lunar Missions (NESC-RP-23-01873 / NASA TM-20250008583)",meta:"NASA Engineering & Safety Center (NESC) · 2025",desc:"月夜・極低温環境で動作する電子機器に関する包括的な技術評価レポート。コールドエレクトロニクス、パッケージング、材料、TID/SEE、サーマルサイクル、信頼性評価、Qualification 推奨など、極域ローバーや月夜運用機器に直接役立つ一次資料。",url:"https://ntrs.nasa.gov/citations/20250008583"},
-            {id:"s06",tag:"Lunar Night – Electronics Rerating",title:"Rerating of Electronic Components for Improved Lunar Mission Night Survival",meta:"S. Biswas · Technical University of Munich · PhD Thesis · 2023",desc:"月夜の極低温環境で電子部品を安全に動作させるための「温度デレーティング手法」を包括的にまとめた博士論文。各種 IC・パッケージ・材料の低温性能変化、測定データ、故障モード解析などが豊富で、月面ローバーの耐寒設計に直結する内容。",url:"https://mediatum.ub.tum.de/doc/1687567/mhrhcbkk3lddt5530dakus7gi.Janos%20Daniel%20Biswas.pdf"}
+            {id:"db01",tag:"GSFC – 放射線データベース",title:"GSFC Radiation Data Base – NASA Goddard Space Flight Center",meta:"NASA GSFC · Radiation Effects and Analysis Group（REAG）· 1,300点以上の部品",desc:"NASA GSFC の放射線効果解析グループ（REAG）が30年以上にわたり蓄積した部品放射線試験データベース。SEE（重イオン・陽子）および TID（Co-60）の試験レポートを部品番号で検索できる。COTS・宇宙用 IC・光電子デバイスなど広範な部品を収録。NASA ミッションの耐放射線設計の主要一次情報源。",url:"https://radhome.gsfc.nasa.gov/radhome/raddatabase/raddatabase.html"},
+            {id:"db02",tag:"NEPP – 文献検索ツール",title:"NASA NEPP Publication Lookup – Electronic Parts and Packaging Program",meta:"NASA NEPP · NASA Goddard / JPL · EEE 部品評価・放射線試験レポート",desc:"NASA の電子部品・パッケージングプログラム（NEPP）が公開する文献・報告書の全文検索ツール。SEE 試験レポート・TID 評価・信頼性評価・部品保証ガイドラインなど NASA ミッション向け EEE 部品に関するドキュメントが検索可能。Google カスタム検索を利用した全文検索として機能する。",url:"https://nepp.nasa.gov/pages/pubs.cfm"},
+            {id:"db03",tag:"ESCIES – ESA 放射線試験レポート",title:"ESCIES Radiation Test Reports Database – European Space Components Information Exchange System",meta:"ESA / European Space Components Information Exchange System · TID / SEE / DD レポート",desc:"ESA および欧州パートナーが実施した部品放射線試験レポートを収録したデータベース。TID・SEE・DD（変位損傷）などの試験結果が部品ごとに公開されており、機密でないものはすべて無料でアクセス可能。欧州宇宙機器設計者の主要参照源。",url:"https://escies.org/labreport/radiationList"},
+            {id:"db04",tag:"DLA – Mil Specs & Drawings",title:"DLA Land and Maritime – MIL Spec / Standard Microcircuit Drawing (SMD) Search",meta:"Defense Logistics Agency (DLA) Land and Maritime · QML Class V / Class Q · Columbus, OH",desc:"米国国防兵站局（DLA）が管理する軍用・宇宙用 IC の標準マイクロ回路図面（SMD）および軍用規格（MIL-SPEC）の検索サービス。QML Class V（宇宙用最高信頼性）・Class Q 認定品の仕様・試験要求・承認メーカーリストを無料で検索できる。宇宙用部品選定の基礎情報として必須。",url:"https://landandmaritimeapps.dla.mil/programs/milspec/DocSearch.aspx"},
+            {id:"db05",tag:"IEEE REDW – 放射線効果データワークショップ",title:"IEEE Radiation Effects Data Workshop (REDW) Record – IEEE Xplore",meta:"IEEE Nuclear and Plasma Sciences Society · NSREC 併催 · 1992年〜現在",desc:"1992年以降毎年 NSREC（核宇宙放射線効果会議）に併催される IEEE 放射線効果データワークショップ（REDW）の全論文アーカイブ。査読なしで速報的に提出された部品の SEE / TID 試験データを収録し、未公表データを含む速報情報源として放射線効果コミュニティで広く参照される。IEEE Xplore で無料閲覧可能。",url:"https://ieeexplore.ieee.org/xpl/conhome/8086/proceeding"},
+            {id:"db06",tag:"TI – Space Products & Radiation Data",title:"Texas Instruments Space Products – Radiation-Hardened and Radiation-Tolerant Products",meta:"Texas Instruments · QML Class V / Class Q / Space-EP / SHP · ti.com/space",desc:"TI の宇宙用製品ポータル。QML Class V（深宇宙・セラミックパッケージ）・Class Q・Space Enhanced Plastic（SEP / LEO 向け）・SHP 規格品の製品ラインナップ、個別の TID / SEE / NDD 放射線試験レポート（PDF）を製品フォルダから無料で参照できる。SAMV71・TMS570 などの宇宙マイコンを含む広範なポートフォリオ。",url:"https://www.ti.com/applications/industrial/aerospace-defense/space/overview.html"},
+            {id:"db07",tag:"Zero-G – COTS 放射線データベース（NewSpace）",title:"Zero-G Radiation Assurance – Radiation Database for COTS Electronics",meta:"Zero-G Radiation Assurance · 米国 · NewSpace / CubeSat / 商業衛星向け",desc:"NewSpace プログラム向けに特化した COTS 部品の放射線試験データベース。TID・SEE（重イオン・陽子）などの試験データを部品番号で検索でき、SWaP（Size Weight and Power）を重視する商業衛星設計者が放射線耐性 COTS 部品を選定するための主要ツール。従来の NASA GSFC データベースでカバーされていない最新 COTS デバイスのデータが充実。商用サービスだが一部の情報は無料で閲覧可能。",url:"https://www.zerogradiation.com/radiation-database"},
+            {id:"db08",tag:"ESA Radiation Test Database（esarad）",title:"ESA Radiation Test Database – esarad.esa.int",meta:"European Space Agency · TEC-QEC · 2024年開設 · TRAD 等の COTS 試験結果収録",desc:"ESA が2024年に新設した公式の放射線試験データポータル。従来の ESCIES 放射線レポートを補完・拡張し、TRAD 等の欧州企業が ESA 契約のもとで実施した COTS 部品（電圧コンバータ・ADC・発振器・GaN FET・メモリなど）の TID・SEE 試験レポートを収録。CORHA 2024 プロジェクトの成果も掲載予定。情報利用には出典明示が必要であり、トレーサビリティの保証は利用者の責任とされている。",url:"https://esarad.esa.int/"},
+            {id:"db09",tag:"TRAD R2COTS – COTS 放射線保証サービス",title:"R2COTS – Radiation & Reliability on Commercial-Off-The-Shelf (TRAD Tests & Radiations)",meta:"TRAD Tests & Radiations · フランス・ラベージュ · 100品超の COTS カタログ",desc:"フランスの放射線試験専門企業 TRAD が提供する COTS 専用放射線保証サービス。TID（Co-60）・重イオン SEE・レーザー照射による100品超の COTS 部品（電圧コンバータ・ADC・発振器・GaN FET・メモリ等）に対し、ダイ改版・マスクセット・ウェーハファブ・拡散ロット・組み立てロットまでのフルトレーサビリティを保証した「Class 3+」認定データを提供する。NewSpace 向けの実用的な COTS 調達・資格取得支援サービスとして ESA コミュニティでも参照されている。",url:"https://www.r2cots.com/"}
           ]
         }
       ]
@@ -389,7 +371,7 @@ const INITIAL = {
           refs:[
             {id:"rp1",tag:"Journal Paper",title:"RadPC: A Novel Single-Event Upset Mitigation Strategy for FPGA-Based Space Computing",meta:"C. M. Major et al. · Journal of Aerospace Information Systems · 2021",desc:"RadPC のコアアーキテクチャ（タイル化 soft processor, QMR, DMS, CMM, partial reconfiguration）を包括的に解説した代表論文。RadPC-Lunar ミッションや月面での SEE 実証についても概要が触れられている。",url:"https://doi.org/10.2514/1.I010859"},
             {id:"rp2",tag:"Conference Paper",title:"Overview of the Upcoming RadPC-Lunar Mission",meta:"C. Major et al. · IEEE Aerospace Conference · 2021 · DOI: 10.1109/AERO50100.2021.9438284",desc:"CLPS / Blue Ghost 1 に搭載される RadPC-Lunar ミッションの概要。着陸地点（Mare Crisium）、ランダーとのインタフェース、搭載ドシメータ、月面運用シナリオなどがコンパクトにまとめられている。",url:"https://www.montana.edu/blameres/vitae/publications/d_conference_full/conf_full_051_lunar_mission_overview_mar21.pdf"},
-            {id:"rp3",tag:"Conference Paper",title:"RadPC@Scale: A Novel Approach to RadPC Single Event Upset Mitigation Strategy",meta:"J. Williams et al. · IEEE Aerospace Conference · 2022",desc:"RadPC のメモリ SEU 対策を、高高度気球実験「RadPC@Scale」で検証した論文。高度 70–85 kft における外部 SRAM SEU 率と DMS による修復回数などが報告されており、実環境での有効性を確認できる。",url:"https://wetlands.msuextension.org/blameres/vitae/publications/d_conference_full/conf_full_054_radpc_at_scale_mar22.pdf"},
+            {id:"rp3",tag:"Conference Paper",title:"RadPC@Scale: A Novel Approach to RadPC Single Event Upset Mitigation Strategy",meta:"J. Williams et al. · IEEE Aerospace Conference · 2022",desc:"RadPC のメモリ SEU 対策を、高高度気球実験「RadPC@Scale」で検証した論文。高度 70–85 kft における外部 SRAM SEU 率と DMS による修復回数などが報告されており、実環境での有効性を確認できる。",url:"https://www.montana.edu/blameres/vitae/publications/d_conference_full/conf_full_054_radpc_at_scale_mar22.pdf"},
             {id:"rp4",tag:"Conference Paper",title:"Dynamic Reconfigurable Computing Architecture for Aerospace Applications",meta:"B. J. LaMeres & C. Gauer · IEEE Aerospace Conference · 2009 · DOI: 10.1109/AERO.2009.4839390",desc:"タイル化 soft processor＋partial reconfiguration の初期構想を示した論文。RadPC の基本思想（空間的回避・spare タイル活用）の原点となるアーキテクチャが説明されている。※ IEEE Xplore 収録。直接アクセスには機関認証が必要な場合がある。",url:"https://ieeexplore.ieee.org/document/4839390"},
             {id:"rp5",tag:"Conference Paper",title:"Spatial Avoidance of Hardware Faults Using FPGA Partial Reconfiguration of Tile-Based Soft Processors",meta:"C. Gauer, B. J. LaMeres, D. Racek · IEEE Aerospace Conference · 2010 · DOI: 10.1109/AERO.2010.5446887",desc:"故障したタイル領域を局所的に切り離し、FPGA の別領域にタイルを再生成する「spatial avoidance」手法を提案した論文。RadPC のタイル再構成アルゴリズムの土台となる。※ IEEE Xplore 収録。直接アクセスには機関認証が必要な場合がある。",url:"https://ieeexplore.ieee.org/document/5446887"}
           ]
@@ -422,6 +404,13 @@ const INITIAL = {
       desc:"EPS・熱設計・ローバー・CLPS・LuSEE-Night など月面ミッション全般の設計・運用に関する文献",
       collapsed: false,
       sections: [
+        { id:"cold-electronics", label:"低温・月夜エレクトロニクス",
+          note:"Cold Electronics · Lunar Night Survival · 極低温動作評価",
+          refs:[
+            {id:"s05",tag:"NASA – Cold Electronics",title:"Cold Electronics for Lunar Missions (NESC-RP-23-01873 / NASA TM-20250008583)",meta:"NASA Engineering & Safety Center (NESC) · 2025",desc:"月夜・極低温環境で動作する電子機器に関する包括的な技術評価レポート。コールドエレクトロニクス、パッケージング、材料、TID/SEE、サーマルサイクル、信頼性評価、Qualification 推奨など、極域ローバーや月夜運用機器に直接役立つ一次資料。",url:"https://ntrs.nasa.gov/citations/20250008583"},
+            {id:"s06",tag:"Lunar Night – Electronics Rerating",title:"Rerating of Electronic Components for Improved Lunar Mission Night Survival",meta:"S. Biswas · Technical University of Munich · PhD Thesis · 2023",desc:"月夜の極低温環境で電子部品を安全に動作させるための「温度デレーティング手法」を包括的にまとめた博士論文。各種 IC・パッケージ・材料の低温性能変化、測定データ、故障モード解析などが豊富で、月面ローバーの耐寒設計に直結する内容。",url:"https://mediatum.ub.tum.de/doc/1687567/mhrhcbkk3lddt5530dakus7gi.Janos%20Daniel%20Biswas.pdf"}
+          ]
+        },
         { id:"power-eps", label:"Power / EPS / Cold Electronics",
           note:"Electrical Power System · Cold Survival · ECSS / NASA",
           refs:[
@@ -464,7 +453,41 @@ const INITIAL = {
           ]
         }
       ]
-    }
+    },
+    /* ═══════════════════════════════════════════════════
+       GROUP NEW: 素粒子実験における耐放射線
+       ═══════════════════════════════════════════════════ */
+    { id:"g-hep", label:"素粒子実験における耐放射線", color:"#dc2626",
+      desc:"LHC / テバトロン / リニアック周辺の混合放射線場が電子機器に与える影響・R2E プログラム・CHARM 試験施設",
+      collapsed: false,
+      sections: [
+        { id:"cern-see", label:"CERN – R2E / CHARM / LHC",
+          note:"LHC トンネル混合場 · R2E プログラム · CHARM 施設",
+          refs:[
+            {id:"c01",tag:"CERN – SEE Review",title:"Single Event Effects in High-Energy Accelerators",meta:"D. García Alía · CERN Yellow Reports · 2017",desc:"高エネルギー加速器における混合場（高エネルギーハドロン＋中性子＋ガンマ線）が電子機器に与える SEE を体系的にレビュー。LHC・PS・SPS における SEE の起源、断面積、実機トリップ事例、宇宙線起因の SEE との違いなどを詳しく解説。",url:"https://cds.cern.ch/record/2320261/files/SEEs_in_high_energy_accelerators.pdf"},
+            {id:"c02",tag:"CERN – Mixed Field",title:"Method for Measuring Mixed-Field Radiation Levels Relevant for SEEs at the LHC",meta:"K. Røed et al. · IEEE Trans. Nucl. Sci. · 2010",desc:"LHC 実機における高エネルギーハドロン由来の SEE 評価に向けて、トンネル内混合場の線量・フルエンス・スペクトルを測定するための RadMon システムと解析手法を解説。実機環境での SEU レート推定の基盤となる手法。",url:"https://www.jlab.org/accel/RadCon/opsgraphs/CERN_radmon_docs/RadMonPaper_final.pdf"},
+            {id:"c03",tag:"CERN – CHARM Facility",title:"A Mixed Field Facility at CERN for Radiation Test: CHARM",meta:"A. Brugger et al. · J. Phys.: Conf. Ser. 1046, 012004 · 2018",desc:"CERN SPS を用いた混合場試験施設 CHARM の概要紹介。プロトン・パイオン・中性子・ガンマ線からなる広いエネルギー分布を持つ場で、宇宙機や LHC 用電子機器の SEE / TID 試験が行える。",url:"https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/237395/1/1742-6596_1046_1_012004.pdf"},
+            {id:"c04",tag:"CERN – CHARM Characterization",title:"Mixed-Field Radiation Monitoring and Beam Characterization at the CERN CHARM Facility",meta:"D. Lacarrère et al. · EPJ Web Conf. · 2024",desc:"CHARM での混合場の線量・スペクトルを実測と FLUKA シミュレーションで比較し、SEE 試験ビームとしての特性を詳述。重イオン相当 LET 分布や線量率など、試験条件の具体的な数値が示されている。",url:"https://cds.cern.ch/record/2900883/files/document.pdf"},
+            {id:"c05",tag:"CERN – R2E",title:"Radiation to Electronics: Impact on CERN LHC Operation (Run 2 Overview & HL-LHC Outlook)",meta:"D. Wollmann et al. · RADECS / R2E Project · 2019",desc:"LHC Run 2 における電子機器の SEE 起因トリップ統計と対策（シールド・配置換え・冗長化・機器交換など）を総括したレビュー。HL-LHC に向けた R2E 戦略の概要も述べられている。",url:"https://www.academia.edu/80349687/Radiation_to_Electronics_Impact_on_CERN_LHC_Operation_Run_2_Overview_and_HL_LHC_Outlook"}
+          ]
+        },
+        { id:"fermilab-slac", label:"Fermilab / SLAC – Detectors & Electronics",
+          note:"ハドロン・電子リニアック環境での放射線損傷と SEE",
+          refs:[
+            {id:"f01",tag:"Fermilab – Overview",title:"Radiation Damage in Detectors and Electronics",meta:"R. Lipton · Beam Instrumentation Workshop (BIW08, SLAC) · 2008",desc:"テバトロンや LHC などのコライダー実験を念頭に、シリコン検出器や前置増幅器、FPGA/ASIC に対する TID / NIEL / SEE の影響と実験での障害事例をまとめた講演スライド。ハドロンコライダーにおける「現場の放射線問題」の全体像をつかむのに適している。",url:"https://epaper.kek.jp/BIW2008/papers/tuiotio02.pdf"},
+            {id:"f02",tag:"Fermilab – Mixed Field",title:"Radiation Effects and Fault Studies in Accelerator Electronics",meta:"Fermilab internal notes · Tevatron / Main Injector",desc:"ビームロスモニタ、電源、制御系などの電子回路に発生した SEU/SEL 事例と、その発生条件・対策をまとめた Fermilab の技術ノート群。どの程度の線束でどのような故障が出るかの感覚をつかむ参考になる。",url:"https://lss.fnal.gov/archive/2001/conf/Conf-01-328.pdf"},
+            {id:"f03",tag:"SLAC – Linac Environment",title:"Radiation Levels and Shielding for Electronics in High-Energy Electron Linacs",meta:"SLAC Reports · LCLS / FACET 周辺",desc:"高エネルギー電子リニアック周辺の二次中性子・フォトン場を評価し、電子機器の配置とシールド設計指針を与える SLAC のレポート。主に TID / NIEL を扱うが、リニアック由来の中性子場を理解する上で有用。",url:"https://www.slac.stanford.edu/cgi-wrap/getdoc/slac-r-732.pdf"},
+            {id:"f04",tag:"SLAC – Beam Diagnostics",title:"Radiation Damage Considerations in Accelerator Beam Instrumentation",meta:"D. W. Storey · IBIC 2015 · KEK / Tsukuba",desc:"ビーム位置モニタやプロファイルモニタなどのビーム計測器における放射線損傷・SEE を概説した IBIC 2015 の招待講演。電子機器の配置・ケーブリング・シャドーイングなど、実務的な対策が整理されている。",url:"https://accelconf.web.cern.ch/IBIC2015/papers/weaua3.pdf"}
+          ]
+        },
+        { id:"kek-hep", label:"KEK – 素粒子実験における放射線損傷",
+          note:"カロリメータ・検出器周辺の中性子場による半導体・電子機器の放射線損傷",
+          refs:[
+            {id:"k03",tag:"KEK – Silicon Detectors / Calorimeter",title:"Radiation Damage Effects on Semiconductor Detectors and Electronics by Neutrons Produced in Calorimeters",meta:"KAKEN 報告 · 高エネルギー実験 · Neutron-Induced Damage",desc:"カロリメータで生成される中性子によるシリコン検出器および読み出し電子回路の放射線損傷を評価した日本の研究プロジェクト報告。Calorimeter 近傍に設置される半導体検出器・ASIC の寿命評価の具体例として有用。KEK の素粒子実験環境における耐放射線設計の参考文献。",url:"https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-17340070/"}
+          ]
+        }
+      ]
+    },
   ]
 };
 
