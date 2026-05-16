@@ -59,6 +59,7 @@
     @media(prefers-color-scheme:dark){mark.hl{background:#713f12;color:#fde68a}}
     .back-top{position:fixed;bottom:24px;right:24px;background:var(--surface);border:1px solid var(--border);border-radius:50%;width:38px;height:38px;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-lg);color:var(--text2);font-size:16px;text-decoration:none;transition:all .15s;z-index:30}
     .back-top:hover{color:var(--accent);transform:translateY(-2px)}
+    .maintained-badge{position:fixed;top:62px;right:12px;font-size:10px;color:var(--text3);background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:3px 8px;z-index:39;white-space:nowrap;box-shadow:var(--shadow);letter-spacing:0.03em}
     footer{text-align:center;padding:20px 16px;font-size:11px;color:var(--text3);border-top:1px solid var(--border);max-width:1200px;margin:0 auto}
     footer a{color:var(--text2);text-decoration:none}
     footer a:hover{color:var(--accent)}
@@ -80,9 +81,10 @@
         <div class="header-sub">月面放射線 · 試験機関 · 素粒子実験 · 耐放射線 · RadPC</div>
       </div>
     </div>
-    <div class="header-stats">96 文献 &nbsp;·&nbsp; 7 グループ &nbsp;·&nbsp; 20 セクション</div>
+    <div class="header-stats">114 文献 &nbsp;·&nbsp; 7 グループ &nbsp;·&nbsp; 25 セクション</div>
   </div>
 </header>
+<div class="maintained-badge">Maintained by T. Takahashi &nbsp;·&nbsp; 2026.05.16</div>
 <div class="hero">
   <div class="hero-eyebrow">Reference Hub</div>
   <h1>Space Mission Reference Hub</h1>
@@ -181,34 +183,29 @@
             <div class="card-title">GEANT4 Study of Miniature Radiation Detector Response in GCR and Inside Spacecraft</div>
             <div class="card-meta">Karafasoulis et al. · SWSC (ESA) · 2022</div>
             <p class="card-desc">小型線量計 MIDAS の GCR 応答を GEANT4 で評価し、月面 LND 測定値と比較して妥当性を検証。月面や宇宙機内部での小型検出器性能評価に直接関連する資料。</p>
+            <a class="card-link" href="https://www.swsc-journal.org/articles/swsc/full_html/2022/01/swsc210031/swsc210031.html" target="_blank" rel="noopener"><span class="url-text">https://www.swsc-journal.org/articles/swsc/full_html/2022/01/swsc210031/swsc210031.html</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
           </article>
         </div>
       </div>
     </section>
     <section class="group-section" id="g-facilities">
-      <div class="group-header"><div class="group-color-bar" style="background:#7c3aed"></div><div class="group-header-text"><div class="group-title">放射線試験機関</div><div class="group-desc">CERN / BNL / Fermilab / SLAC / KEK / J-PARC における SEE・TID 試験環境と施設ガイド</div></div><div class="group-count">16 件</div></div>
+      <div class="group-header"><div class="group-color-bar" style="background:#7c3aed"></div><div class="group-header-text"><div class="group-title">放射線試験機関</div><div class="group-desc">CERN / BNL / Fermilab / SLAC / KEK / J-PARC における SEE・TID 試験環境と施設ガイド</div></div><div class="group-count">24 件</div></div>
       <div class="subsection" id="japan-facilities">
         <div class="subsec-header"><div class="subsec-title">日本の放射線試験施設</div><div class="subsec-note">QST高崎 TIARA · 大阪大学 RCNP · 若狭湾エネルギー研究センター · 東北大学 RARiS · KEK / J-PARC</div></div>
         <div class="cards">
-          <article class="card" data-text="kek – radiation science center radiation damage in detectors and electronics at high-intensity accelerators kek 放射線科学センター · j-parc / superkekb 周辺 j-parc や superkekb でのビームロスに伴う中性子場・ガンマ線場が検出器・電子機器に与える影響を概説した kek の解説資料。ビームロスモニタや電源・制御装置への see / ソフトエラー事例が紹介されている。">
-            <div class="card-tag"><span class="tag-dot" style="background:#7c3aed"></span>KEK – Radiation Science Center</div>
-            <div class="card-title">Radiation Damage in Detectors and Electronics at High-Intensity Accelerators</div>
-            <div class="card-meta">KEK 放射線科学センター · J-PARC / SuperKEKB 周辺</div>
-            <p class="card-desc">J-PARC や SuperKEKB でのビームロスに伴う中性子場・ガンマ線場が検出器・電子機器に与える影響を概説した KEK の解説資料。ビームロスモニタや電源・制御装置への SEE / ソフトエラー事例が紹介されている。</p>
-            <a class="card-link" href="https://www2.kek.jp/rad/RSC/report/" target="_blank" rel="noopener"><span class="url-text">https://www2.kek.jp/rad/RSC/report/</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
-          </article>
-          <article class="card" data-text="j-parc – neutron field (mlf) neutron-induced radiation damage studies at j-parc j-parc materials &amp; life science exp. facility (mlf) · user guides j-parc mlf での中性子線場を用いた材料・電子デバイスの放射線損傷試験に関するユーザー情報。ビームライン別のスペクトルや線量率が記載されており、中性子起因 see / ソフトエラー試験を検討する際の参考になる。">
-            <div class="card-tag"><span class="tag-dot" style="background:#7c3aed"></span>J-PARC – Neutron Field (MLF)</div>
-            <div class="card-title">Neutron-Induced Radiation Damage Studies at J-PARC</div>
-            <div class="card-meta">J-PARC Materials &amp; Life Science Exp. Facility (MLF) · User Guides</div>
-            <p class="card-desc">J-PARC MLF での中性子線場を用いた材料・電子デバイスの放射線損傷試験に関するユーザー情報。ビームライン別のスペクトルや線量率が記載されており、中性子起因 SEE / ソフトエラー試験を検討する際の参考になる。</p>
-            <a class="card-link" href="https://mlfinfo.jp/en/" target="_blank" rel="noopener"><span class="url-text">https://mlfinfo.jp/en/</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          <article class="card" data-text="j-parc mlf – muse（ミュオン see） j-parc mlf muse ビームラインを用いた半導体ミュオンソフトエラー試験 j-parc 物質・生命科学実験施設（mlf）· muse · kek / jaea / ソシオネクスト j-parc mlf の muse ビームラインは世界最高強度の正・負ミュオンビームを提供し、宇宙線ミュオン起因の半導体ソフトエラー試験に使われている。中性子ビームラインも23本あるが、物質・生命科学研究向けであり半導体 see 試験への一般開放はされていない。高エネルギー中性子ソフトエラー試験には大阪大学 rcnp、熱中性子には京都大学 kur が使われる。リンク先はミュオン vs. 中性子ソフトエラー比較研究（ソシオネクスト・kek 等、2021年）のプレスリリース。">
+            <div class="card-tag"><span class="tag-dot" style="background:#7c3aed"></span>J-PARC MLF – MUSE（ミュオン SEE）</div>
+            <div class="card-title">J-PARC MLF MUSE ビームラインを用いた半導体ミュオンソフトエラー試験</div>
+            <div class="card-meta">J-PARC 物質・生命科学実験施設（MLF）· MUSE · KEK / JAEA / ソシオネクスト</div>
+            <p class="card-desc">J-PARC MLF の MUSE ビームラインは世界最高強度の正・負ミュオンビームを提供し、宇宙線ミュオン起因の半導体ソフトエラー試験に使われている。中性子ビームラインも23本あるが、物質・生命科学研究向けであり半導体 SEE 試験への一般開放はされていない。高エネルギー中性子ソフトエラー試験には大阪大学 RCNP、熱中性子には京都大学 KUR が使われる。リンク先はミュオン vs. 中性子ソフトエラー比較研究（ソシオネクスト・KEK 等、2021年）のプレスリリース。</p>
+            <a class="card-link" href="https://j-parc.jp/c/press-release/2021/07/16000719.html" target="_blank" rel="noopener"><span class="url-text">https://j-parc.jp/c/press-release/2021/07/16000719.html</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
           </article>
           <article class="card" data-text="ground neutron spectrum measurement of the flux and energy spectrum of cosmic-ray induced neutrons on the ground m. s. gordon et al. · ieee trans. nucl. sci. 51 · 2004 地上における宇宙線誘起中性子のスペクトル測定。j-parc の中性子源との比較・参照に有用。">
             <div class="card-tag"><span class="tag-dot" style="background:#7c3aed"></span>Ground Neutron Spectrum</div>
             <div class="card-title">Measurement of the Flux and Energy Spectrum of Cosmic-Ray Induced Neutrons on the Ground</div>
             <div class="card-meta">M. S. Gordon et al. · IEEE Trans. Nucl. Sci. 51 · 2004</div>
             <p class="card-desc">地上における宇宙線誘起中性子のスペクトル測定。J-PARC の中性子源との比較・参照に有用。</p>
+            <a class="card-link" href="https://ieeexplore.ieee.org/document/1369506/" target="_blank" rel="noopener"><span class="url-text">https://ieeexplore.ieee.org/document/1369506/</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
           </article>
           <article class="card" data-text="qst高崎 – tiara イオン照射研究施設（tiara）– qst 高崎量子技術基盤研究所 qst 高崎量子技術基盤研究所 · tiara · 施設供用制度 takasaki ion accelerators for advanced radiation application（tiara）。avfサイクロトロン・タンデム加速器・シングルエンド加速器・イオン注入装置の4種類のイオン加速器を備え、数万 ev から数億 ev の広いエネルギー範囲の多種イオンを供給できる。宇宙機器用半導体の see / tid 試験にも利用可能。外部利用は施設供用制度を通じて申請する。">
             <div class="card-tag"><span class="tag-dot" style="background:#7c3aed"></span>QST高崎 – TIARA</div>
@@ -240,28 +237,35 @@
           </article>
         </div>
       </div>
-      <div class="subsection" id="overseas-facilities">
-        <div class="subsec-header"><div class="subsec-title">海外の放射線試験施設</div><div class="subsec-note">BNL（NSRL / SEUTF / HEET）· LBNL / RADEF · Texas A&amp;M など主要海外施設</div></div>
+      <div class="subsection" id="us-facilities">
+        <div class="subsec-header"><div class="subsec-title">米国の放射線試験施設</div><div class="subsec-note">BNL（NSRL / SEUTF / HEET）· LBNL BASE · TAMU · MGH Francis Burr · Fermilab / SLAC</div></div>
         <div class="cards">
-          <article class="card" data-text="bnl – seutf tandem van de graaff accelerator facility – fact sheet (seutf) bnl · tandem van de graaff · single event upset test facility 1 mev プロトンから 337 mev 金イオンまで 50 種類以上のイオン種を提供。let 0.01–91 mev·cm²/mg をカバーする重イオン see 試験専用施設（seutf）として広く利用されている。nsrl とは独立した施設。">
-            <div class="card-tag"><span class="tag-dot" style="background:#7c3aed"></span>BNL – SEUTF</div>
+          <article class="card" data-text="tamu – radiation effects facility texas a&amp;m university cyclotron institute – radiation effects facility (ref) texas a&amp;m university · k500 + k150 サイクロトロン · college station, tx k500 超伝導サイクロトロン（最大 60 mev/u 重イオン）と k150 サイクロトロン（陽子 6.3–45 mev・軽重イオン）の2本の専用ビームラインを持つ。let 0.1–99.8 mev·cm²/mg の広範な重イオンカクテルと see 試験用 seuss ソフトウェアを提供。「世界の放射線効果試験をリードする」と自称し、全米でも最大規模の商業 see 試験施設の一つ。">
+            <div class="card-tag"><span class="tag-dot" style="background:#7c3aed"></span>TAMU – Radiation Effects Facility</div>
+            <div class="card-title">Texas A&amp;M University Cyclotron Institute – Radiation Effects Facility (REF)</div>
+            <div class="card-meta">Texas A&amp;M University · K500 + K150 サイクロトロン · College Station, TX</div>
+            <p class="card-desc">K500 超伝導サイクロトロン（最大 60 MeV/u 重イオン）と K150 サイクロトロン（陽子 6.3–45 MeV・軽重イオン）の2本の専用ビームラインを持つ。LET 0.1–99.8 MeV·cm²/mg の広範な重イオンカクテルと SEE 試験用 SEUSS ソフトウェアを提供。「世界の放射線効果試験をリードする」と自称し、全米でも最大規模の商業 SEE 試験施設の一つ。</p>
+            <a class="card-link" href="https://cyclotron.tamu.edu/ref/heavy_ions.html" target="_blank" rel="noopener"><span class="url-text">https://cyclotron.tamu.edu/ref/heavy_ions.html</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="lbnl – base（berkeley accelerator space effects） lawrence berkeley national laboratory 88-inch cyclotron – base facility lawrence berkeley national laboratory · doe · berkeley, ca 88インチサイクロトロン（k=140）に付属する宇宙放射線効果試験施設。1979年に世界初の重イオン see 試験を実施した歴史を持つ。陽子（最大 60 mev）・重イオン（水素〜ウラン、最大エネルギーはイオン種依存）・中性子ビームを提供し、gps・ロケット・衛星の電子機器試験で豊富な実績がある。">
+            <div class="card-tag"><span class="tag-dot" style="background:#7c3aed"></span>LBNL – BASE（Berkeley Accelerator Space Effects）</div>
+            <div class="card-title">Lawrence Berkeley National Laboratory 88-Inch Cyclotron – BASE Facility</div>
+            <div class="card-meta">Lawrence Berkeley National Laboratory · DOE · Berkeley, CA</div>
+            <p class="card-desc">88インチサイクロトロン（K=140）に付属する宇宙放射線効果試験施設。1979年に世界初の重イオン SEE 試験を実施した歴史を持つ。陽子（最大 60 MeV）・重イオン（水素〜ウラン、最大エネルギーはイオン種依存）・中性子ビームを提供し、GPS・ロケット・衛星の電子機器試験で豊富な実績がある。</p>
+            <a class="card-link" href="https://cyclotron.lbl.gov/base-rad-effects" target="_blank" rel="noopener"><span class="url-text">https://cyclotron.lbl.gov/base-rad-effects</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="bnl – seutf（重イオン see 専用） tandem van de graaff accelerator facility – fact sheet (seutf) bnl · tandem van de graaff · single event upset test facility · upton, ny 1 mev プロトンから 337 mev 金イオンまで 50 種類以上のイオン種を提供。let 0.01–91 mev·cm²/mg をカバーする重イオン see 試験専用施設（seutf）として広く利用されている。nsrl とは独立した施設。">
+            <div class="card-tag"><span class="tag-dot" style="background:#7c3aed"></span>BNL – SEUTF（重イオン SEE 専用）</div>
             <div class="card-title">Tandem Van de Graaff Accelerator Facility – Fact Sheet (SEUTF)</div>
-            <div class="card-meta">BNL · Tandem Van de Graaff · Single Event Upset Test Facility</div>
+            <div class="card-meta">BNL · Tandem Van de Graaff · Single Event Upset Test Facility · Upton, NY</div>
             <p class="card-desc">1 MeV プロトンから 337 MeV 金イオンまで 50 種類以上のイオン種を提供。LET 0.01–91 MeV·cm²/mg をカバーする重イオン SEE 試験専用施設（SEUTF）として広く利用されている。NSRL とは独立した施設。</p>
             <a class="card-link" href="https://www.bnl.gov/newsroom/factsheets/files/pdf/tvdg.pdf" target="_blank" rel="noopener"><span class="url-text">https://www.bnl.gov/newsroom/factsheets/files/pdf/tvdg.pdf</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
           </article>
-          <article class="card" data-text="bnl – heet concept proposal for a high-energy effects testing facility (heet) at rhic bnl · rhic · radnext / esa workshop rhic ビームを利用して、高エネルギー二次ハドロン場による see 試験を行う heet 構想を説明した資料。hl-lhc / fcc など将来コライダーで必要となる高エネルギーハドロン see 試験の要求を議論。">
-            <div class="card-tag"><span class="tag-dot" style="background:#7c3aed"></span>BNL – HEET Concept</div>
-            <div class="card-title">Proposal for a High-Energy Effects Testing Facility (HEET) at RHIC</div>
-            <div class="card-meta">BNL · RHIC · RADNEXT / ESA Workshop</div>
-            <p class="card-desc">RHIC ビームを利用して、高エネルギー二次ハドロン場による SEE 試験を行う HEET 構想を説明した資料。HL-LHC / FCC など将来コライダーで必要となる高エネルギーハドロン SEE 試験の要求を議論。</p>
-            <a class="card-link" href="https://indico.cern.ch/event/1007775/contributions/4224412/attachments/2187033/3696709/RADNEXT_HEET_BNL.pdf" target="_blank" rel="noopener"><span class="url-text">https://indico.cern.ch/event/1007775/contributions/4224412/attachments/2187033/3696709/RADNEXT_HEET_BNL.pdf</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
-          </article>
-          <article class="card" data-text="bnl – nsrl nasa space radiation laboratory (nsrl) – user information bnl / nasa · nsrl · space radiation simulation · upton, ny 宇宙線を模擬した高エネルギーイオンビームを提供する nasa space radiation laboratory（nsrl）のユーザー向け情報。bnl のブースター加速器からの高エネルギー重イオン（fe, si, o など）と陽子を供給。生物影響試験が主目的だが、電子機器の tid / see 試験にも利用可能。イオン種・エネルギー・線量率などの仕様を把握するのに役立つ。">
-            <div class="card-tag"><span class="tag-dot" style="background:#7c3aed"></span>BNL – NSRL</div>
+          <article class="card" data-text="bnl – nsrl（nasa宇宙放射線研究所） nasa space radiation laboratory (nsrl) – user information bnl / nasa · nsrl · space radiation simulation · upton, ny 宇宙線を模擬した高エネルギーイオンビームを提供する nasa space radiation laboratory（nsrl）。bnl のブースター加速器から高エネルギー重イオン（fe, si, o など）と陽子を供給。生物影響試験が主目的だが電子機器の tid / see 試験にも利用可能。2020年に gcr シミュレーターを開発し、33 イオン種シーケンス照射による宇宙放射線模擬が可能になった。">
+            <div class="card-tag"><span class="tag-dot" style="background:#7c3aed"></span>BNL – NSRL（NASA宇宙放射線研究所）</div>
             <div class="card-title">NASA Space Radiation Laboratory (NSRL) – User Information</div>
             <div class="card-meta">BNL / NASA · NSRL · Space Radiation Simulation · Upton, NY</div>
-            <p class="card-desc">宇宙線を模擬した高エネルギーイオンビームを提供する NASA Space Radiation Laboratory（NSRL）のユーザー向け情報。BNL のブースター加速器からの高エネルギー重イオン（Fe, Si, O など）と陽子を供給。生物影響試験が主目的だが、電子機器の TID / SEE 試験にも利用可能。イオン種・エネルギー・線量率などの仕様を把握するのに役立つ。</p>
+            <p class="card-desc">宇宙線を模擬した高エネルギーイオンビームを提供する NASA Space Radiation Laboratory（NSRL）。BNL のブースター加速器から高エネルギー重イオン（Fe, Si, O など）と陽子を供給。生物影響試験が主目的だが電子機器の TID / SEE 試験にも利用可能。2020年に GCR シミュレーターを開発し、33 イオン種シーケンス照射による宇宙放射線模擬が可能になった。</p>
             <a class="card-link" href="https://www.bnl.gov/nsrl/" target="_blank" rel="noopener"><span class="url-text">https://www.bnl.gov/nsrl/</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
           </article>
           <article class="card" data-text="bnl – nsrl first run results of the first run of the nasa space radiation laboratory at bnl k. a. brown et al. · proceedings of epac 2004 bnl の nsrl 施設稼働初期の成果と加速器性能に関する報告。ビームエネルギーや線量率の実測値を含む。">
@@ -269,18 +273,82 @@
             <div class="card-title">Results of the First Run of the NASA Space Radiation Laboratory at BNL</div>
             <div class="card-meta">K. A. Brown et al. · Proceedings of EPAC 2004</div>
             <p class="card-desc">BNL の NSRL 施設稼働初期の成果と加速器性能に関する報告。ビームエネルギーや線量率の実測値を含む。</p>
+            <a class="card-link" href="https://accelconf.web.cern.ch/e04/papers/TUPLT181.pdf" target="_blank" rel="noopener"><span class="url-text">https://accelconf.web.cern.ch/e04/papers/TUPLT181.pdf</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
           </article>
           <article class="card" data-text="bnl – nsrl beam transfer results from the commissioning of the nsrl beam transfer line at bnl n. tsoupas et al. · proceedings of epac 2004 nsrl のビーム輸送ラインと照射野の均一性技術に関する技術報告。">
             <div class="card-tag"><span class="tag-dot" style="background:#7c3aed"></span>BNL – NSRL Beam Transfer</div>
             <div class="card-title">Results from the Commissioning of the NSRL Beam Transfer Line at BNL</div>
             <div class="card-meta">N. Tsoupas et al. · Proceedings of EPAC 2004</div>
             <p class="card-desc">NSRL のビーム輸送ラインと照射野の均一性技術に関する技術報告。</p>
+            <a class="card-link" href="https://accelconf.web.cern.ch/e04/papers/TUPLT180.pdf" target="_blank" rel="noopener"><span class="url-text">https://accelconf.web.cern.ch/e04/papers/TUPLT180.pdf</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
           </article>
           <article class="card" data-text="bnl – gcr simulator nasa's first ground-based galactic cosmic ray simulator l. c. simonsen et al. · plos biol. 18 · 2020 bnl nsrl における「gcr シミュレーター（銀河宇宙線模擬装置）」の開発と運用に関する重要論文。gcr スペクトルを模擬した多イオン種シーケンス照射プロトコルを確立し、電子機器試験への応用可能性を示している。">
             <div class="card-tag"><span class="tag-dot" style="background:#7c3aed"></span>BNL – GCR Simulator</div>
             <div class="card-title">NASA's First Ground-Based Galactic Cosmic Ray Simulator</div>
             <div class="card-meta">L. C. Simonsen et al. · PLOS Biol. 18 · 2020</div>
             <p class="card-desc">BNL NSRL における「GCR シミュレーター（銀河宇宙線模擬装置）」の開発と運用に関する重要論文。GCR スペクトルを模擬した多イオン種シーケンス照射プロトコルを確立し、電子機器試験への応用可能性を示している。</p>
+            <a class="card-link" href="https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000669" target="_blank" rel="noopener"><span class="url-text">https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000669</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="bnl – heet 構想 proposal for a high-energy effects testing facility (heet) at rhic bnl · rhic · radnext / esa workshop rhic ビームを利用して、高エネルギー二次ハドロン場による see 試験を行う heet 構想を説明した資料。hl-lhc / fcc など将来コライダーで必要となる高エネルギーハドロン see 試験の要求を議論。">
+            <div class="card-tag"><span class="tag-dot" style="background:#7c3aed"></span>BNL – HEET 構想</div>
+            <div class="card-title">Proposal for a High-Energy Effects Testing Facility (HEET) at RHIC</div>
+            <div class="card-meta">BNL · RHIC · RADNEXT / ESA Workshop</div>
+            <p class="card-desc">RHIC ビームを利用して、高エネルギー二次ハドロン場による SEE 試験を行う HEET 構想を説明した資料。HL-LHC / FCC など将来コライダーで必要となる高エネルギーハドロン SEE 試験の要求を議論。</p>
+            <a class="card-link" href="https://indico.cern.ch/event/1007775/contributions/4224412/attachments/2187033/3696709/RADNEXT_HEET_BNL.pdf" target="_blank" rel="noopener"><span class="url-text">https://indico.cern.ch/event/1007775/contributions/4224412/attachments/2187033/3696709/RADNEXT_HEET_BNL.pdf</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="mgh francis burr – 陽子線 see 試験 francis h. burr proton therapy center, massachusetts general hospital mgh / harvard · iba サイクロトロン · boston, ma 医療用陽子線治療施設だが、70–230 mev の陽子ビームを see 試験にも提供。nasa nsrec データワークショップの複数論文で試験施設として引用されている。サリー大学の ossat プロセッサ試験（samv71/stm32h7/sama5d3）でも利用された reef と同様に、医療施設を see 試験に転用する代表例。">
+            <div class="card-tag"><span class="tag-dot" style="background:#7c3aed"></span>MGH Francis Burr – 陽子線 SEE 試験</div>
+            <div class="card-title">Francis H. Burr Proton Therapy Center, Massachusetts General Hospital</div>
+            <div class="card-meta">MGH / Harvard · IBA サイクロトロン · Boston, MA</div>
+            <p class="card-desc">医療用陽子線治療施設だが、70–230 MeV の陽子ビームを SEE 試験にも提供。NASA NSREC データワークショップの複数論文で試験施設として引用されている。サリー大学の OSSAT プロセッサ試験（SAMV71/STM32H7/SAMA5D3）でも利用された REEF と同様に、医療施設を SEE 試験に転用する代表例。</p>
+            <a class="card-link" href="https://www.mgh.harvard.edu/radiationoncology/BurrProtonCenter.aspx" target="_blank" rel="noopener"><span class="url-text">https://www.mgh.harvard.edu/radiationoncology/BurrProtonCenter.aspx</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+        </div>
+      </div>
+      <div class="subsection" id="eu-facilities">
+        <div class="subsec-header"><div class="subsec-title">ヨーロッパの放射線試験施設</div><div class="subsec-note">CERN（CHARM / VESPER / H8）· PSI PIF · UCL HIF · RADEF · Surrey REEF · ESTEC CASE · Trento</div></div>
+        <div class="cards">
+          <article class="card" data-text="psi – pif（陽子照射施設） proton irradiation facility (pif) – paul scherrer institut paul scherrer institut (psi) · スイス・ビリゲン · 最大 230 mev 陽子 psi のアイソクロナスサイクロトロンに接続した専用陽子照射施設。100 mev および 230 mev の陽子ビームを提供し、宇宙用電子機器の see（陽子誘起）試験に広く利用される。radef・ucl hif と並んで欧州 esa ecif に認定された主要施設の一つ。zu3eg 試験（juice 論文）でも使用。">
+            <div class="card-tag"><span class="tag-dot" style="background:#7c3aed"></span>PSI – PIF（陽子照射施設）</div>
+            <div class="card-title">Proton Irradiation Facility (PIF) – Paul Scherrer Institut</div>
+            <div class="card-meta">Paul Scherrer Institut (PSI) · スイス・ビリゲン · 最大 230 MeV 陽子</div>
+            <p class="card-desc">PSI のアイソクロナスサイクロトロンに接続した専用陽子照射施設。100 MeV および 230 MeV の陽子ビームを提供し、宇宙用電子機器の SEE（陽子誘起）試験に広く利用される。RADEF・UCL HIF と並んで欧州 ESA ECIF に認定された主要施設の一つ。ZU3EG 試験（JUICE 論文）でも使用。</p>
+            <a class="card-link" href="https://www.psi.ch/en/ltp/proton-irradiation-facility" target="_blank" rel="noopener"><span class="url-text">https://www.psi.ch/en/ltp/proton-irradiation-facility</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="ucl hif – 重イオン照射施設 heavy ion facility (hif) – université catholique de louvain ucl cyclotron resource centre · ベルギー・ルーバン＝ラ＝ヌーヴ · サイクロトロン ucl のサイクロトロンを利用した重イオン照射施設（hif）および軽イオン施設（lif）。標準的な重イオンカクテル（h〜xe）によるsee試験を提供。多くの esa ミッション機器試験に使用されており、sefuw 2018 の zu3eg 試験（glorieux 2018）でも利用。">
+            <div class="card-tag"><span class="tag-dot" style="background:#7c3aed"></span>UCL HIF – 重イオン照射施設</div>
+            <div class="card-title">Heavy Ion Facility (HIF) – Université catholique de Louvain</div>
+            <div class="card-meta">UCL Cyclotron Resource Centre · ベルギー・ルーバン＝ラ＝ヌーヴ · サイクロトロン</div>
+            <p class="card-desc">UCL のサイクロトロンを利用した重イオン照射施設（HIF）および軽イオン施設（LIF）。標準的な重イオンカクテル（H〜Xe）によるSEE試験を提供。多くの ESA ミッション機器試験に使用されており、SEFUW 2018 の ZU3EG 試験（Glorieux 2018）でも利用。</p>
+            <a class="card-link" href="http://www.cyc.ucl.ac.be/HIF/HIF.html" target="_blank" rel="noopener"><span class="url-text">http://www.cyc.ucl.ac.be/HIF/HIF.html</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="radef – 放射線効果施設（フィンランド） radiation effects facility (radef) – university of jyväskylä university of jyväskylä (jyfl) · フィンランド · esa ecif 認定（2005年〜） k-130 サイクロトロン + ecr イオン源による高透過重イオンカクテル（10 / 16.3 / 22 mev/n、最大 au イオン）・陽子・電子（linac）を提供する esa 認定欧州部品照射施設（ecif）。2005年から esa との契約を継続中（2027年まで延長）。nasa・jaxa・cnes も利用。zu3eg 試験（低エネルギー陽子・重イオン）や juice ミッション機器評価でも使用。">
+            <div class="card-tag"><span class="tag-dot" style="background:#7c3aed"></span>RADEF – 放射線効果施設（フィンランド）</div>
+            <div class="card-title">RADiation Effects Facility (RADEF) – University of Jyväskylä</div>
+            <div class="card-meta">University of Jyväskylä (JYFL) · フィンランド · ESA ECIF 認定（2005年〜）</div>
+            <p class="card-desc">K-130 サイクロトロン + ECR イオン源による高透過重イオンカクテル（10 / 16.3 / 22 MeV/n、最大 Au イオン）・陽子・電子（LINAC）を提供する ESA 認定欧州部品照射施設（ECIF）。2005年から ESA との契約を継続中（2027年まで延長）。NASA・JAXA・CNES も利用。ZU3EG 試験（低エネルギー陽子・重イオン）や JUICE ミッション機器評価でも使用。</p>
+            <a class="card-link" href="https://www.jyu.fi/en/science/accelerator-laboratory/facilities-and-instruments/radiation-effects-facility" target="_blank" rel="noopener"><span class="url-text">https://www.jyu.fi/en/science/accelerator-laboratory/facilities-and-instruments/radiation-effects-facility</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="surrey reef – 電子線 tid・内部帯電試験 realistic electron environment facility (reef) – university of surrey surrey space centre · university of surrey · イギリス sr-90（半減期 28 年）ベータ線源を用いた電子線照射施設。geo 放射線帯の電子環境を真空チャンバー内で長期間模擬し、tid 試験および内部帯電（iedep）試験を実施。ossat の samv71/stm32h7/sama5d3 試験（kispe 2021）で使用された試験装置「reef」がこれに相当する。">
+            <div class="card-tag"><span class="tag-dot" style="background:#7c3aed"></span>Surrey REEF – 電子線 TID・内部帯電試験</div>
+            <div class="card-title">Realistic Electron Environment Facility (REEF) – University of Surrey</div>
+            <div class="card-meta">Surrey Space Centre · University of Surrey · イギリス</div>
+            <p class="card-desc">Sr-90（半減期 28 年）ベータ線源を用いた電子線照射施設。GEO 放射線帯の電子環境を真空チャンバー内で長期間模擬し、TID 試験および内部帯電（IEDEP）試験を実施。OSSAT の SAMV71/STM32H7/SAMA5D3 試験（KISPE 2021）で使用された試験装置「REEF」がこれに相当する。</p>
+            <a class="card-link" href="https://www.surrey.ac.uk/surrey-space-centre" target="_blank" rel="noopener"><span class="url-text">https://www.surrey.ac.uk/surrey-space-centre</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="esa estec – case（californium-252 線源） the case system – californium-252 radiation facility at esa estec esa estec · tec-qec · オランダ・ノールドウェイク · cf-252 線源 esa の estec（欧州宇宙研究技術センター）に設置された californium-252 中性子・ガンマ線照射施設 case。宇宙用部品の放射線特性評価に使用される。escies（欧州宇宙部品情報交換システム）で詳細情報が公開されている。">
+            <div class="card-tag"><span class="tag-dot" style="background:#7c3aed"></span>ESA ESTEC – CASE（Californium-252 線源）</div>
+            <div class="card-title">The CASE System – Californium-252 Radiation Facility at ESA ESTEC</div>
+            <div class="card-meta">ESA ESTEC · TEC-QEC · オランダ・ノールドウェイク · Cf-252 線源</div>
+            <p class="card-desc">ESA の ESTEC（欧州宇宙研究技術センター）に設置された Californium-252 中性子・ガンマ線照射施設 CASE。宇宙用部品の放射線特性評価に使用される。ESCIES（欧州宇宙部品情報交換システム）で詳細情報が公開されている。</p>
+            <a class="card-link" href="https://escies.org/ReadArticle?docId=252" target="_blank" rel="noopener"><span class="url-text">https://escies.org/ReadArticle?docId=252</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="protonterapia trento – 陽子線試験施設 centro di protonterapia – trento（イタリア） apss / trento · イタリア · 陽子線治療施設 · esa 試験実績あり イタリア・トレント県の陽子線治療施設。mgh francis burr と同様に医療用陽子ビームを宇宙用電子機器の放射線試験（see / tid）にも提供。esa の試験プロジェクトで利用実績があり、ヨーロッパにおける陽子線 see 試験のオルタナティブ施設として機能している。">
+            <div class="card-tag"><span class="tag-dot" style="background:#7c3aed"></span>Protonterapia Trento – 陽子線試験施設</div>
+            <div class="card-title">Centro di Protonterapia – Trento（イタリア）</div>
+            <div class="card-meta">APSS / Trento · イタリア · 陽子線治療施設 · ESA 試験実績あり</div>
+            <p class="card-desc">イタリア・トレント県の陽子線治療施設。MGH Francis Burr と同様に医療用陽子ビームを宇宙用電子機器の放射線試験（SEE / TID）にも提供。ESA の試験プロジェクトで利用実績があり、ヨーロッパにおける陽子線 SEE 試験のオルタナティブ施設として機能している。</p>
+            <a class="card-link" href="https://www.apss.tn.it/servizi/Centro-di-Protonterapia" target="_blank" rel="noopener"><span class="url-text">https://www.apss.tn.it/servizi/Centro-di-Protonterapia</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
           </article>
         </div>
       </div>
@@ -306,6 +374,7 @@
             <div class="card-title">Strategic Radiation-Hardened Electronics Council (SRHEC) Public Summary from Analysis of Alternatives for Domestic SEE Test Facilities</div>
             <div class="card-meta">J. Franco and J. Ross · 2021</div>
             <p class="card-desc">米国内の SEE 試験施設の不足と、高エネルギー重イオン照射施設の必要性に関する分析。</p>
+            <a class="card-link" href="https://nepp.nasa.gov/workshops/dhesee2021/talks/6a_SEE%20AoA%20summary%20Nov%202020%20approved%20for%20release.pdf" target="_blank" rel="noopener"><span class="url-text">https://nepp.nasa.gov/workshops/dhesee2021/talks/6a_SEE%20AoA%20summary%20Nov%202020%20approved%20for%20release.pdf</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
           </article>
         </div>
       </div>
@@ -417,12 +486,12 @@
             <p class="card-desc">ESA ミッションで用いる宇宙環境モデル（GCR, SPE, trapped radiation など）を定義した標準。SEE / TID 解析に用いる「環境モデル」の出発点となる文書。</p>
             <a class="card-link" href="https://ecss.nl/standard/ecss-e-st-10-04c-rev-1-space-environment-15-june-2020/" target="_blank" rel="noopener"><span class="url-text">https://ecss.nl/standard/ecss-e-st-10-04c-rev-1-space-environment-15-june-2020/</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
           </article>
-          <article class="card" data-text="ecss – radiation effects ecss-e-st-10-12c – radiation effects and design margins esa / ecss · radiation calculation · design margins ecss-e-st-10-04c で定義された環境を用いて tid / see の影響をどう計算し、どのような設計マージンを取るかを定めた標準。放射線設計プロセス全体のルールに相当する。">
+          <article class="card" data-text="ecss – radiation effects ecss-e-st-10-12c – methods for the calculation of radiation received and its effects, and a policy for design margins esa / ecss · 2008年11月（corr.1: 2017年2月） 宇宙放射線の計算手法と設計マージンのポリシーを定める ecss 標準。tid / see / niel の影響をどう計算し、どのような放射線設計マージン（rdm）を取るかの規則に相当する。ecss-e-hb-10-12a ハンドブックと組み合わせて使用する。">
             <div class="card-tag"><span class="tag-dot" style="background:#059669"></span>ECSS – Radiation Effects</div>
-            <div class="card-title">ECSS-E-ST-10-12C – Radiation Effects and Design Margins</div>
-            <div class="card-meta">ESA / ECSS · Radiation Calculation · Design Margins</div>
-            <p class="card-desc">ECSS-E-ST-10-04C で定義された環境を用いて TID / SEE の影響をどう計算し、どのような設計マージンを取るかを定めた標準。放射線設計プロセス全体のルールに相当する。</p>
-            <a class="card-link" href="https://ecss.nl/standard/ecss-e-st-10-12c-radiation-effects/" target="_blank" rel="noopener"><span class="url-text">https://ecss.nl/standard/ecss-e-st-10-12c-radiation-effects/</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+            <div class="card-title">ECSS-E-ST-10-12C – Methods for the Calculation of Radiation Received and Its Effects, and a Policy for Design Margins</div>
+            <div class="card-meta">ESA / ECSS · 2008年11月（Corr.1: 2017年2月）</div>
+            <p class="card-desc">宇宙放射線の計算手法と設計マージンのポリシーを定める ECSS 標準。TID / SEE / NIEL の影響をどう計算し、どのような放射線設計マージン（RDM）を取るかの規則に相当する。ECSS-E-HB-10-12A ハンドブックと組み合わせて使用する。</p>
+            <a class="card-link" href="https://ecss.nl/standard/ecss-e-st-10-12c-methods-for-the-calculation-of-radiation-received-and-its-effects-and-a-policy-for-design-margins/" target="_blank" rel="noopener"><span class="url-text">https://ecss.nl/standard/ecss-e-st-10-12c-methods-for-the-calculation-of-radiation-received-and-its-effects-and-a-policy-for-design-margins/</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
           </article>
           <article class="card" data-text="jaxa – 耐放射線設計標準 jaxa-jerg-2-143 耐宇宙環境設計標準（耐放射線設計標準） jaxa · 耐放射線設計標準 · 日本語版・英語版あり 宇宙機・衛星搭載機器の耐放射線設計のための基盤標準文書。tid マージン、see（seu/sel/seb/sefi）設計要求、放射線試験レベルと評価手順などを規定し、jerg-2-141 と組み合わせて具体的な rha 方針を与える。">
             <div class="card-tag"><span class="tag-dot" style="background:#059669"></span>JAXA – 耐放射線設計標準</div>
@@ -443,18 +512,21 @@
             <div class="card-title">NASA Reliability and Maintainability (R&amp;M) Standard for Spaceflight and Support Systems, NASA-STD-8729.1A</div>
             <div class="card-meta">NASA · 2017</div>
             <p class="card-desc">宇宙飛行システムにおける信頼性基準とリスク管理の基礎となる標準規格。</p>
+            <a class="card-link" href="https://standards.nasa.gov/standard/NASA/NASA-STD-87291" target="_blank" rel="noopener"><span class="url-text">https://standards.nasa.gov/standard/NASA/NASA-STD-87291</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
           </article>
           <article class="card" data-text="nasa – leo radiation space radiation effects on electronic components in low-earth orbit nasa preferred reliability practice no. pd-ed-1258 · 1996 低軌道（leo）における電子部品への宇宙放射線影響に関する基本ガイドライン。">
             <div class="card-tag"><span class="tag-dot" style="background:#059669"></span>NASA – LEO Radiation</div>
             <div class="card-title">Space Radiation Effects on Electronic Components in Low-Earth Orbit</div>
             <div class="card-meta">NASA Preferred Reliability Practice No. PD-ED-1258 · 1996</div>
             <p class="card-desc">低軌道（LEO）における電子部品への宇宙放射線影響に関する基本ガイドライン。</p>
+            <a class="card-link" href="https://extapps.ksc.nasa.gov/Reliability/Documents/Preferred_Practices/1258.pdf" target="_blank" rel="noopener"><span class="url-text">https://extapps.ksc.nasa.gov/Reliability/Documents/Preferred_Practices/1258.pdf</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
           </article>
           <article class="card" data-text="nasa – radiation design margin radiation design margin requirement nasa preferred reliability practice no. pd-ed-1260 · 1996 放射線設計マージン（design margin）の要件定義に関する実務慣行文書。">
             <div class="card-tag"><span class="tag-dot" style="background:#059669"></span>NASA – Radiation Design Margin</div>
             <div class="card-title">Radiation Design Margin Requirement</div>
             <div class="card-meta">NASA Preferred Reliability Practice No. PD-ED-1260 · 1996</div>
             <p class="card-desc">放射線設計マージン（Design Margin）の要件定義に関する実務慣行文書。</p>
+            <a class="card-link" href="https://extapps.ksc.nasa.gov/Reliability/Documents/Preferred_Practices/1260.pdf" target="_blank" rel="noopener"><span class="url-text">https://extapps.ksc.nasa.gov/Reliability/Documents/Preferred_Practices/1260.pdf</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
           </article>
           <article class="card" data-text="rha newspace – evolution radiation hardness assurance: evolving for newspace nasa technical reports server new space の台頭に伴う rha 手法の進化とリスク受容に関する主要な議論。民間宇宙開発に対応した保証手法の変化を論じている。">
             <div class="card-tag"><span class="tag-dot" style="background:#059669"></span>RHA NewSpace – Evolution</div>
@@ -468,6 +540,7 @@
             <div class="card-title">Guidelines for Verification Strategies to Minimize RISK Based on Mission Environment, -Application and -Lifetime (MEAL)</div>
             <div class="card-meta">O. Gonzales · 2018</div>
             <p class="card-desc">ミッションの環境・用途・寿命（MEAL）に基づいたリスク最小化のための検証戦略ガイドライン。</p>
+            <a class="card-link" href="https://ntrs.nasa.gov/api/citations/20180007359/downloads/20180007359.pdf" target="_blank" rel="noopener"><span class="url-text">https://ntrs.nasa.gov/api/citations/20180007359/downloads/20180007359.pdf</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
           </article>
         </div>
       </div>
@@ -486,56 +559,154 @@
             <div class="card-title">Radiation Assurance for the Space Environment</div>
             <div class="card-meta">J. L. Barth, K. A. LaBel and C. Poivey · 2004 International Conference on IC Design and Technology</div>
             <p class="card-desc">宇宙環境における放射線保証の包括的なアプローチについて。</p>
+            <a class="card-link" href="https://ntrs.nasa.gov/api/citations/20040070939/downloads/20040070939.pdf" target="_blank" rel="noopener"><span class="url-text">https://ntrs.nasa.gov/api/citations/20040070939/downloads/20040070939.pdf</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
           </article>
           <article class="card" data-text="see test – adequacy are current see test procedures adequate for modern devices and electronics technologies? k. a. label et al. · 2008 最新の半導体技術に対する既存の see 試験手順の妥当性を問う、試験法見直しのための重要資料。">
             <div class="card-tag"><span class="tag-dot" style="background:#059669"></span>SEE Test – Adequacy</div>
             <div class="card-title">Are Current SEE Test Procedures Adequate for Modern Devices and Electronics Technologies?</div>
             <div class="card-meta">K. A. LaBel et al. · 2008</div>
             <p class="card-desc">最新の半導体技術に対する既存の SEE 試験手順の妥当性を問う、試験法見直しのための重要資料。</p>
+            <a class="card-link" href="https://radhome.gsfc.nasa.gov/radhome/papers/HEART08_LaBel.pdf" target="_blank" rel="noopener"><span class="url-text">https://radhome.gsfc.nasa.gov/radhome/papers/HEART08_LaBel.pdf</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
           </article>
         </div>
       </div>
     </section>
     <section class="group-section" id="g-parts">
-      <div class="group-header"><div class="group-color-bar" style="background:#d97706"></div><div class="group-header-text"><div class="group-title">耐放射線部品</div><div class="group-desc">COTS 評価・RHA 研究論文・低温エレクトロニクス・シールド技術に関する文献</div></div><div class="group-count">8 件</div></div>
-      <div class="subsection" id="cots-research">
-        <div class="subsec-header"><div class="subsec-title">COTS 評価・RHA 研究論文</div><div class="subsec-note">COTS 利用・TID/SEE 耐性評価・ADC 等デバイス評価の研究論文</div></div>
+      <div class="group-header"><div class="group-color-bar" style="background:#d97706"></div><div class="group-header-text"><div class="group-title">耐放射線部品</div><div class="group-desc">COTS 評価・RHA 研究論文・低温エレクトロニクス・シールド技術に関する文献</div></div><div class="group-count">18 件</div></div>
+      <div class="subsection" id="cots-rha-method">
+        <div class="subsec-header"><div class="subsec-title">COTS 評価方法論・RHA 研究</div><div class="subsec-note">COTS 利用の方法論・ハードネス保証の基礎・試験手順の妥当性</div></div>
         <div class="cards">
-          <article class="card" data-text="cots – radiation (pioneer) use of cots microelectronics in radiation environments p. s. winokur et al. · ieee trans. nucl. sci. 46 · 1999 放射線環境下での民生品（cots）利用に関する先駆的な研究と保証手法。">
+          <article class="card" data-text="cots – radiation (pioneer) use of cots microelectronics in radiation environments p. s. winokur et al. · ieee trans. nucl. sci. 46 · 1999 · doi: 10.1109/23.819113 放射線環境下での民生品（cots）利用に関する先駆的な研究と保証手法。ハードネス保証・システムハードニング技術・ライフサイクルコストのトレードオフを体系的に論じた cots 利用の基礎論文。">
             <div class="card-tag"><span class="tag-dot" style="background:#d97706"></span>COTS – Radiation (Pioneer)</div>
             <div class="card-title">Use of COTS Microelectronics in Radiation Environments</div>
-            <div class="card-meta">P. S. Winokur et al. · IEEE Trans. Nucl. Sci. 46 · 1999</div>
-            <p class="card-desc">放射線環境下での民生品（COTS）利用に関する先駆的な研究と保証手法。</p>
+            <div class="card-meta">P. S. Winokur et al. · IEEE Trans. Nucl. Sci. 46 · 1999 · DOI: 10.1109/23.819113</div>
+            <p class="card-desc">放射線環境下での民生品（COTS）利用に関する先駆的な研究と保証手法。ハードネス保証・システムハードニング技術・ライフサイクルコストのトレードオフを体系的に論じた COTS 利用の基礎論文。</p>
+            <a class="card-link" href="https://ieeexplore.ieee.org/document/819113/" target="_blank" rel="noopener"><span class="url-text">https://ieeexplore.ieee.org/document/819113/</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
           </article>
-          <article class="card" data-text="rha – testing review radiation hardness assurance testing of microelectronic devices: radiation environments, physical mechanisms, and foundations j. r. schwank et al. · ieee trans. nucl. sci. 60 · 2013 放射線耐性保証試験の物理的メカニズムと基礎に関する包括的なレビュー。tid / see の発生機構から試験手順まで体系的に解説。">
+          <article class="card" data-text="rha – testing review radiation hardness assurance testing of microelectronic devices: radiation environments, physical mechanisms, and foundations j. r. schwank et al. · ieee trans. nucl. sci. 60 · 2013 · doi: 10.1109/tns.2013.2254722 放射線耐性保証試験の物理的メカニズムと基礎に関する包括的なレビュー。tid / see の発生機構から試験手順まで体系的に解説。">
             <div class="card-tag"><span class="tag-dot" style="background:#d97706"></span>RHA – Testing Review</div>
             <div class="card-title">Radiation Hardness Assurance Testing of Microelectronic Devices: Radiation Environments, Physical Mechanisms, and Foundations</div>
-            <div class="card-meta">J. R. Schwank et al. · IEEE Trans. Nucl. Sci. 60 · 2013</div>
+            <div class="card-meta">J. R. Schwank et al. · IEEE Trans. Nucl. Sci. 60 · 2013 · DOI: 10.1109/TNS.2013.2254722</div>
             <p class="card-desc">放射線耐性保証試験の物理的メカニズムと基礎に関する包括的なレビュー。TID / SEE の発生機構から試験手順まで体系的に解説。</p>
+            <a class="card-link" href="https://ieeexplore.ieee.org/document/6530780/" target="_blank" rel="noopener"><span class="url-text">https://ieeexplore.ieee.org/document/6530780/</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
           </article>
-          <article class="card" data-text="ieee – low-energy protons criticality of low-energy protons in single-event effects testing of highly-scaled technologies j. a. pellish et al. · ieee trans. nucl. sci. 61 · 2014 微細化プロセスにおける低エネルギー陽子の see への影響と試験における重要性を論じた論文。">
+          <article class="card" data-text="cmos – radiation challenges current and future challenges in radiation effects on cmos electronics p. e. dodd et al. · ieee trans. nucl. sci. 57 · 2010 · doi: 10.1109/tns.2010.2042613 cmos エレクトロニクスの放射線影響に関する現在および将来の課題をまとめた論文。技術スケーリングに伴う tid 耐性の変化と see への影響、ナノスケールでのハードニング手法の課題を体系的に論じている。">
+            <div class="card-tag"><span class="tag-dot" style="background:#d97706"></span>CMOS – Radiation Challenges</div>
+            <div class="card-title">Current and Future Challenges in Radiation Effects on CMOS Electronics</div>
+            <div class="card-meta">P. E. Dodd et al. · IEEE Trans. Nucl. Sci. 57 · 2010 · DOI: 10.1109/TNS.2010.2042613</div>
+            <p class="card-desc">CMOS エレクトロニクスの放射線影響に関する現在および将来の課題をまとめた論文。技術スケーリングに伴う TID 耐性の変化と SEE への影響、ナノスケールでのハードニング手法の課題を体系的に論じている。</p>
+            <a class="card-link" href="https://ieeexplore.ieee.org/document/5550487/" target="_blank" rel="noopener"><span class="url-text">https://ieeexplore.ieee.org/document/5550487/</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="esa corha – cots 網羅的評価 radiation screening of cots components and verification of cots rha approach (corha) c. tscherne, p. beck et al. · seibersdorf laboratories / univ. padova / esa · tec-qec final presentation days, estec · 2023年6月29日 esa が資金提供した corha プロジェクトの最終成果報告。マイコン・オペアンプ・マルチプレクサなど13種類以上の cots 部品に対する tid（co60, seibersdorf 施設）および see 試験結果を網羅的に評価・報告。cots 部品に対するアドホック rha アプローチの提案も含む。cubesat・ニュースペース向け cots 採用の可否判断に直接役立つ一次資料。">
+            <div class="card-tag"><span class="tag-dot" style="background:#d97706"></span>ESA CORHA – COTS 網羅的評価</div>
+            <div class="card-title">Radiation screening of COTS components and verification of COTS RHA approach (CORHA)</div>
+            <div class="card-meta">C. Tscherne, P. Beck et al. · Seibersdorf Laboratories / Univ. Padova / ESA · TEC-QEC Final Presentation Days, ESTEC · 2023年6月29日</div>
+            <p class="card-desc">ESA が資金提供した CORHA プロジェクトの最終成果報告。マイコン・オペアンプ・マルチプレクサなど13種類以上の COTS 部品に対する TID（Co60, Seibersdorf 施設）および SEE 試験結果を網羅的に評価・報告。COTS 部品に対するアドホック RHA アプローチの提案も含む。CubeSat・ニュースペース向け COTS 採用の可否判断に直接役立つ一次資料。</p>
+            <a class="card-link" href="https://indico.esa.int/event/444/contributions/7793/attachments/5317/8527/Tscherne_CORHA_ESA_FPD_v1.0.pdf" target="_blank" rel="noopener"><span class="url-text">https://indico.esa.int/event/444/contributions/7793/attachments/5317/8527/Tscherne_CORHA_ESA_FPD_v1.0.pdf</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+        </div>
+      </div>
+      <div class="subsection" id="cots-processor">
+        <div class="subsec-header"><div class="subsec-title">COTS プロセッサの放射線試験</div><div class="subsec-note">SAMV71 / STM32H7 / SAMA5D3 – TID 試験レポート（Open Source Satellite Programme）</div></div>
+        <div class="cards">
+          <article class="card" data-text="kispe ossat – tid 比較試験 results from testing low-cost, high-performance terrestrial processors for use in low-cost high-performance space missions a. bernie, p. madle et al. · kispe space / univ. of surrey · ssc 2021 (smallsat conference) samv71（~60 krad で故障開始）・stm32h7（~47 krad）・sama5d3（120 krad 超）の3種 cots プロセッサを surrey 大学と共同で電子線 tid 試験。消費電力変動・エラー自動回復・ファイルシステム性能も評価。800 km 太陽同期軌道での 10 年ミッション（想定 tid: ~10 krad）に対して3種とも候補として妥当と結論。">
+            <div class="card-tag"><span class="tag-dot" style="background:#d97706"></span>KISPE OSSAT – TID 比較試験</div>
+            <div class="card-title">Results from Testing Low-Cost, High-Performance Terrestrial Processors for Use in Low-Cost High-Performance Space Missions</div>
+            <div class="card-meta">A. Bernie, P. Madle et al. · KISPE Space / Univ. of Surrey · SSC 2021 (SmallSat Conference)</div>
+            <p class="card-desc">SAMV71（~60 kRad で故障開始）・STM32H7（~47 kRad）・SAMA5D3（120 kRad 超）の3種 COTS プロセッサを Surrey 大学と共同で電子線 TID 試験。消費電力変動・エラー自動回復・ファイルシステム性能も評価。800 km 太陽同期軌道での 10 年ミッション（想定 TID: ~10 kRad）に対して3種とも候補として妥当と結論。</p>
+            <a class="card-link" href="https://digitalcommons.usu.edu/smallsat/2021/all2021/123/" target="_blank" rel="noopener"><span class="url-text">https://digitalcommons.usu.edu/smallsat/2021/all2021/123/</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="ossat – samv71 詳細レポート samv71 radiation test report (open source satellite programme) kispe space / open source satellite programme · ks-doc-01250 800 km 太陽同期軌道・10 年ミッション（想定 tid: ~10 krad）を前提とした samv71 の詳細試験レポート。最大 95 krad まで段階的に照射し、消費電流・ecc・aes・sd カード・uart 等の機能ごとに劣化を評価。エラーの自動修復（cortex-m7 ecc）の実証データを含む。stm32h7（ks-doc-01251）および sama5d3（ks-doc-01252）の個別レポートも同サイトから入手可能。">
+            <div class="card-tag"><span class="tag-dot" style="background:#d97706"></span>OSSAT – SAMV71 詳細レポート</div>
+            <div class="card-title">SAMV71 Radiation Test Report (Open Source Satellite Programme)</div>
+            <div class="card-meta">KISPE Space / Open Source Satellite Programme · KS-DOC-01250</div>
+            <p class="card-desc">800 km 太陽同期軌道・10 年ミッション（想定 TID: ~10 kRad）を前提とした SAMV71 の詳細試験レポート。最大 95 kRad まで段階的に照射し、消費電流・ECC・AES・SD カード・UART 等の機能ごとに劣化を評価。エラーの自動修復（Cortex-M7 ECC）の実証データを含む。STM32H7（KS-DOC-01251）および SAMA5D3（KS-DOC-01252）の個別レポートも同サイトから入手可能。</p>
+            <a class="card-link" href="https://www.opensourcesatellite.org/downloads/KS-DOC-01250_SAMV71_Radiation_Test_Report.pdf" target="_blank" rel="noopener"><span class="url-text">https://www.opensourcesatellite.org/downloads/KS-DOC-01250_SAMV71_Radiation_Test_Report.pdf</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+        </div>
+      </div>
+      <div class="subsection" id="cots-fpga-digital">
+        <div class="subsec-header"><div class="subsec-title">COTS FPGA・デジタル部品の SEE 試験</div><div class="subsec-note">SRAM FPGA の SEU 特性・緩和手法・高エネルギー電子による SEE 評価</div></div>
+        <div class="cards">
+          <article class="card" data-text="ieee – low-energy protons criticality of low-energy protons in single-event effects testing of highly-scaled technologies j. a. pellish et al. · ieee trans. nucl. sci. 61 · 2014 微細化プロセスにおける低エネルギー陽子の see への影響と試験における重要性を論じた論文。32 nm soi cmos での測定データを示し、2 mev 以下の陽子成分を含む試験の重要性を実証。">
             <div class="card-tag"><span class="tag-dot" style="background:#d97706"></span>IEEE – Low-Energy Protons</div>
             <div class="card-title">Criticality of Low-Energy Protons in Single-Event Effects Testing of Highly-Scaled Technologies</div>
             <div class="card-meta">J. A. Pellish et al. · IEEE Trans. Nucl. Sci. 61 · 2014</div>
-            <p class="card-desc">微細化プロセスにおける低エネルギー陽子の SEE への影響と試験における重要性を論じた論文。</p>
+            <p class="card-desc">微細化プロセスにおける低エネルギー陽子の SEE への影響と試験における重要性を論じた論文。32 nm SOI CMOS での測定データを示し、2 MeV 以下の陽子成分を含む試験の重要性を実証。</p>
+            <a class="card-link" href="https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20150000377.pdf" target="_blank" rel="noopener"><span class="url-text">https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20150000377.pdf</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
           </article>
-          <article class="card" data-text="cmos – radiation challenges current and future challenges in radiation effects on cmos electronics p. e. dodd et al. · ieee trans. nucl. sci. 57 · 2010 cmos エレクトロニクスの放射線影響に関する現在および将来の課題をまとめた論文。">
-            <div class="card-tag"><span class="tag-dot" style="background:#d97706"></span>CMOS – Radiation Challenges</div>
-            <div class="card-title">Current and Future Challenges in Radiation Effects on CMOS Electronics</div>
-            <div class="card-meta">P. E. Dodd et al. · IEEE Trans. Nucl. Sci. 57 · 2010</div>
-            <p class="card-desc">CMOS エレクトロニクスの放射線影響に関する現在および将来の課題をまとめた論文。</p>
+          <article class="card" data-text="sram fpga – seu 解析と緩和手法 single event effects in sram based fpga for space applications: analysis and mitigation r. weigand · esa microelectronics section · dsnoc 2009 sramベース fpga における seu のメカニズム、creme96 を用いた seu レート計算、tmr（三重冗長化）・ftmr（機能的 tmr）などの緩和手法を解説したプレゼンテーション。参考文献には creme96（https://creme96.nrl.navy.mil/）・psi pif（陽子線試験）・ucl hif（重イオン試験）の url が明記されており、宇宙用 fpga 設計の入門資料として有用。">
+            <div class="card-tag"><span class="tag-dot" style="background:#d97706"></span>SRAM FPGA – SEU 解析と緩和手法</div>
+            <div class="card-title">Single Event Effects in SRAM based FPGA for space applications: Analysis and Mitigation</div>
+            <div class="card-meta">R. Weigand · ESA Microelectronics Section · DSNOC 2009</div>
+            <p class="card-desc">SRAMベース FPGA における SEU のメカニズム、CREME96 を用いた SEU レート計算、TMR（三重冗長化）・FTMR（機能的 TMR）などの緩和手法を解説したプレゼンテーション。参考文献には CREME96（https://creme96.nrl.navy.mil/）・PSI PIF（陽子線試験）・UCL HIF（重イオン試験）の URL が明記されており、宇宙用 FPGA 設計の入門資料として有用。</p>
+            <a class="card-link" href="http://microelectronics.esa.int/papers/DSNOC2009-SEE-SRAM-FPGA-RolandWeigand-Slides-V1.0.pdf" target="_blank" rel="noopener"><span class="url-text">http://microelectronics.esa.int/papers/DSNOC2009-SEE-SRAM-FPGA-RolandWeigand-Slides-V1.0.pdf</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
           </article>
-          <article class="card" data-text="adc – radiation tolerance evaluation of commercial adc radiation tolerance for accelerator experiments k. chen et al. · j. instrum. · 2015 加速器実験における民生用 adc の放射線耐性評価事例。cots コンポーネントの実用的な耐性データを提供する。">
+          <article class="card" data-text="stratix 10 fpga – 中性子 see single-event characterization of a stratix 10 fpga using neutron irradiation nsf shrec / brigham young univ. · ieee nsrec 2019 · doi: 10.1109/nsrec.2019.8906534 intel 14 nm finfet プロセスの stratix 10（1sg280lu）fpga に対して中性子照射 seu 試験を実施。configuration ram の seu 断面積を推定し、ニューヨーク市相当の中性子フルエンスで 3.2 fit/mbit（config sram）・7.1 fit/mbit（block ram）と定量化。14 nm 世代 fpga のナノスケール seu 特性の基礎データ。">
+            <div class="card-tag"><span class="tag-dot" style="background:#d97706"></span>Stratix 10 FPGA – 中性子 SEE</div>
+            <div class="card-title">Single-Event Characterization of a Stratix 10 FPGA Using Neutron Irradiation</div>
+            <div class="card-meta">NSF SHREC / Brigham Young Univ. · IEEE NSREC 2019 · DOI: 10.1109/NSREC.2019.8906534</div>
+            <p class="card-desc">Intel 14 nm FinFET プロセスの Stratix 10（1SG280LU）FPGA に対して中性子照射 SEU 試験を実施。Configuration RAM の SEU 断面積を推定し、ニューヨーク市相当の中性子フルエンスで 3.2 FIT/Mbit（Config SRAM）・7.1 FIT/Mbit（Block RAM）と定量化。14 nm 世代 FPGA のナノスケール SEU 特性の基礎データ。</p>
+            <a class="card-link" href="https://ieeexplore.ieee.org/abstract/document/8906534/" target="_blank" rel="noopener"><span class="url-text">https://ieeexplore.ieee.org/abstract/document/8906534/</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="juice – 高エネルギー電子 see リスク評価 risk assessment of see events due to high energy electrons during the juice mission esa tec-qec final presentation days, estec · 2023年6月29日 zynq ultrascale+（zu3eg）・sam v71 などを対象に、高エネルギー電子・陽子・重イオン照射による see 発生率を評価。cern vesper（高エネルギー電子）・psi pif（陽子）・radef（低エネルギー陽子・重イオン）での試験結果をもとに、leo・geo・木星軌道環境での seu レートを比較した。電子直接イオン化による seu の寄与を定量的に示した希少な資料。zu3eg の全電源ドメインにおける sel 評価・hdio 最大電圧バイアス下での重イオン（xe/ni）照射によるハードダメージ発見・cram/bram/ff/distram/tmr 各メモリの seu 断面積比較データも含む。">
+            <div class="card-tag"><span class="tag-dot" style="background:#d97706"></span>JUICE – 高エネルギー電子 SEE リスク評価</div>
+            <div class="card-title">Risk assessment of SEE events due to high energy electrons during the JUICE mission</div>
+            <div class="card-meta">ESA TEC-QEC Final Presentation Days, ESTEC · 2023年6月29日</div>
+            <p class="card-desc">Zynq UltraScale+（ZU3EG）・SAM V71 などを対象に、高エネルギー電子・陽子・重イオン照射による SEE 発生率を評価。CERN VESPER（高エネルギー電子）・PSI PIF（陽子）・RADEF（低エネルギー陽子・重イオン）での試験結果をもとに、LEO・GEO・木星軌道環境での SEU レートを比較した。電子直接イオン化による SEU の寄与を定量的に示した希少な資料。ZU3EG の全電源ドメインにおける SEL 評価・HDIO 最大電圧バイアス下での重イオン（Xe/Ni）照射によるハードダメージ発見・CRAM/BRAM/FF/DistRAM/TMR 各メモリの SEU 断面積比較データも含む。</p>
+            <a class="card-link" href="https://indico.esa.int/event/444/contributions/7802/attachments/5319/8529/4.Risk%20Assessment%20of%20SEE%20Events%20due%20to%20High%20Energy%20Electrons%20during%20the%20Juice%20Mission.pdf" target="_blank" rel="noopener"><span class="url-text">https://indico.esa.int/event/444/contributions/7802/attachments/5319/8529/4.Risk%20Assessment%20of%20SEE%20Events%20due%20to%20High%20Energy%20Electrons%20during%20the%20Juice%20Mission.pdf</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="zu3eg mpsoc – 重イオン・高エネルギー電子 see 詳細 single event characterization of a xilinx ultrascale+ mp-soc fpga (sefuw 2018) m. glorieux, t. lange et al. · iroc technologies / esa / cern · space fpga users workshop (sefuw), estec · 2018年4月 zu3eg mp-soc を ucl 標準重イオン・cern sps 超高エネルギー xe ビーム・高エネルギー電子（vesper）で照射した see 総合試験のスライド。全19電源ドメインの sel 監視・cram/bram/distram/ff の seu 断面積・arm r5 coremark/pi fft 機能テスト結果を網羅。16 nm finfet の低 seu 感度とともに、hdio 3.3 v バイアス + 高 let 重イオン照射時のハードダメージ（回復不能損傷）を初めて報告した資料。sel は vcc_auxio 電源に支配的で、高エネルギー電子に対しては sel 感度なし。">
+            <div class="card-tag"><span class="tag-dot" style="background:#d97706"></span>ZU3EG MPSoC – 重イオン・高エネルギー電子 SEE 詳細</div>
+            <div class="card-title">Single Event Characterization of a Xilinx UltraScale+ MP-SoC FPGA (SEFUW 2018)</div>
+            <div class="card-meta">M. Glorieux, T. Lange et al. · IROC Technologies / ESA / CERN · SpacE FPGA Users Workshop (SEFUW), ESTEC · 2018年4月</div>
+            <p class="card-desc">ZU3EG MP-SoC を UCL 標準重イオン・CERN SPS 超高エネルギー Xe ビーム・高エネルギー電子（VESPER）で照射した SEE 総合試験のスライド。全19電源ドメインの SEL 監視・CRAM/BRAM/DistRAM/FF の SEU 断面積・ARM R5 COREMARK/Pi FFT 機能テスト結果を網羅。16 nm FinFET の低 SEU 感度とともに、HDIO 3.3 V バイアス + 高 LET 重イオン照射時のハードダメージ（回復不能損傷）を初めて報告した資料。SEL は VCC_AUXIO 電源に支配的で、高エネルギー電子に対しては SEL 感度なし。</p>
+            <a class="card-link" href="https://indico.esa.int/event/232/contributions/2162/attachments/1815/2115/SEFUW2018_SEEXCZU3EG_ThomasLange.pdf" target="_blank" rel="noopener"><span class="url-text">https://indico.esa.int/event/232/contributions/2162/attachments/1815/2115/SEFUW2018_SEEXCZU3EG_ThomasLange.pdf</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="zu3eg – 中性子・陽子・アルファ see neutron, 64 mev proton &amp; alpha single-event characterization of xilinx 16nm finfet zynq ultrascale+ mpsoc p. maillard, m. hart et al. · xilinx · ieee nsrec 2017 · doi: 10.1109/tns.2017.2769127 xczu9eg（zu9eg）を中性子・64 mev 陽子・熱中性子・アルファ線で照射した see 特性評価。16 nm finfet の bram が 65 nm / 28 nm より seu 感度が低いことを実測で示す。sem-ip による cram スクラビングの効果も検証。zu3eg と同一アーキテクチャファミリーの基礎データとして juice 論文でも引用されている。">
+            <div class="card-tag"><span class="tag-dot" style="background:#d97706"></span>ZU3EG – 中性子・陽子・アルファ SEE</div>
+            <div class="card-title">Neutron, 64 MeV Proton &amp; Alpha Single-Event Characterization of Xilinx 16nm FinFET Zynq UltraScale+ MPSoC</div>
+            <div class="card-meta">P. Maillard, M. Hart et al. · Xilinx · IEEE NSREC 2017 · DOI: 10.1109/TNS.2017.2769127</div>
+            <p class="card-desc">XCZU9EG（ZU9EG）を中性子・64 MeV 陽子・熱中性子・アルファ線で照射した SEE 特性評価。16 nm FinFET の BRAM が 65 nm / 28 nm より SEU 感度が低いことを実測で示す。SEM-IP による CRAM スクラビングの効果も検証。ZU3EG と同一アーキテクチャファミリーの基礎データとして JUICE 論文でも引用されている。</p>
+            <a class="card-link" href="https://ieeexplore.ieee.org/document/8115449/" target="_blank" rel="noopener"><span class="url-text">https://ieeexplore.ieee.org/document/8115449/</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="zu3eg – 重イオン sel / seu（通常 + 超高エネルギー） single-event characterization of xilinx ultrascale+ mpsoc under standard and ultra-high energy heavy-ion irradiation m. glorieux et al. · iroc technologies / esa / cern · ieee nsrec 2018 · doi: 10.1109/tns.2018.2874197 ucl 標準重イオンと cern sps 超高エネルギー xe ビームによる sel / seu 断面積の測定。超高エネルギーイオンでも標準重イオンと同等の seu 感度を示す一方、sel は vcc_auxio に支配的であることを定量化。hdio ハードダメージの追加観察（3件）も報告。zu3eg のラッチアップ設計指針を策定するための基礎データ。">
+            <div class="card-tag"><span class="tag-dot" style="background:#d97706"></span>ZU3EG – 重イオン SEL / SEU（通常 + 超高エネルギー）</div>
+            <div class="card-title">Single-Event Characterization of Xilinx UltraScale+ MPSOC under Standard and Ultra-High Energy Heavy-Ion Irradiation</div>
+            <div class="card-meta">M. Glorieux et al. · IROC Technologies / ESA / CERN · IEEE NSREC 2018 · DOI: 10.1109/TNS.2018.2874197</div>
+            <p class="card-desc">UCL 標準重イオンと CERN SPS 超高エネルギー Xe ビームによる SEL / SEU 断面積の測定。超高エネルギーイオンでも標準重イオンと同等の SEU 感度を示す一方、SEL は VCC_AUXIO に支配的であることを定量化。HDIO ハードダメージの追加観察（3件）も報告。ZU3EG のラッチアップ設計指針を策定するための基礎データ。</p>
+            <a class="card-link" href="https://ieeexplore.ieee.org/document/8584296/" target="_blank" rel="noopener"><span class="url-text">https://ieeexplore.ieee.org/document/8584296/</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+        </div>
+      </div>
+      <div class="subsection" id="cots-analog">
+        <div class="subsec-header"><div class="subsec-title">COTS アナログ部品（ADC 等）の SEE / TID 試験</div><div class="subsec-note">商用 ADC の放射線耐性評価・カメラ応用での SEE 試験</div></div>
+        <div class="cards">
+          <article class="card" data-text="adc – radiation tolerance evaluation of commercial adc radiation tolerance for accelerator experiments k. chen et al. (bnl) · j. instrum. 10, p08009 · 2015 · doi: 10.1088/1748-0221/10/08/p08009 17 種の市販 adc に対する tid 試験と、12/14 bit adc 2 種の see 詳細評価。lhc の加速器放射線環境（ハドロン・中性子・ガンマ線）を念頭に置いたもので、atlas lar カロリメータアップグレード向け cots adc 選定に適用された実用的なデータ。">
             <div class="card-tag"><span class="tag-dot" style="background:#d97706"></span>ADC – Radiation Tolerance</div>
             <div class="card-title">Evaluation of Commercial ADC Radiation Tolerance for Accelerator Experiments</div>
-            <div class="card-meta">K. Chen et al. · J. Instrum. · 2015</div>
-            <p class="card-desc">加速器実験における民生用 ADC の放射線耐性評価事例。COTS コンポーネントの実用的な耐性データを提供する。</p>
+            <div class="card-meta">K. Chen et al. (BNL) · J. Instrum. 10, P08009 · 2015 · DOI: 10.1088/1748-0221/10/08/P08009</div>
+            <p class="card-desc">17 種の市販 ADC に対する TID 試験と、12/14 bit ADC 2 種の SEE 詳細評価。LHC の加速器放射線環境（ハドロン・中性子・ガンマ線）を念頭に置いたもので、ATLAS LAr カロリメータアップグレード向け COTS ADC 選定に適用された実用的なデータ。</p>
+            <a class="card-link" href="https://iopscience.iop.org/article/10.1088/1748-0221/10/08/P08009" target="_blank" rel="noopener"><span class="url-text">https://iopscience.iop.org/article/10.1088/1748-0221/10/08/P08009</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
           </article>
-          <article class="card" data-text="smallsat – shielding demo shields-1, a smallsat radiation shielding technology demonstration d. l. i. thomsen et al. · 29th annual aiaa/usu conference on small satellites · 2015 小型衛星（smallsat）における放射線遮蔽技術の実証例。">
+          <article class="card" data-text="cots adc – カメラ応用 see single event effects testing of a commercial-off-the-shelf analog-to-digital converter in a camera application ieee nsrec 2016 radiation effects data workshop · doi: 10.1109/nsrec.2016.7891739 analog devices ad7984（18 bit, sar adc）に対する重イオン照射 see 試験。カメラ応用として実際の回路に実装した状態での試験結果を報告しており、応用特化型の see 評価アプローチの事例として有用。cots adc の宇宙カメラ設計への適用可否判断に関連する資料。">
+            <div class="card-tag"><span class="tag-dot" style="background:#d97706"></span>COTS ADC – カメラ応用 SEE</div>
+            <div class="card-title">Single Event Effects Testing of a Commercial-Off-The-Shelf Analog-to-Digital Converter in a Camera Application</div>
+            <div class="card-meta">IEEE NSREC 2016 Radiation Effects Data Workshop · DOI: 10.1109/NSREC.2016.7891739</div>
+            <p class="card-desc">Analog Devices AD7984（18 bit, SAR ADC）に対する重イオン照射 SEE 試験。カメラ応用として実際の回路に実装した状態での試験結果を報告しており、応用特化型の SEE 評価アプローチの事例として有用。COTS ADC の宇宙カメラ設計への適用可否判断に関連する資料。</p>
+            <a class="card-link" href="https://ieeexplore.ieee.org/abstract/document/7891739/" target="_blank" rel="noopener"><span class="url-text">https://ieeexplore.ieee.org/abstract/document/7891739/</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+        </div>
+      </div>
+      <div class="subsection" id="cots-shielding">
+        <div class="subsec-header"><div class="subsec-title">放射線シールド・遮蔽技術</div><div class="subsec-note">Z-graded シールド・COTS 部品の寿命延長・CubeSat 実証</div></div>
+        <div class="cards">
+          <article class="card" data-text="smallsat – shielding demo shields-1, a smallsat radiation shielding technology demonstration d. l. i. thomsen et al. · 29th annual aiaa/usu conference on small satellites · 2015 小型衛星（smallsat）における放射線遮蔽技術の実証例。原子番号（z）グレーデッドシールドが同じ厚みのアルミシールドより電子遮蔽性能で約30%向上することを spenvis モデリングで示し、cots 部品の耐放射線寿命延長を目的とした cubesat ミッション。">
             <div class="card-tag"><span class="tag-dot" style="background:#d97706"></span>SmallSat – Shielding Demo</div>
             <div class="card-title">Shields-1, A SmallSat Radiation Shielding Technology Demonstration</div>
             <div class="card-meta">D. L. I. Thomsen et al. · 29th Annual AIAA/USU Conference on Small Satellites · 2015</div>
-            <p class="card-desc">小型衛星（SmallSat）における放射線遮蔽技術の実証例。</p>
+            <p class="card-desc">小型衛星（SmallSat）における放射線遮蔽技術の実証例。原子番号（Z）グレーデッドシールドが同じ厚みのアルミシールドより電子遮蔽性能で約30%向上することを SPENVIS モデリングで示し、COTS 部品の耐放射線寿命延長を目的とした CubeSat ミッション。</p>
+            <a class="card-link" href="https://digitalcommons.usu.edu/smallsat/2015/all2015/84/" target="_blank" rel="noopener"><span class="url-text">https://digitalcommons.usu.edu/smallsat/2015/all2015/84/</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
           </article>
         </div>
       </div>
@@ -713,19 +884,19 @@
       <div class="subsection" id="power-eps">
         <div class="subsec-header"><div class="subsec-title">Power / EPS / Cold Electronics</div><div class="subsec-note">Electrical Power System · Cold Survival · ECSS / NASA</div></div>
         <div class="cards">
-          <article class="card" data-text="ecss – power systems ecss-e-st-20-20c – spacecraft electrical power design european cooperation for space standardization · 2020 宇宙機電源（eps）の設計要求を定義する ecss の主要標準。電源バス電圧、冗長構成、lcl（latching current limiter）、電力制御・保護回路など、ローバーの電源設計にも直接適用可能な設計指針を提供。">
+          <article class="card" data-text="ecss – power systems ecss-e-st-20-20c – electrical design and interface requirements for power supply european cooperation for space standardization · 2016年4月 宇宙機の電源配電（lcl/rlcl ベース）の設計要求を定義する ecss の主要標準。電源バス電圧、冗長構成、lcl（latching current limiter）の仕様・保護回路など、ローバーの電源設計にも直接適用可能な設計指針を提供。">
             <div class="card-tag"><span class="tag-dot" style="background:#9333ea"></span>ECSS – Power Systems</div>
-            <div class="card-title">ECSS-E-ST-20-20C – Spacecraft Electrical Power Design</div>
-            <div class="card-meta">European Cooperation for Space Standardization · 2020</div>
-            <p class="card-desc">宇宙機電源（EPS）の設計要求を定義する ECSS の主要標準。電源バス電圧、冗長構成、LCL（Latching Current Limiter）、電力制御・保護回路など、ローバーの電源設計にも直接適用可能な設計指針を提供。</p>
-            <a class="card-link" href="https://ecss.nl/standard/ecss-e-st-20-20c-spacecraft-electrical-power-design/" target="_blank" rel="noopener"><span class="url-text">https://ecss.nl/standard/ecss-e-st-20-20c-spacecraft-electrical-power-design/</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+            <div class="card-title">ECSS-E-ST-20-20C – Electrical Design and Interface Requirements for Power Supply</div>
+            <div class="card-meta">European Cooperation for Space Standardization · 2016年4月</div>
+            <p class="card-desc">宇宙機の電源配電（LCL/RLCL ベース）の設計要求を定義する ECSS の主要標準。電源バス電圧、冗長構成、LCL（Latching Current Limiter）の仕様・保護回路など、ローバーの電源設計にも直接適用可能な設計指針を提供。</p>
+            <a class="card-link" href="https://ecss.nl/standard/ecss-e-st-20-20c-space-engineering-electrical-design-and-interface-requirements-for-power-supply-15-april-2016-2/" target="_blank" rel="noopener"><span class="url-text">https://ecss.nl/standard/ecss-e-st-20-20c-space-engineering-electrical-design-and-interface-requirements-for-power-supply-15-april-2016-2/</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
           </article>
-          <article class="card" data-text="ecss – power handbook ecss-e-hb-20-20a – electrical power system design guidelines ecss handbook · 2018 ecss-e-st-20-20c の詳細ハンドブック。電源アーキテクチャ、lcl の使い方、バッテリー運用、電力予算、サバイバル電力と熱設計の結合など、実務的な eps 設計方法を解説。">
+          <article class="card" data-text="ecss – power handbook ecss-e-hb-20-20a – guidelines for electrical design and interface requirements for power supply esa / ecss handbook · 2016年4月 ecss-e-st-20-20c の詳細ハンドブック。lcl の動作原理・設計代替案・試験手順の解説、バッテリー運用、電力予算、サバイバル電力と熱設計の結合など、実務的な eps 設計方法を解説。">
             <div class="card-tag"><span class="tag-dot" style="background:#9333ea"></span>ECSS – Power Handbook</div>
-            <div class="card-title">ECSS-E-HB-20-20A – Electrical Power System Design Guidelines</div>
-            <div class="card-meta">ECSS Handbook · 2018</div>
-            <p class="card-desc">ECSS-E-ST-20-20C の詳細ハンドブック。電源アーキテクチャ、LCL の使い方、バッテリー運用、電力予算、サバイバル電力と熱設計の結合など、実務的な EPS 設計方法を解説。</p>
-            <a class="card-link" href="https://ecss.nl/standard/ecss-e-hb-20-20a-electrical-power-system-design-guidelines/" target="_blank" rel="noopener"><span class="url-text">https://ecss.nl/standard/ecss-e-hb-20-20a-electrical-power-system-design-guidelines/</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+            <div class="card-title">ECSS-E-HB-20-20A – Guidelines for Electrical Design and Interface Requirements for Power Supply</div>
+            <div class="card-meta">ESA / ECSS Handbook · 2016年4月</div>
+            <p class="card-desc">ECSS-E-ST-20-20C の詳細ハンドブック。LCL の動作原理・設計代替案・試験手順の解説、バッテリー運用、電力予算、サバイバル電力と熱設計の結合など、実務的な EPS 設計方法を解説。</p>
+            <a class="card-link" href="https://ecss.nl/home/ecss-e-hb-20-20a-space-engineering-guidelines-for-electrical-design-and-interface-requirements-for-power-supply-15-april-2016/" target="_blank" rel="noopener"><span class="url-text">https://ecss.nl/home/ecss-e-hb-20-20a-space-engineering-guidelines-for-electrical-design-and-interface-requirements-for-power-supply-15-april-2016/</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
           </article>
           <article class="card" data-text="lunar rover – eps influence towards influences of the eps on lunar rover's systems design m. mulsow et al. · conference paper · 2022 月面ローバーのシステム設計において、eps が質量・熱設計・運用モード・ペイロード統合に与える影響を検討した研究。電源構成やバッテリ戦略が、ミッション継続時間や夜間サバイバル、ローバー全体アーキテクチャにどのように波及するかを整理。">
             <div class="card-tag"><span class="tag-dot" style="background:#9333ea"></span>Lunar Rover – EPS Influence</div>
@@ -739,12 +910,14 @@
             <div class="card-title">NASA Space Flight Program and Project Management Handbook</div>
             <div class="card-meta">NASA Headquarters · 2014</div>
             <p class="card-desc">NASA のプログラムおよびプロジェクト管理ハンドブック。リスク管理プロセスの参照元。</p>
+            <a class="card-link" href="https://ntrs.nasa.gov/citations/20150000400" target="_blank" rel="noopener"><span class="url-text">https://ntrs.nasa.gov/citations/20150000400</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
           </article>
           <article class="card" data-text="cubesat – design spec cubesat design specification (1u-12u), rev 14.1 the cubesat program, cal poly · 2022 new space の代表格である cubesat の設計仕様書。システムレベル試験の被験体要件として参照。">
             <div class="card-tag"><span class="tag-dot" style="background:#9333ea"></span>CubeSat – Design Spec</div>
             <div class="card-title">CubeSat Design Specification (1U-12U), REV 14.1</div>
             <div class="card-meta">The CubeSat Program, Cal Poly · 2022</div>
             <p class="card-desc">New Space の代表格である CubeSat の設計仕様書。システムレベル試験の被験体要件として参照。</p>
+            <a class="card-link" href="https://www.nasa.gov/wp-content/uploads/2018/01/cubesatdesignspecificationrev14_12022-02-09.pdf" target="_blank" rel="noopener"><span class="url-text">https://www.nasa.gov/wp-content/uploads/2018/01/cubesatdesignspecificationrev14_12022-02-09.pdf</span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
           </article>
         </div>
       </div>
@@ -879,19 +1052,18 @@
 </div>
 <a class="back-top" href="#" title="トップへ">↑</a>
 <footer>
-  <p>Space Mission Reference Hub &nbsp;·&nbsp; 96 文献 &nbsp;·&nbsp; 最終更新: 2026年5月15日</p>
+  <p>Space Mission Reference Hub &nbsp;·&nbsp; 114 文献 &nbsp;·&nbsp; 最終更新: 2026年5月16日</p>
 </footer>
 <script>
 (function(){
-  var search=document.getElementById('search');
-  var hint=document.getElementById('search-hint');
+  var search=document.getElementById('search');var hint=document.getElementById('search-hint');
   function escRe(s){return s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');}
   function strip(el){el.innerHTML=el.innerHTML.replace(/<mark class="hl">([^<]*)<\/mark>/g,'$1');}
   function addMarks(el,re){
     ['.card-title','.card-meta','.card-desc','.card-tag'].forEach(function(sel){
       var node=el.querySelector(sel);if(!node)return;
-      var tw=document.createTreeWalker(node,NodeFilter.SHOW_TEXT);
-      var nodes=[];var n;while((n=tw.nextNode()))nodes.push(n);
+      var tw=document.createTreeWalker(node,NodeFilter.SHOW_TEXT);var nodes=[];var n;
+      while((n=tw.nextNode()))nodes.push(n);
       nodes.forEach(function(tn){
         var parts=tn.nodeValue.split(re);if(parts.length<2)return;
         var frag=document.createDocumentFragment();
@@ -908,17 +1080,12 @@
     var re=q?new RegExp('('+escRe(q)+')','gi'):null;
     var cards=document.querySelectorAll('.card');var shown=0;
     cards.forEach(function(card){
-      strip(card);
-      var match=!q||(card.dataset.text||'').includes(ql);
+      strip(card);var match=!q||(card.dataset.text||'').includes(ql);
       card.classList.toggle('hidden',!match);
       if(match){shown++;if(re)addMarks(card,re);}
     });
-    document.querySelectorAll('.subsection').forEach(function(s){
-      s.classList.toggle('hidden',s.querySelectorAll('.card:not(.hidden)').length===0);
-    });
-    document.querySelectorAll('.group-section').forEach(function(g){
-      g.classList.toggle('hidden',g.querySelectorAll('.card:not(.hidden)').length===0);
-    });
+    document.querySelectorAll('.subsection').forEach(function(s){s.classList.toggle('hidden',s.querySelectorAll('.card:not(.hidden)').length===0);});
+    document.querySelectorAll('.group-section').forEach(function(g){g.classList.toggle('hidden',g.querySelectorAll('.card:not(.hidden)').length===0);});
     hint.textContent=q?shown+' 件が一致':'';
   });
   document.querySelectorAll('.nav-pill[data-color]').forEach(function(pill){
