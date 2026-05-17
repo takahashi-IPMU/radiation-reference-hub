@@ -200,10 +200,6 @@ const INITIAL = {
         { id:"japan-facilities", label:"日本の放射線試験施設",
           note:"QST高崎 TIARA · 大阪大学 RCNP · 若狭湾エネルギー研究センター · 東北大学 RARiS · KEK / J-PARC",
           refs:[
-
-            {id:"k02",tag:"J-PARC MLF – MUSE（ミュオン SEE）",title:"J-PARC MLF MUSE ビームラインを用いた半導体ミュオンソフトエラー試験",meta:"J-PARC 物質・生命科学実験施設（MLF）· MUSE · KEK / JAEA / ソシオネクスト",desc:"J-PARC MLF の MUSE ビームラインは世界最高強度の正・負ミュオンビームを提供し、宇宙線ミュオン起因の半導体ソフトエラー試験に使われている。中性子ビームラインも23本あるが、物質・生命科学研究向けであり半導体 SEE 試験への一般開放はされていない。高エネルギー中性子ソフトエラー試験には大阪大学 RCNP、熱中性子には京都大学 KUR が使われる。リンク先はミュオン vs. 中性子ソフトエラー比較研究（ソシオネクスト・KEK 等、2021年）のプレスリリース。",url:"https://j-parc.jp/c/press-release/2021/07/16000719.html"},
-
-            {id:"q06",tag:"Ground Neutron Spectrum",title:"Measurement of the Flux and Energy Spectrum of Cosmic-Ray Induced Neutrons on the Ground",meta:"M. S. Gordon et al. · IEEE Trans. Nucl. Sci. 51 · 2004",desc:"地上における宇宙線誘起中性子のスペクトル測定。J-PARC の中性子源との比較・参照に有用。",url:"https://ieeexplore.ieee.org/document/1369506/"},
             {id:"qst01",tag:"QST高崎 – TIARA",title:"イオン照射研究施設（TIARA）– QST 高崎量子技術基盤研究所",meta:"QST 高崎量子技術基盤研究所 · TIARA · 施設供用制度",desc:"Takasaki Ion Accelerators for Advanced Radiation Application（TIARA）。AVFサイクロトロン・タンデム加速器・シングルエンド加速器・イオン注入装置の4種類のイオン加速器を備え、数万 eV から数億 eV の広いエネルギー範囲の多種イオンを供給できる。宇宙機器用半導体の SEE / TID 試験にも利用可能。外部利用は施設供用制度を通じて申請する。",url:"https://www.qst.go.jp/site/taka-riyoukanri/2163.html"},
             {id:"rcnp01",tag:"阪大 RCNP – サイクロトロン施設",title:"大阪大学 核物理研究センター（RCNP）サイクロトロン施設",meta:"Research Center for Nuclear Physics, Osaka University · AVF + Ring Cyclotron",desc:"K140 AVFサイクロトロン（1973年稼働）と K400 リングサイクロトロン（1991年稼働）の2段カスケード構成。陽子最大 420 MeV・重イオン最大 100 MeV/u を供給。エネルギー広がり ΔE/E ≈ 10⁻⁴ の高品質ビームが特長。半導体デバイスの SEE / NIEL 試験に利用可能な共同利用・共同研究拠点。",url:"https://www.rcnp.osaka-u.ac.jp/Divisions/np1-a/RCF/RCNPCF-ACj.html"},
             {id:"werc01",tag:"若狭湾エネルギー研究センター",title:"若狭湾エネルギー研究センター（WERC）イオン加速器施設",meta:"公益財団法人 若狭湾エネルギー研究センター · 福井県敦賀市 · タンデム加速器 + シンクロトロン",desc:"タンデム加速器（最大ターミナル電圧 5 MV）とシンクロトロン加速器（陽子 200 MeV）を中核装置とする多目的イオン加速器システムを保有。宇宙機器の放射線耐性評価研究に活用されており、JAXA との研究連携・協力覚書を締結。水素・ヘリウム・炭素等の荷電粒子イオンビームによる SEE / TID 試験が可能。外部利用は依頼照射制度による。",url:"https://www.werc.or.jp/outline/shisetsu/kasokuki/"},
@@ -457,8 +453,8 @@ const INITIAL = {
     /* ═══════════════════════════════════════════════════
        GROUP NEW: 素粒子実験における耐放射線
        ═══════════════════════════════════════════════════ */
-    { id:"g-hep", label:"素粒子実験における耐放射線", color:"#dc2626",
-      desc:"LHC / テバトロン / リニアック周辺の混合放射線場が電子機器に与える影響・R2E プログラム・CHARM 試験施設",
+    { id:"g-hep", label:"耐放射線半導体関連の研究", color:"#dc2626",
+      desc:"LHC / テバトロン / リニアック・KEK 実験周辺の混合放射線場が電子機器・検出器に与える影響、宇宙線ミュオン・中性子スペクトルの研究",
       collapsed: false,
       sections: [
         { id:"cern-see", label:"CERN – R2E / CHARM / LHC",
@@ -480,10 +476,18 @@ const INITIAL = {
             {id:"f04",tag:"SLAC – Beam Diagnostics",title:"Radiation Damage Considerations in Accelerator Beam Instrumentation",meta:"D. W. Storey · IBIC 2015 · KEK / Tsukuba",desc:"ビーム位置モニタやプロファイルモニタなどのビーム計測器における放射線損傷・SEE を概説した IBIC 2015 の招待講演。電子機器の配置・ケーブリング・シャドーイングなど、実務的な対策が整理されている。",url:"https://accelconf.web.cern.ch/IBIC2015/papers/weaua3.pdf"}
           ]
         },
-        { id:"kek-hep", label:"KEK – 素粒子実験における放射線損傷",
-          note:"カロリメータ・検出器周辺の中性子場による半導体・電子機器の放射線損傷",
+        { id:"kek-hep", label:"KEK / J-PARC – 素粒子実験・ミュオン SEE",
+          note:"カロリメータ中性子による放射線損傷・J-PARC ミュオン SEE",
           refs:[
+            {id:"k02",tag:"J-PARC MLF – MUSE（ミュオン SEE）",title:"J-PARC MLF MUSE ビームラインを用いた半導体ミュオンソフトエラー試験",meta:"J-PARC 物質・生命科学実験施設（MLF）· MUSE · KEK / JAEA / ソシオネクスト",desc:"J-PARC MLF の MUSE ビームラインは世界最高強度の正・負ミュオンビームを提供し、宇宙線ミュオン起因の半導体ソフトエラー試験に使われている。中性子ビームラインも23本あるが、物質・生命科学研究向けであり半導体 SEE 試験への一般開放はされていない。高エネルギー中性子ソフトエラー試験には大阪大学 RCNP、熱中性子には京都大学 KUR が使われる。リンク先はミュオン vs. 中性子ソフトエラー比較研究（ソシオネクスト・KEK 等、2021年）のプレスリリース。",url:"https://j-parc.jp/c/press-release/2021/07/16000719.html"},
             {id:"k03",tag:"KEK – Silicon Detectors / Calorimeter",title:"Radiation Damage Effects on Semiconductor Detectors and Electronics by Neutrons Produced in Calorimeters",meta:"KAKEN 報告 · 高エネルギー実験 · Neutron-Induced Damage",desc:"カロリメータで生成される中性子によるシリコン検出器および読み出し電子回路の放射線損傷を評価した日本の研究プロジェクト報告。Calorimeter 近傍に設置される半導体検出器・ASIC の寿命評価の具体例として有用。KEK の素粒子実験環境における耐放射線設計の参考文献。",url:"https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-17340070/"}
+          ]
+        },
+        { id:"cosmic-ray-ser", label:"地上・大気宇宙線による半導体ソフトエラー（スペクトル・SER）",
+          note:"地上宇宙線スペクトル測定・SER 計算基礎・JEDEC 標準・シミュレーションツール",
+          refs:[
+            {id:"q06",tag:"Ground Neutron Spectrum",title:"Measurement of the Flux and Energy Spectrum of Cosmic-Ray Induced Neutrons on the Ground",meta:"M. S. Gordon et al. · IEEE Trans. Nucl. Sci. 51 · 2004 · DOI: 10.1109/TNS.2004.839134",desc:"地上における宇宙線誘起中性子のフラックスとエネルギースペクトルの精密測定。Silicon と Boron を用いた検出器でニューヨーク市（海抜 15 m）における中性子スペクトルを測定し、エネルギー範囲 0.1 MeV–10 GeV にわたる標準スペクトルデータを確立。半導体ソフトエラー率（SER）の計算基準として広く引用され、J-PARC・RCNP 等の加速器施設における中性子 SEE 試験のスペクトル参照源でもある。",url:"https://ieeexplore.ieee.org/document/1369506/"},
+            {id:"ziegler96",tag:"IBM – Terrestrial Cosmic Rays (基礎)",title:"Terrestrial Cosmic Rays",meta:"J. F. Ziegler · IBM Journal of Research and Development 40(1) · 1996 · DOI: 10.1147/rd.401.0019",desc:"地上宇宙線が電子機器に与える影響の物理を体系的にレビューした基礎論文。海面での粒子組成（中性子・陽子・パイオン・ミュオン・電子・光子）のフラックスと、緯度・高度・太陽活動・日変化による変動を定量化。IBM の大規模フィールド試験データに基づき、半導体 SER と宇宙線の因果関係を確立した先駆的論文。Gordon 2004 の測定データ解釈の前提となる物理的基礎を与える。",url:"https://ieeexplore.ieee.org/document/5389443/"}
           ]
         }
       ]
