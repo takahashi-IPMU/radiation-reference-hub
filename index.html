@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <title>Space Mission Reference Hub</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
+<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8"><title>Space Mission Reference Hub</title><meta name="viewport" content="width=device-width, initial-scale=1"><style>
 
     :root{--bg:#f2f4f7;--surface:#fff;--surface2:#f8f9fb;--text:#1a2332;--text2:#5a6a7e;--text3:#9aaabb;--border:#dde3ec;--accent:#2563eb;--accent-bg:rgba(37,99,235,.08);--radius:12px;--radius-lg:20px;--shadow:0 2px 8px rgba(15,23,42,.07);--shadow-lg:0 16px 40px rgba(15,23,42,.13);--font:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic UI",system-ui,sans-serif}
     @media(prefers-color-scheme:dark){:root{--bg:#080f1a;--surface:#111827;--surface2:#0d1520;--text:#e8edf5;--text2:#8899bb;--text3:#445566;--border:#1e2d42;--accent:#60a5fa;--accent-bg:rgba(96,165,250,.12);--shadow:0 2px 8px rgba(0,0,0,.4);--shadow-lg:0 16px 40px rgba(0,0,0,.6)}}
@@ -63,49 +57,60 @@
     footer a{color:var(--text2);text-decoration:none}
     footer a:hover{color:var(--accent)}
   
-  </style>
-</head>
-<body>
-<header class="site-header">
-  <div class="header-inner">
-    <div class="header-logo">
-      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-        <rect x="2" y="3" width="7" height="9" rx="1.5" fill="#2563eb"/>
-        <rect x="11" y="3" width="7" height="5" rx="1.5" fill="#2563eb" opacity="0.5"/>
-        <rect x="11" y="10" width="7" height="7" rx="1.5" fill="#2563eb" opacity="0.7"/>
-        <rect x="2" y="14" width="7" height="3" rx="1.5" fill="#2563eb" opacity="0.4"/>
-      </svg>
-      <div>
-        <div>Space Mission Reference Hub</div>
-        <div class="header-sub">宇宙放射線環境 · 試験機関 · 耐放射線 · 部品DB · ツール · RadPC</div>
-      </div>
-    </div>
-    <div class="header-stats">153 文献 &nbsp;·&nbsp; 9 グループ &nbsp;·&nbsp; 35 セクション</div>
-  </div>
-</header>
-<div class="maintained-badge">Maintained by T. Takahashi &nbsp;·&nbsp; 2026.05.19</div>
-<div class="hero">
-  <div class="hero-eyebrow">Reference Hub</div>
-  <h1>Space Mission Reference Hub</h1>
-  <p class="hero-sub">宇宙空間放射線環境・放射線試験機関・耐放射線標準文書・耐放射線部品・部品放射線データベース・有用なツール・RadPC レファレンス・月面ミッション設計・耐放射線半導体関連研究に関する文献データベース</p>
-  <nav class="nav-pills">
+  </style></head><body><header class="site-header"><div class="header-inner"><div class="header-logo"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2" y="3" width="7" height="9" rx="1.5" fill="#2563eb"/><rect x="11" y="3" width="7" height="5" rx="1.5" fill="#2563eb" opacity="0.5"/><rect x="11" y="10" width="7" height="7" rx="1.5" fill="#2563eb" opacity="0.7"/><rect x="2" y="14" width="7" height="3" rx="1.5" fill="#2563eb" opacity="0.4"/></svg><div><div>Space Mission Reference Hub</div><div class="header-sub">放射線の影響 · 宇宙環境 · 試験機関 · 耐放射線 · 部品DB · ツール · RadPC</div></div></div><div class="header-stats">159 文献 &nbsp;·&nbsp; 10 グループ &nbsp;·&nbsp; 36 セクション</div></div></header><div class="maintained-badge">Maintained by T. Takahashi &nbsp;·&nbsp; 2026.05.20</div><div class="hero"><div class="hero-eyebrow">Reference Hub</div><h1>Space Mission Reference Hub</h1><p class="hero-sub">放射線の影響・宇宙空間放射線環境・有用なツール・耐放射線標準文書・放射線試験機関・耐放射線部品・部品データベース・RadPC・月面ミッション設計・耐放射線半導体研究に関する文献データベース</p><nav class="nav-pills">    <a href="#g-radeffects" class="nav-pill" data-color="#7c2d12">放射線の影響</a>
     <a href="#g-lunar-rad" class="nav-pill" data-color="#2563eb">宇宙空間放射線環境</a>
-    <a href="#g-facilities" class="nav-pill" data-color="#7c3aed">放射線試験機関</a>
+    <a href="#g-tools" class="nav-pill" data-color="#0f766e">有用なツール</a>
     <a href="#g-standards" class="nav-pill" data-color="#059669">耐放射線関係標準文書</a>
+    <a href="#g-facilities" class="nav-pill" data-color="#7c3aed">放射線試験機関</a>
     <a href="#g-parts" class="nav-pill" data-color="#d97706">耐放射線部品</a>
     <a href="#g-partdb" class="nav-pill" data-color="#be185d">部品放射線データベース</a>
-    <a href="#g-tools" class="nav-pill" data-color="#0f766e">有用なツール</a>
     <a href="#g-radpc" class="nav-pill" data-color="#0891b2">RadPC レファレンス</a>
     <a href="#g-mission" class="nav-pill" data-color="#9333ea">月面ミッション設計・運用</a>
     <a href="#g-hep" class="nav-pill" data-color="#dc2626">耐放射線半導体関連の研究</a>
-  </nav>
-</div>
-<div class="search-wrap">
-  <input class="search-box" id="search" type="search" placeholder="タイトル・著者・キーワードで絞り込み…">
-  <div class="search-hint" id="search-hint"></div>
-</div>
-<div class="page-body">
-
+</nav></div><div class="search-wrap"><input class="search-box" id="search" type="search" placeholder="タイトル・著者・キーワードで絞り込み…"><div class="search-hint" id="search-hint"></div></div><div class="page-body">
+    <section class="group-section" id="g-radeffects">
+      <div class="group-header"><div class="group-color-bar" style="background:#7c2d12"></div><div class="group-header-text"><div class="group-title">放射線の影響</div><div class="group-desc">宇宙放射線が半導体デバイス・電子部品に与える物理的影響の基礎。TID・SEE・DDD のメカニズムと宇宙環境の全体像。新規参入者の入門資料から専門的レビュー論文まで。</div></div><div class="group-count">5 件</div></div>
+      <div class="subsection" id="rad-effects-basics">
+        <div class="subsec-header"><div class="subsec-title">放射線効果の基礎・教科書的文献（無料PDF）</div><div class="subsec-note">TID / SEE / DDD のメカニズムを解説した入門スライド・レビュー論文（NASA NEPP・NTRS 無料配布）</div></div>
+        <div class="cards">
+          <article class="card" data-text="nasa nepp – radiation effects 101（入門スライド） radiation effects on electronics 101: simple concepts and new challenges k. a. label · nasa gsfc / nepp · nepp webex presentation · 2004年4月21日 宇宙用電子部品の観点から see と tid の全体像を教科書的にまとめた nasa nepp の入門スライド集。see を「単一粒子による確率的イベント」・tid を「長時間で蓄積する劣化」として整理し、各効果の物理的メカニズム・デバイスへの影響・試験方法・軽減手法を平易に解説。新規参入者や宇宙機器設計者が放射線効果の概要を素早く把握するための最初の一冊として最適。nasa nepp サイトより無料で入手可能（pdf）。">
+            <div class="card-tag"><span class="dot" style="background:#7c2d12"></span>NASA NEPP – Radiation Effects 101（入門スライド）</div>
+            <div class="card-title">Radiation Effects on Electronics 101: Simple Concepts and New Challenges</div>
+            <div class="card-meta">K. A. LaBel · NASA GSFC / NEPP · NEPP WebEx Presentation · 2004年4月21日</div>
+            <p class="card-desc">宇宙用電子部品の観点から SEE と TID の全体像を教科書的にまとめた NASA NEPP の入門スライド集。SEE を「単一粒子による確率的イベント」・TID を「長時間で蓄積する劣化」として整理し、各効果の物理的メカニズム・デバイスへの影響・試験方法・軽減手法を平易に解説。新規参入者や宇宙機器設計者が放射線効果の概要を素早く把握するための最初の一冊として最適。NASA NEPP サイトより無料で入手可能（PDF）。</p>
+            <a class="card-link" href="https://nepp.nasa.gov/docuploads/392333B0-7A48-4A04-A3A72B0B1DD73343/Rad_Effects_101_WebEx.pdf" target="_blank" rel="noopener"><span class="url-text">https://nepp.nasa.gov/docuploads/392333B0-7A48-4A04-A3A72B0B1DD73343/Rad_Effects_101_WebEx.pdf</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="宇宙放射線環境と効果 – nasa 講義資料 space environments and effects j. l. barth · nasa gsfc · ieee npss distinguished lecturer · 2018年9月 · ntrs: 20180007430 nasa gsfc の janet barth による宇宙放射線環境と半導体への影響の包括的講義スライド（pdf 117ページ）。gcr・sep・捕捉放射線帯の特性から、tid・see・ddd・内部帯電・表面帯電の各効果と設計対策まで宇宙機器設計に必要な知識を俯瞰できる。新規参入者の入門資料として最適。nasa ntrs より無料で入手可能。">
+            <div class="card-tag"><span class="dot" style="background:#7c2d12"></span>宇宙放射線環境と効果 – NASA 講義資料</div>
+            <div class="card-title">Space Environments and Effects</div>
+            <div class="card-meta">J. L. Barth · NASA GSFC · IEEE NPSS Distinguished Lecturer · 2018年9月 · NTRS: 20180007430</div>
+            <p class="card-desc">NASA GSFC の Janet Barth による宇宙放射線環境と半導体への影響の包括的講義スライド（PDF 117ページ）。GCR・SEP・捕捉放射線帯の特性から、TID・SEE・DDD・内部帯電・表面帯電の各効果と設計対策まで宇宙機器設計に必要な知識を俯瞰できる。新規参入者の入門資料として最適。NASA NTRS より無料で入手可能。</p>
+            <a class="card-link" href="https://ntrs.nasa.gov/api/citations/20180007430/downloads/20180007430.pdf" target="_blank" rel="noopener"><span class="url-text">https://ntrs.nasa.gov/api/citations/20180007430/downloads/20180007430.pdf</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="宇宙・大気・地上の放射線環境 – 総合レビュー space, atmospheric, and terrestrial radiation environments j. l. barth, c. s. dyer, e. g. stassinopoulos · ieee trans. nucl. sci. 50(3) · 2003 · ntrs: 20030054354 gcr・sep・捕捉放射線帯・大気中宇宙線・saa・地上テラリアル中性子の各放射線環境を定量的に整理したレビュー。軌道別の線量・フルエンス・let スペクトルの計算例も含まれており、半導体デバイスへの影響解析の前提となる環境理解の標準的入門資料。oldham・dodd と同号（nsrec 50周年記念特集号）。nasa ntrs より無料で入手可能。">
+            <div class="card-tag"><span class="dot" style="background:#7c2d12"></span>宇宙・大気・地上の放射線環境 – 総合レビュー</div>
+            <div class="card-title">Space, Atmospheric, and Terrestrial Radiation Environments</div>
+            <div class="card-meta">J. L. Barth, C. S. Dyer, E. G. Stassinopoulos · IEEE Trans. Nucl. Sci. 50(3) · 2003 · NTRS: 20030054354</div>
+            <p class="card-desc">GCR・SEP・捕捉放射線帯・大気中宇宙線・SAA・地上テラリアル中性子の各放射線環境を定量的に整理したレビュー。軌道別の線量・フルエンス・LET スペクトルの計算例も含まれており、半導体デバイスへの影響解析の前提となる環境理解の標準的入門資料。Oldham・Dodd と同号（NSREC 50周年記念特集号）。NASA NTRS より無料で入手可能。</p>
+            <a class="card-link" href="https://ntrs.nasa.gov/api/citations/20030054354/downloads/20030054354.pdf" target="_blank" rel="noopener"><span class="url-text">https://ntrs.nasa.gov/api/citations/20030054354/downloads/20030054354.pdf</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="tid 基礎 – mos デバイスの電離線量効果 total ionizing dose effects in mos oxides and devices t. r. oldham &amp; f. b. mclean · ieee trans. nucl. sci. 50(3) · 2003 · doi: 10.1109/tns.2003.1208572 mos デバイスにおける tid の物理メカニズムを体系的にレビューした決定版論文。sio₂ 中での電子正孔対生成・正孔輸送・酸化膜トラップ電荷・界面準位形成の4段階プロセスを詳述。閾値電圧シフト・リーク電流増加・動作速度低下などのデバイス劣化現象と回路への影響も概説。nsrec 50周年記念特集号の一篇で、放射線効果入門から専門家まで広く参照される標準的レビュー。nasa ntrs より無料で入手可能。">
+            <div class="card-tag"><span class="dot" style="background:#7c2d12"></span>TID 基礎 – MOS デバイスの電離線量効果</div>
+            <div class="card-title">Total Ionizing Dose Effects in MOS Oxides and Devices</div>
+            <div class="card-meta">T. R. Oldham &amp; F. B. McLean · IEEE Trans. Nucl. Sci. 50(3) · 2003 · DOI: 10.1109/TNS.2003.1208572</div>
+            <p class="card-desc">MOS デバイスにおける TID の物理メカニズムを体系的にレビューした決定版論文。SiO₂ 中での電子正孔対生成・正孔輸送・酸化膜トラップ電荷・界面準位形成の4段階プロセスを詳述。閾値電圧シフト・リーク電流増加・動作速度低下などのデバイス劣化現象と回路への影響も概説。NSREC 50周年記念特集号の一篇で、放射線効果入門から専門家まで広く参照される標準的レビュー。NASA NTRS より無料で入手可能。</p>
+            <a class="card-link" href="https://ntrs.nasa.gov/api/citations/20030032300/downloads/20030032300.pdf" target="_blank" rel="noopener"><span class="url-text">https://ntrs.nasa.gov/api/citations/20030032300/downloads/20030032300.pdf</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="see 基礎 – シングルイベント効果のメカニズム basic mechanisms and modeling of single-event upset in digital microelectronics p. e. dodd &amp; l. w. massengill · ieee trans. nucl. sci. 50(3) · 2003 · doi: 10.1109/tns.2003.813129 デジタル mos デバイスにおける seu の物理メカニズムと回路レベルモデリングのレビュー。重イオン・陽子による電荷生成・電荷収集・ビットフリップのメカニズム、dram / sram / 組み合わせ論理の各々での挙動、緩和技術（tmr・ecc）、技術スケーリングの影響を体系的に解説。同号の oldham（tid）・sexton（破壊的 see）と合わせて放射線効果の三大レビュー論文。ieee 会員は ieee xplore より、非会員はリサーチゲート等から入手可能。">
+            <div class="card-tag"><span class="dot" style="background:#7c2d12"></span>SEE 基礎 – シングルイベント効果のメカニズム</div>
+            <div class="card-title">Basic Mechanisms and Modeling of Single-Event Upset in Digital Microelectronics</div>
+            <div class="card-meta">P. E. Dodd &amp; L. W. Massengill · IEEE Trans. Nucl. Sci. 50(3) · 2003 · DOI: 10.1109/TNS.2003.813129</div>
+            <p class="card-desc">デジタル MOS デバイスにおける SEU の物理メカニズムと回路レベルモデリングのレビュー。重イオン・陽子による電荷生成・電荷収集・ビットフリップのメカニズム、DRAM / SRAM / 組み合わせ論理の各々での挙動、緩和技術（TMR・ECC）、技術スケーリングの影響を体系的に解説。同号の Oldham（TID）・Sexton（破壊的 SEE）と合わせて放射線効果の三大レビュー論文。IEEE 会員は IEEE Xplore より、非会員はリサーチゲート等から入手可能。</p>
+            <a class="card-link" href="https://ieeexplore.ieee.org/document/1208578/" target="_blank" rel="noopener"><span class="url-text">https://ieeexplore.ieee.org/document/1208578/</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+        </div>
+      </div>
+    </section>
     <section class="group-section" id="g-lunar-rad">
       <div class="group-header"><div class="group-color-bar" style="background:#2563eb"></div><div class="group-header-text"><div class="group-title">宇宙空間放射線環境</div><div class="group-desc">GCR・SEP の基礎・月面・LEO・深宇宙の放射線環境仕様・測定・モデリングに関する文献</div></div><div class="group-count">14 件</div></div>
       <div class="subsection" id="gcr-sep-basics">
@@ -150,6 +155,25 @@
             <div class="card-meta">JAXA 技術標準 · JERG-2-141_N1.pdf</div>
             <p class="card-desc">宇宙機が軌道上で遭遇する自然宇宙環境（真空、熱環境、放射線、プラズマ、帯電、メテオロイド／スペースデブリなど）を体系的に定義した JAXA の宇宙環境標準。日本の衛星・探査機開発における宇宙環境条件設定の基本文書。</p>
             <a class="card-link" href="https://sma.jaxa.jp/TechDoc/Docs/JAXA-JERG-2-141_N1.pdf" target="_blank" rel="noopener"><span class="url-text">https://sma.jaxa.jp/TechDoc/Docs/JAXA-JERG-2-141_N1.pdf</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+        </div>
+      </div>
+      <div class="subsection" id="leo-env">
+        <div class="subsec-header"><div class="subsec-title">低軌道（LEO）放射線環境</div><div class="subsec-note">ISS / LEO 軌道での放射線環境測定・モデリング・SAA</div></div>
+        <div class="cards">
+          <article class="card" data-text="iss – 放射線環境概説 space radiation environment on the international space station t. berger et al. · npj microgravity 3, 2 · 2017 · doi: 10.1038/s41526-017-0015-8 iss における gcr・saa（南大西洋異常域）・太陽粒子の 3 成分からなる leo 放射線環境を包括的に概説。乗組員・電子機器それぞれへの寄与を定量化し、軌道高度・傾斜角・太陽活動依存性を議論。leo ミッション放射線解析の標準的入門資料。">
+            <div class="card-tag"><span class="dot" style="background:#2563eb"></span>ISS – 放射線環境概説</div>
+            <div class="card-title">Space Radiation Environment on the International Space Station</div>
+            <div class="card-meta">T. Berger et al. · npj Microgravity 3, 2 · 2017 · DOI: 10.1038/s41526-017-0015-8</div>
+            <p class="card-desc">ISS における GCR・SAA（南大西洋異常域）・太陽粒子の 3 成分からなる LEO 放射線環境を包括的に概説。乗組員・電子機器それぞれへの寄与を定量化し、軌道高度・傾斜角・太陽活動依存性を議論。LEO ミッション放射線解析の標準的入門資料。</p>
+            <a class="card-link" href="https://www.nature.com/articles/s41526-017-0015-8" target="_blank" rel="noopener"><span class="url-text">https://www.nature.com/articles/s41526-017-0015-8</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="jaxa – 宇宙放射線環境 (jerg-2-141) jerg-2-141 宇宙環境計測データ集 – 軌道上放射線環境 jaxa 宇宙環境・エネルギー技術 · jerg-2-141 jaxa の宇宙環境データ集。leo・gto・geo・月軌道等の電子・陽子・重イオンフラックスを軌道パラメータ別に整理したリファレンスデータ。日本の衛星・宇宙機の放射線設計に用いられる標準データソース。">
+            <div class="card-tag"><span class="dot" style="background:#2563eb"></span>JAXA – 宇宙放射線環境 (JERG-2-141)</div>
+            <div class="card-title">JERG-2-141 宇宙環境計測データ集 – 軌道上放射線環境</div>
+            <div class="card-meta">JAXA 宇宙環境・エネルギー技術 · JERG-2-141</div>
+            <p class="card-desc">JAXA の宇宙環境データ集。LEO・GTO・GEO・月軌道等の電子・陽子・重イオンフラックスを軌道パラメータ別に整理したリファレンスデータ。日本の衛星・宇宙機の放射線設計に用いられる標準データソース。</p>
+            <a class="card-link" href="https://sma.jaxa.jp/TechDoc/Docs/JAXA-JERG-2-141.pdf" target="_blank" rel="noopener"><span class="url-text">https://sma.jaxa.jp/TechDoc/Docs/JAXA-JERG-2-141.pdf</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
           </article>
         </div>
       </div>
@@ -207,28 +231,276 @@
           </article>
         </div>
       </div>
-      <div class="subsection" id="leo-env">
-        <div class="subsec-header"><div class="subsec-title">低軌道（LEO）放射線環境</div><div class="subsec-note">ISS / LEO 軌道での放射線環境測定・モデリング・SAA</div></div>
+    </section>
+    <section class="group-section" id="g-tools">
+      <div class="group-header"><div class="group-color-bar" style="background:#0f766e"></div><div class="group-header-text"><div class="group-title">有用なツール</div><div class="group-desc">放射線環境・影響・LET・シールド解析に用いられるシミュレーションツール・計算コード</div></div><div class="group-count">10 件</div></div>
+      <div class="subsection" id="rad-tools">
+        <div class="subsec-header"><div class="subsec-title">放射線・粒子輸送シミュレーションツール</div><div class="subsec-note">CREME-MC · SPENVIS · SRIM · PHITS · Geant4 – SEE / TID / シールド・粒子輸送解析</div></div>
         <div class="cards">
-          <article class="card" data-text="iss – 放射線環境概説 space radiation environment on the international space station t. berger et al. · npj microgravity 3, 2 · 2017 · doi: 10.1038/s41526-017-0015-8 iss における gcr・saa（南大西洋異常域）・太陽粒子の 3 成分からなる leo 放射線環境を包括的に概説。乗組員・電子機器それぞれへの寄与を定量化し、軌道高度・傾斜角・太陽活動依存性を議論。leo ミッション放射線解析の標準的入門資料。">
-            <div class="card-tag"><span class="dot" style="background:#2563eb"></span>ISS – 放射線環境概説</div>
-            <div class="card-title">Space Radiation Environment on the International Space Station</div>
-            <div class="card-meta">T. Berger et al. · npj Microgravity 3, 2 · 2017 · DOI: 10.1038/s41526-017-0015-8</div>
-            <p class="card-desc">ISS における GCR・SAA（南大西洋異常域）・太陽粒子の 3 成分からなる LEO 放射線環境を包括的に概説。乗組員・電子機器それぞれへの寄与を定量化し、軌道高度・傾斜角・太陽活動依存性を議論。LEO ミッション放射線解析の標準的入門資料。</p>
-            <a class="card-link" href="https://www.nature.com/articles/s41526-017-0015-8" target="_blank" rel="noopener"><span class="url-text">https://www.nature.com/articles/s41526-017-0015-8</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          <article class="card" data-text="creme-mc – 宇宙放射線・see レート計算 creme-mc: cosmic ray effects on micro-electronics (monte carlo) vanderbilt university isde · オンライン計算ツール · https://creme.isde.vanderbilt.edu/ 宇宙放射線環境における see レート（seu・sel 等）をモンテカルロ法で計算するオンラインツール。軌道・シールド・デバイスパラメータ（臨界電荷・感受体積）を入力し、gcr・sep 環境下での see 発生率を推定できる。creme96 の後継として広く使われており、宇宙機器の耐放射線設計における see レート評価の標準ツールの一つ。">
+            <div class="card-tag"><span class="dot" style="background:#0f766e"></span>CREME-MC – 宇宙放射線・SEE レート計算</div>
+            <div class="card-title">CREME-MC: Cosmic Ray Effects on Micro-Electronics (Monte Carlo)</div>
+            <div class="card-meta">Vanderbilt University ISDE · オンライン計算ツール · https://creme.isde.vanderbilt.edu/</div>
+            <p class="card-desc">宇宙放射線環境における SEE レート（SEU・SEL 等）をモンテカルロ法で計算するオンラインツール。軌道・シールド・デバイスパラメータ（臨界電荷・感受体積）を入力し、GCR・SEP 環境下での SEE 発生率を推定できる。CREME96 の後継として広く使われており、宇宙機器の耐放射線設計における SEE レート評価の標準ツールの一つ。</p>
+            <a class="card-link" href="https://creme.isde.vanderbilt.edu/" target="_blank" rel="noopener"><span class="url-text">https://creme.isde.vanderbilt.edu/</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
           </article>
-          <article class="card" data-text="jaxa – 宇宙放射線環境 (jerg-2-141) jerg-2-141 宇宙環境計測データ集 – 軌道上放射線環境 jaxa 宇宙環境・エネルギー技術 · jerg-2-141 jaxa の宇宙環境データ集。leo・gto・geo・月軌道等の電子・陽子・重イオンフラックスを軌道パラメータ別に整理したリファレンスデータ。日本の衛星・宇宙機の放射線設計に用いられる標準データソース。">
-            <div class="card-tag"><span class="dot" style="background:#2563eb"></span>JAXA – 宇宙放射線環境 (JERG-2-141)</div>
-            <div class="card-title">JERG-2-141 宇宙環境計測データ集 – 軌道上放射線環境</div>
-            <div class="card-meta">JAXA 宇宙環境・エネルギー技術 · JERG-2-141</div>
-            <p class="card-desc">JAXA の宇宙環境データ集。LEO・GTO・GEO・月軌道等の電子・陽子・重イオンフラックスを軌道パラメータ別に整理したリファレンスデータ。日本の衛星・宇宙機の放射線設計に用いられる標準データソース。</p>
-            <a class="card-link" href="https://sma.jaxa.jp/TechDoc/Docs/JAXA-JERG-2-141.pdf" target="_blank" rel="noopener"><span class="url-text">https://sma.jaxa.jp/TechDoc/Docs/JAXA-JERG-2-141.pdf</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          <article class="card" data-text="spenvis – 宇宙環境総合解析ポータル spenvis: space environment information system esa / bira-iasb · オンライン計算ツール · https://www.spenvis.oma.be/ esa が提供する宇宙環境の総合オンライン解析システム。軌道定義・放射線帯モデル（ap-9/ae-9・ap8/ae8・crrespro・flumic）・gcr / sep フラックス・シールド評価・tid 計算・太陽電池劣化（ddd）・デブリ環境など多様な計算モジュールを提供。宇宙機の放射線環境解析において世界標準のプラットフォーム。登録無料。">
+            <div class="card-tag"><span class="dot" style="background:#0f766e"></span>SPENVIS – 宇宙環境総合解析ポータル</div>
+            <div class="card-title">SPENVIS: Space Environment Information System</div>
+            <div class="card-meta">ESA / BIRA-IASB · オンライン計算ツール · https://www.spenvis.oma.be/</div>
+            <p class="card-desc">ESA が提供する宇宙環境の総合オンライン解析システム。軌道定義・放射線帯モデル（AP-9/AE-9・AP8/AE8・CRRESPRO・FLUMIC）・GCR / SEP フラックス・シールド評価・TID 計算・太陽電池劣化（DDD）・デブリ環境など多様な計算モジュールを提供。宇宙機の放射線環境解析において世界標準のプラットフォーム。登録無料。</p>
+            <a class="card-link" href="https://www.spenvis.oma.be/" target="_blank" rel="noopener"><span class="url-text">https://www.spenvis.oma.be/</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="srim – イオン・物質相互作用計算 srim (stopping and range of ions in matter) j. f. ziegler et al. · フリーウェア · http://www.srim.org/ イオンと物質の相互作用（阻止能・飛程・let・イオン散乱）を計算するモンテカルロシミュレーションコード。tid 評価でのシールド内エネルギー損失計算、see 試験でのイオン種・エネルギー選択時の let 計算に広く使用される。フリーウェアとして配布されており、放射線効果解析の入門ツールとしても広く普及。">
+            <div class="card-tag"><span class="dot" style="background:#0f766e"></span>SRIM – イオン・物質相互作用計算</div>
+            <div class="card-title">SRIM (Stopping and Range of Ions in Matter)</div>
+            <div class="card-meta">J. F. Ziegler et al. · フリーウェア · http://www.srim.org/</div>
+            <p class="card-desc">イオンと物質の相互作用（阻止能・飛程・LET・イオン散乱）を計算するモンテカルロシミュレーションコード。TID 評価でのシールド内エネルギー損失計算、SEE 試験でのイオン種・エネルギー選択時の LET 計算に広く使用される。フリーウェアとして配布されており、放射線効果解析の入門ツールとしても広く普及。</p>
+            <a class="card-link" href="http://www.srim.org/" target="_blank" rel="noopener"><span class="url-text">http://www.srim.org/</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="atima – 重イオン阻止能・飛程計算 atima (atomic interaction with matter) h. weick, h. geissel et al. · gsi helmholtzzentrum für schwerionenforschung · ダルムシュタット gsi が開発した重イオンの阻止能（de/dx）・飛程・エネルギー損失ストラグリング・角度散乱を計算するコード。1 kev/u〜450 gev/u の広いエネルギー範囲で陽子から重イオン（u まで）に対応し、lindhard-sørensenの厳密理論に基づくため高 z イオンでも精度約 1% を達成。see 試験でのイオン種選定における let 計算・srim との相互検証・lise++ や phits のサブルーチンとしても組み込まれている。geant4 にも atima モデルとして実装済み。srim が扱えない高エネルギー重イオン（数百 mev/u 以上）の阻止能計算において特に有用。catima（c++ 実装）は github（https://github.com/hrosiak/catima）から入手可能。">
+            <div class="card-tag"><span class="dot" style="background:#0f766e"></span>ATIMA – 重イオン阻止能・飛程計算</div>
+            <div class="card-title">ATIMA (ATomic Interaction with MAtter)</div>
+            <div class="card-meta">H. Weick, H. Geissel et al. · GSI Helmholtzzentrum für Schwerionenforschung · ダルムシュタット</div>
+            <p class="card-desc">GSI が開発した重イオンの阻止能（dE/dx）・飛程・エネルギー損失ストラグリング・角度散乱を計算するコード。1 keV/u〜450 GeV/u の広いエネルギー範囲で陽子から重イオン（U まで）に対応し、Lindhard-Sørensenの厳密理論に基づくため高 Z イオンでも精度約 1% を達成。SEE 試験でのイオン種選定における LET 計算・SRIM との相互検証・LISE++ や PHITS のサブルーチンとしても組み込まれている。Geant4 にも ATIMA モデルとして実装済み。SRIM が扱えない高エネルギー重イオン（数百 MeV/u 以上）の阻止能計算において特に有用。catima（C++ 実装）は GitHub（https://github.com/hrosiak/catima）から入手可能。</p>
+            <a class="card-link" href="https://web-docs.gsi.de/~weick/atima/" target="_blank" rel="noopener"><span class="url-text">https://web-docs.gsi.de/~weick/atima/</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="phits – 粒子輸送モンテカルロコード phits (particle and heavy ion transport code system) qst / jaea · 汎用粒子輸送コード · 日本発の国際標準 qst（量子科学技術研究開発機構）/ jaea が開発した汎用の粒子・重イオン輸送モンテカルロコード。陽子・中性子・重イオン・光子・電子など多種の粒子輸送を扱い、tid・ddd・see 解析のほか、加速器施設の遮蔽設計・宇宙線輸送・生物線量評価まで幅広い分野で使用される。jaeaコードセンター経由で登録配布。">
+            <div class="card-tag"><span class="dot" style="background:#0f766e"></span>PHITS – 粒子輸送モンテカルロコード</div>
+            <div class="card-title">PHITS (Particle and Heavy Ion Transport code System)</div>
+            <div class="card-meta">QST / JAEA · 汎用粒子輸送コード · 日本発の国際標準</div>
+            <p class="card-desc">QST（量子科学技術研究開発機構）/ JAEA が開発した汎用の粒子・重イオン輸送モンテカルロコード。陽子・中性子・重イオン・光子・電子など多種の粒子輸送を扱い、TID・DDD・SEE 解析のほか、加速器施設の遮蔽設計・宇宙線輸送・生物線量評価まで幅広い分野で使用される。JAEAコードセンター経由で登録配布。</p>
+            <a class="card-link" href="https://phits.jaea.go.jp/" target="_blank" rel="noopener"><span class="url-text">https://phits.jaea.go.jp/</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="geant4 – 汎用粒子輸送モンテカルロ geant4: a simulation toolkit s. agostinelli et al. (geant4 collaboration) · nucl. instrum. methods a 506 · 2003 · doi: 10.1016/s0168-9002(03)01368-8 cern を中心とした国際コラボレーションが開発したオープンソースの汎用粒子・物質相互作用シミュレーションツール。電磁・ハドロン・光学過程を網羅し、ev から tev まで広いエネルギー範囲に対応。宇宙放射線シミュレーション（iss・月面・衛星内部の線量計算）・see 解析・シールド設計・検出器シミュレーション・医療物理まで幅広く使用される。phits と並ぶ世界標準の粒子輸送コードで、本文献集の midas・redmoon 等でも採用されている。論文引用数は10万件超（2024年）。">
+            <div class="card-tag"><span class="dot" style="background:#0f766e"></span>Geant4 – 汎用粒子輸送モンテカルロ</div>
+            <div class="card-title">Geant4: A Simulation Toolkit</div>
+            <div class="card-meta">S. Agostinelli et al. (Geant4 Collaboration) · Nucl. Instrum. Methods A 506 · 2003 · DOI: 10.1016/S0168-9002(03)01368-8</div>
+            <p class="card-desc">CERN を中心とした国際コラボレーションが開発したオープンソースの汎用粒子・物質相互作用シミュレーションツール。電磁・ハドロン・光学過程を網羅し、eV から TeV まで広いエネルギー範囲に対応。宇宙放射線シミュレーション（ISS・月面・衛星内部の線量計算）・SEE 解析・シールド設計・検出器シミュレーション・医療物理まで幅広く使用される。PHITS と並ぶ世界標準の粒子輸送コードで、本文献集の MIDAS・REDMoon 等でも採用されている。論文引用数は10万件超（2024年）。</p>
+            <a class="card-link" href="https://geant4.org/" target="_blank" rel="noopener"><span class="url-text">https://geant4.org/</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+        </div>
+      </div>
+      <div class="subsection" id="rad-env-models">
+        <div class="subsec-header"><div class="subsec-title">宇宙放射線環境モデル（標準・規格）</div><div class="subsec-note">AP-9 / AE-9 捕捉放射線帯 · ISO 15390 GCR · ISO 15391 SEP</div></div>
+        <div class="cards">
+          <article class="card" data-text="ap-9 / ae-9 – 捕捉放射線帯モデル（現行標準） ae9, ap9 and spm: new models for specifying the trapped energetic particle and space plasma environment g. p. ginet et al. · afrl / mit ll / aerospace corp. · space science reviews 179 · 2013 · doi: 10.1007/s11214-013-9964-y ap-8 / ae-8 の後継として afrl・nasa が共同開発した捕捉放射線帯モデルの基礎論文。ae-9（電子）・ap-9（陽子）・spm（プラズマ）の3モデルセットで、van allen probes 等の最新データに基づく。統計的不確かさを monte carlo で定量化する点が ap-8 と根本的に異なり、設計マージン評価の精度が向上。ap-8 との差が tid・ddd 設計値に直接影響するため、モデルの選択根拠を示す上で必須の文献。spenvis・irene ポータルから利用可能。">
+            <div class="card-tag"><span class="dot" style="background:#0f766e"></span>AP-9 / AE-9 – 捕捉放射線帯モデル（現行標準）</div>
+            <div class="card-title">AE9, AP9 and SPM: New Models for Specifying the Trapped Energetic Particle and Space Plasma Environment</div>
+            <div class="card-meta">G. P. Ginet et al. · AFRL / MIT LL / Aerospace Corp. · Space Science Reviews 179 · 2013 · DOI: 10.1007/s11214-013-9964-y</div>
+            <p class="card-desc">AP-8 / AE-8 の後継として AFRL・NASA が共同開発した捕捉放射線帯モデルの基礎論文。AE-9（電子）・AP-9（陽子）・SPM（プラズマ）の3モデルセットで、Van Allen Probes 等の最新データに基づく。統計的不確かさを Monte Carlo で定量化する点が AP-8 と根本的に異なり、設計マージン評価の精度が向上。AP-8 との差が TID・DDD 設計値に直接影響するため、モデルの選択根拠を示す上で必須の文献。SPENVIS・IRENE ポータルから利用可能。</p>
+            <a class="card-link" href="https://www.vdl.afrl.af.mil/programs/ae9ap9/files/publications/AE9AP9SPM_SSR_Overview.pdf" target="_blank" rel="noopener"><span class="url-text">https://www.vdl.afrl.af.mil/programs/ae9ap9/files/publications/AE9AP9SPM_SSR_Overview.pdf</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="ap-9 / ae-9 – ダウンロードポータル（afrl） irene-ae9/ap9/spm radiation environment model – afrl portal afrl · vdl.afrl.af.mil · 配布サイト（無料・要登録） ap-9/ae-9/spm モデルのコード・データセット・ユーザーズガイドを無料配布する afrl 公式ポータル。windows 版実行ファイルとして提供されており、軌道パラメータを入力して電子・陽子フラックスと統計的不確かさを出力できる。将来バージョンで irene モデルへ発展予定。spenvis とは独立したスタンドアロン版として使用可能。">
+            <div class="card-tag"><span class="dot" style="background:#0f766e"></span>AP-9 / AE-9 – ダウンロードポータル（AFRL）</div>
+            <div class="card-title">IRENE-AE9/AP9/SPM Radiation Environment Model – AFRL Portal</div>
+            <div class="card-meta">AFRL · vdl.afrl.af.mil · 配布サイト（無料・要登録）</div>
+            <p class="card-desc">AP-9/AE-9/SPM モデルのコード・データセット・ユーザーズガイドを無料配布する AFRL 公式ポータル。Windows 版実行ファイルとして提供されており、軌道パラメータを入力して電子・陽子フラックスと統計的不確かさを出力できる。将来バージョンで IRENE モデルへ発展予定。SPENVIS とは独立したスタンドアロン版として使用可能。</p>
+            <a class="card-link" href="https://www.vdl.afrl.af.mil/programs/ae9ap9/" target="_blank" rel="noopener"><span class="url-text">https://www.vdl.afrl.af.mil/programs/ae9ap9/</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="iso 15390 – gcr モデル（国際標準） iso 15390:2004 – space environment: galactic cosmic ray model iso / tc 20/sc 14 · 国際標準化機構 · 2004年（2013年再確認） 銀河宇宙線（gcr）フラックスの国際標準モデル（nymmik モデルをベース）。101 mev〜10⁵ mev の電子・陽子・z=2〜92 原子核の近地球空間外でのスペクトルと太陽変調依存性を規定。spenvis・creme-mc が実装しており、宇宙機器の設計根拠文書化に使われる。有償規格だが iso.org で概要を確認できる。">
+            <div class="card-tag"><span class="dot" style="background:#0f766e"></span>ISO 15390 – GCR モデル（国際標準）</div>
+            <div class="card-title">ISO 15390:2004 – Space Environment: Galactic Cosmic Ray Model</div>
+            <div class="card-meta">ISO / TC 20/SC 14 · 国際標準化機構 · 2004年（2013年再確認）</div>
+            <p class="card-desc">銀河宇宙線（GCR）フラックスの国際標準モデル（Nymmik モデルをベース）。101 MeV〜10⁵ MeV の電子・陽子・Z=2〜92 原子核の近地球空間外でのスペクトルと太陽変調依存性を規定。SPENVIS・CREME-MC が実装しており、宇宙機器の設計根拠文書化に使われる。有償規格だが ISO.org で概要を確認できる。</p>
+            <a class="card-link" href="https://www.iso.org/standard/37095.html" target="_blank" rel="noopener"><span class="url-text">https://www.iso.org/standard/37095.html</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="iso/ts 15391 – sep モデル（国際標準） iso/ts 15391:2009 – space environment: probabilistic model of solar particle fluxes iso / tc 20/sc 14 · 国際標準化機構 · technical specification · 2009年 太陽エネルギー粒子（sep）フラックスの確率論的国際標準モデル。ミッション期間・軌道・信頼度を入力して sep フルエンス（陽子・重イオン）の累積分布関数を出力する nymmik 確率モデルを規定。spenvis が実装。jpl-91 モデルや esp モデルとともに sep 設計値の設定に用いられ、設計根拠文書化に不可欠な国際規格。iso 15390（gcr）と対をなす。">
+            <div class="card-tag"><span class="dot" style="background:#0f766e"></span>ISO/TS 15391 – SEP モデル（国際標準）</div>
+            <div class="card-title">ISO/TS 15391:2009 – Space Environment: Probabilistic Model of Solar Particle Fluxes</div>
+            <div class="card-meta">ISO / TC 20/SC 14 · 国際標準化機構 · Technical Specification · 2009年</div>
+            <p class="card-desc">太陽エネルギー粒子（SEP）フラックスの確率論的国際標準モデル。ミッション期間・軌道・信頼度を入力して SEP フルエンス（陽子・重イオン）の累積分布関数を出力する Nymmik 確率モデルを規定。SPENVIS が実装。JPL-91 モデルや ESP モデルとともに SEP 設計値の設定に用いられ、設計根拠文書化に不可欠な国際規格。ISO 15390（GCR）と対をなす。</p>
+            <a class="card-link" href="https://www.iso.org/standard/37096.html" target="_blank" rel="noopener"><span class="url-text">https://www.iso.org/standard/37096.html</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="group-section" id="g-standards">
+      <div class="group-header"><div class="group-color-bar" style="background:#059669"></div><div class="group-header-text"><div class="group-title">耐放射線関係標準文書</div><div class="group-desc">NASA / ECSS / JAXA / JEDEC による RHA・EEE Parts・宇宙環境に関する標準規格・設計ガイドライン</div></div><div class="group-count">19 件</div></div>
+      <div class="subsection" id="rha-standards">
+        <div class="subsec-header"><div class="subsec-title">RHA・放射線設計 標準規格</div><div class="subsec-note">NASA-STD / ECSS / JAXA-JERG / JEDEC – RHA・TID・SEE 設計要求</div></div>
+        <div class="cards">
+          <article class="card" data-text="ecss – rha ecss-q-st-60-15c – radiation hardness assurance (eee components) esa / ecss · rha · eee components eee 部品に対する radiation hardness assurance（rha）の標準。see / tid を踏まえた部品選定・試験・保証の枠組みを与え、cots 利用時の追加評価プロセスも規定する。">
+            <div class="card-tag"><span class="dot" style="background:#059669"></span>ECSS – RHA</div>
+            <div class="card-title">ECSS-Q-ST-60-15C – Radiation Hardness Assurance (EEE Components)</div>
+            <div class="card-meta">ESA / ECSS · RHA · EEE Components</div>
+            <p class="card-desc">EEE 部品に対する Radiation Hardness Assurance（RHA）の標準。SEE / TID を踏まえた部品選定・試験・保証の枠組みを与え、COTS 利用時の追加評価プロセスも規定する。</p>
+            <a class="card-link" href="https://ecss.nl/standard/ecss-q-st-60-15c-rev-1-radiation-hardness-assurance-20-march-2025/" target="_blank" rel="noopener"><span class="url-text">https://ecss.nl/standard/ecss-q-st-60-15c-rev-1-radiation-hardness-assurance-20-march-2025/</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="ecss – space environment ecss-e-st-10-04c – space environment esa / ecss · space environment models · gcr / spe / trapped esa ミッションで用いる宇宙環境モデル（gcr, spe, trapped radiation など）を定義した標準。see / tid 解析に用いる「環境モデル」の出発点となる文書。">
+            <div class="card-tag"><span class="dot" style="background:#059669"></span>ECSS – Space Environment</div>
+            <div class="card-title">ECSS-E-ST-10-04C – Space Environment</div>
+            <div class="card-meta">ESA / ECSS · Space Environment Models · GCR / SPE / Trapped</div>
+            <p class="card-desc">ESA ミッションで用いる宇宙環境モデル（GCR, SPE, trapped radiation など）を定義した標準。SEE / TID 解析に用いる「環境モデル」の出発点となる文書。</p>
+            <a class="card-link" href="https://ecss.nl/standard/ecss-e-st-10-04c-rev-1-space-environment-15-june-2020/" target="_blank" rel="noopener"><span class="url-text">https://ecss.nl/standard/ecss-e-st-10-04c-rev-1-space-environment-15-june-2020/</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="ecss – radiation effects ecss-e-st-10-12c – methods for the calculation of radiation received and its effects, and a policy for design margins esa / ecss · 2008年11月（corr.1: 2017年2月）· pdf 直リンク 宇宙放射線の計算手法と設計マージンのポリシーを定める ecss 標準。tid / see / niel（非電離エネルギー損失）の影響をどう計算し、どのような放射線設計マージン（rdm: 通常 ×2）を設定するかの規則を規定する。軌道環境モデルの選択・シールド解析・デバイスレベルの耐性評価から設計マージン適用までの一連のプロセスを体系化。ecss-e-hb-10-12a ハンドブックと組み合わせて使用するのが標準的。欧州宇宙機器設計において nasa-std や jaxa-jerg に相当する位置づけの重要文書。pdf は ecss.nl より直接入手可能。">
+            <div class="card-tag"><span class="dot" style="background:#059669"></span>ECSS – Radiation Effects</div>
+            <div class="card-title">ECSS-E-ST-10-12C – Methods for the Calculation of Radiation Received and Its Effects, and a Policy for Design Margins</div>
+            <div class="card-meta">ESA / ECSS · 2008年11月（Corr.1: 2017年2月）· PDF 直リンク</div>
+            <p class="card-desc">宇宙放射線の計算手法と設計マージンのポリシーを定める ECSS 標準。TID / SEE / NIEL（非電離エネルギー損失）の影響をどう計算し、どのような放射線設計マージン（RDM: 通常 ×2）を設定するかの規則を規定する。軌道環境モデルの選択・シールド解析・デバイスレベルの耐性評価から設計マージン適用までの一連のプロセスを体系化。ECSS-E-HB-10-12A ハンドブックと組み合わせて使用するのが標準的。欧州宇宙機器設計において NASA-STD や JAXA-JERG に相当する位置づけの重要文書。PDF は ECSS.nl より直接入手可能。</p>
+            <a class="card-link" href="https://ecss.nl/wp-content/uploads/2008/11/ECSS-E-ST-10-12C%2815November2008%29Corr.1%2822February2017%29.pdf" target="_blank" rel="noopener"><span class="url-text">https://ecss.nl/wp-content/uploads/2008/11/ECSS-E-ST-10-12C%2815November2008%29Corr.1%2822February2017%29.pdf</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="jaxa – 耐放射線設計標準 jaxa-jerg-2-143 耐宇宙環境設計標準（耐放射線設計標準） jaxa · 耐放射線設計標準 · 日本語版・英語版あり 宇宙機・衛星搭載機器の耐放射線設計のための基盤標準文書。tid マージン、see（seu/sel/seb/sefi）設計要求、放射線試験レベルと評価手順などを規定し、jerg-2-141 と組み合わせて具体的な rha 方針を与える。">
+            <div class="card-tag"><span class="dot" style="background:#059669"></span>JAXA – 耐放射線設計標準</div>
+            <div class="card-title">JAXA-JERG-2-143 耐宇宙環境設計標準（耐放射線設計標準）</div>
+            <div class="card-meta">JAXA · 耐放射線設計標準 · 日本語版・英語版あり</div>
+            <p class="card-desc">宇宙機・衛星搭載機器の耐放射線設計のための基盤標準文書。TID マージン、SEE（SEU/SEL/SEB/SEFI）設計要求、放射線試験レベルと評価手順などを規定し、JERG-2-141 と組み合わせて具体的な RHA 方針を与える。</p>
+            <a class="card-link" href="https://sma.jaxa.jp/TechDoc/Docs/JAXA-JERG-2-143A.pdf" target="_blank" rel="noopener"><span class="url-text">https://sma.jaxa.jp/TechDoc/Docs/JAXA-JERG-2-143A.pdf</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="jedec – see test standard test procedure for the management of single-event effects in semiconductor devices from heavy ion irradiation, jesd57a jedec solid state technology association · 2017 重イオン照射によるシングルイベント効果（see）試験の標準手順書。let の定義、照射条件、エラーカウント方法など see 試験の基本を定める。">
+            <div class="card-tag"><span class="dot" style="background:#059669"></span>JEDEC – SEE Test Standard</div>
+            <div class="card-title">Test Procedure for the Management of Single-Event Effects in Semiconductor Devices from Heavy Ion Irradiation, JESD57A</div>
+            <div class="card-meta">JEDEC Solid State Technology Association · 2017</div>
+            <p class="card-desc">重イオン照射によるシングルイベント効果（SEE）試験の標準手順書。LET の定義、照射条件、エラーカウント方法など SEE 試験の基本を定める。</p>
+            <a class="card-link" href="https://www.jedec.org/standards-documents/docs/jesd-57" target="_blank" rel="noopener"><span class="url-text">https://www.jedec.org/standards-documents/docs/jesd-57</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="nasa – r&amp;m standard nasa reliability and maintainability (r&amp;m) standard for spaceflight and support systems, nasa-std-8729.1a nasa · 2017 宇宙飛行システムにおける信頼性基準とリスク管理の基礎となる標準規格。">
+            <div class="card-tag"><span class="dot" style="background:#059669"></span>NASA – R&amp;M Standard</div>
+            <div class="card-title">NASA Reliability and Maintainability (R&amp;M) Standard for Spaceflight and Support Systems, NASA-STD-8729.1A</div>
+            <div class="card-meta">NASA · 2017</div>
+            <p class="card-desc">宇宙飛行システムにおける信頼性基準とリスク管理の基礎となる標準規格。</p>
+            <a class="card-link" href="https://standards.nasa.gov/standard/NASA/NASA-STD-87291" target="_blank" rel="noopener"><span class="url-text">https://standards.nasa.gov/standard/NASA/NASA-STD-87291</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="nasa – leo radiation space radiation effects on electronic components in low-earth orbit nasa preferred reliability practice no. pd-ed-1258 · 1996 低軌道（leo）における電子部品への宇宙放射線影響に関する基本ガイドライン。">
+            <div class="card-tag"><span class="dot" style="background:#059669"></span>NASA – LEO Radiation</div>
+            <div class="card-title">Space Radiation Effects on Electronic Components in Low-Earth Orbit</div>
+            <div class="card-meta">NASA Preferred Reliability Practice No. PD-ED-1258 · 1996</div>
+            <p class="card-desc">低軌道（LEO）における電子部品への宇宙放射線影響に関する基本ガイドライン。</p>
+            <a class="card-link" href="https://extapps.ksc.nasa.gov/Reliability/Documents/Preferred_Practices/1258.pdf" target="_blank" rel="noopener"><span class="url-text">https://extapps.ksc.nasa.gov/Reliability/Documents/Preferred_Practices/1258.pdf</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="nasa – radiation design margin radiation design margin requirement nasa preferred reliability practice no. pd-ed-1260 · 1996 放射線設計マージン（design margin）の要件定義に関する実務慣行文書。">
+            <div class="card-tag"><span class="dot" style="background:#059669"></span>NASA – Radiation Design Margin</div>
+            <div class="card-title">Radiation Design Margin Requirement</div>
+            <div class="card-meta">NASA Preferred Reliability Practice No. PD-ED-1260 · 1996</div>
+            <p class="card-desc">放射線設計マージン（Design Margin）の要件定義に関する実務慣行文書。</p>
+            <a class="card-link" href="https://extapps.ksc.nasa.gov/Reliability/Documents/Preferred_Practices/1260.pdf" target="_blank" rel="noopener"><span class="url-text">https://extapps.ksc.nasa.gov/Reliability/Documents/Preferred_Practices/1260.pdf</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="rha newspace – evolution radiation hardness assurance: evolving for newspace nasa technical reports server new space の台頭に伴う rha 手法の進化とリスク受容に関する主要な議論。民間宇宙開発に対応した保証手法の変化を論じている。">
+            <div class="card-tag"><span class="dot" style="background:#059669"></span>RHA NewSpace – Evolution</div>
+            <div class="card-title">Radiation Hardness Assurance: Evolving for NewSpace</div>
+            <div class="card-meta">NASA Technical Reports Server</div>
+            <p class="card-desc">New Space の台頭に伴う RHA 手法の進化とリスク受容に関する主要な議論。民間宇宙開発に対応した保証手法の変化を論じている。</p>
+            <a class="card-link" href="https://ntrs.nasa.gov/" target="_blank" rel="noopener"><span class="url-text">https://ntrs.nasa.gov/</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="meal – risk verification guidelines for verification strategies to minimize risk based on mission environment, -application and -lifetime (meal) o. gonzales · 2018 ミッションの環境・用途・寿命（meal）に基づいたリスク最小化のための検証戦略ガイドライン。">
+            <div class="card-tag"><span class="dot" style="background:#059669"></span>MEAL – Risk Verification</div>
+            <div class="card-title">Guidelines for Verification Strategies to Minimize RISK Based on Mission Environment, -Application and -Lifetime (MEAL)</div>
+            <div class="card-meta">O. Gonzales · 2018</div>
+            <p class="card-desc">ミッションの環境・用途・寿命（MEAL）に基づいたリスク最小化のための検証戦略ガイドライン。</p>
+            <a class="card-link" href="https://ntrs.nasa.gov/api/citations/20180007359/downloads/20180007359.pdf" target="_blank" rel="noopener"><span class="url-text">https://ntrs.nasa.gov/api/citations/20180007359/downloads/20180007359.pdf</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+        </div>
+      </div>
+      <div class="subsection" id="eee-parts-std">
+        <div class="subsec-header"><div class="subsec-title">EEE Parts 保証標準</div><div class="subsec-note">NASA-STD-8739.10 · EEE-INST-002 · EEE 部品選定・調達・トレーサビリティ</div></div>
+        <div class="cards">
+          <article class="card" data-text="nasa – eee parts standard nasa-std-8739.10 – electrical, electronic, and electromechanical (eee) parts assurance standard nasa · eee parts assurance · cots / pems nasa の eee 部品保証標準。cots 品やプラスチック封止品（pems）を含めた選定・調達・トレーサビリティ・試験・保管・適用方法を定める。cots メモリ／マイコン利用時のリスク管理とパーツアシュアランスの前提文書。">
+            <div class="card-tag"><span class="dot" style="background:#059669"></span>NASA – EEE Parts Standard</div>
+            <div class="card-title">NASA-STD-8739.10 – Electrical, Electronic, and Electromechanical (EEE) Parts Assurance Standard</div>
+            <div class="card-meta">NASA · EEE Parts Assurance · COTS / PEMs</div>
+            <p class="card-desc">NASA の EEE 部品保証標準。COTS 品やプラスチック封止品（PEMs）を含めた選定・調達・トレーサビリティ・試験・保管・適用方法を定める。COTS メモリ／マイコン利用時のリスク管理とパーツアシュアランスの前提文書。</p>
+            <a class="card-link" href="https://standards.nasa.gov/standard/NASA/NASA-STD-873910" target="_blank" rel="noopener"><span class="url-text">https://standards.nasa.gov/standard/NASA/NASA-STD-873910</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="nasa – eee-inst-002（部品選定指針） eee-inst-002: instructions for eee parts selection, screening, qualification, and derating nasa gsfc · eee-inst-002 · rev. a · 2008年1月 nasa gsfc が発行する eee 部品の選定・スクリーニング・資格認定・ディレーティングに関する詳細指針書。放射線耐性評価（tid / see / ddd）要求を含む多くの評価要件が規定されており、放射線保証プログラムの実装手順書として機能する。宇宙グレード・mil グレード・cots 品のそれぞれに対する要求レベルを体系的に整理。">
+            <div class="card-tag"><span class="dot" style="background:#059669"></span>NASA – EEE-INST-002（部品選定指針）</div>
+            <div class="card-title">EEE-INST-002: Instructions for EEE Parts Selection, Screening, Qualification, and Derating</div>
+            <div class="card-meta">NASA GSFC · EEE-INST-002 · Rev. A · 2008年1月</div>
+            <p class="card-desc">NASA GSFC が発行する EEE 部品の選定・スクリーニング・資格認定・ディレーティングに関する詳細指針書。放射線耐性評価（TID / SEE / DDD）要求を含む多くの評価要件が規定されており、放射線保証プログラムの実装手順書として機能する。宇宙グレード・MIL グレード・COTS 品のそれぞれに対する要求レベルを体系的に整理。</p>
+            <a class="card-link" href="https://nepp.nasa.gov/pages/EEE-INST-002.cfm" target="_blank" rel="noopener"><span class="url-text">https://nepp.nasa.gov/pages/EEE-INST-002.cfm</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="rha – radiation assurance radiation assurance for the space environment j. l. barth, k. a. label and c. poivey · 2004 international conference on ic design and technology 宇宙環境における放射線保証の包括的なアプローチについて。">
+            <div class="card-tag"><span class="dot" style="background:#059669"></span>RHA – Radiation Assurance</div>
+            <div class="card-title">Radiation Assurance for the Space Environment</div>
+            <div class="card-meta">J. L. Barth, K. A. LaBel and C. Poivey · 2004 International Conference on IC Design and Technology</div>
+            <p class="card-desc">宇宙環境における放射線保証の包括的なアプローチについて。</p>
+            <a class="card-link" href="https://ntrs.nasa.gov/api/citations/20040070939/downloads/20040070939.pdf" target="_blank" rel="noopener"><span class="url-text">https://ntrs.nasa.gov/api/citations/20040070939/downloads/20040070939.pdf</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="see test – adequacy are current see test procedures adequate for modern devices and electronics technologies? k. a. label et al. · 2008 最新の半導体技術に対する既存の see 試験手順の妥当性を問う、試験法見直しのための重要資料。">
+            <div class="card-tag"><span class="dot" style="background:#059669"></span>SEE Test – Adequacy</div>
+            <div class="card-title">Are Current SEE Test Procedures Adequate for Modern Devices and Electronics Technologies?</div>
+            <div class="card-meta">K. A. LaBel et al. · 2008</div>
+            <p class="card-desc">最新の半導体技術に対する既存の SEE 試験手順の妥当性を問う、試験法見直しのための重要資料。</p>
+            <a class="card-link" href="https://radhome.gsfc.nasa.gov/radhome/papers/HEART08_LaBel.pdf" target="_blank" rel="noopener"><span class="url-text">https://radhome.gsfc.nasa.gov/radhome/papers/HEART08_LaBel.pdf</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+        </div>
+      </div>
+      <div class="subsection" id="rad-test-methods">
+        <div class="subsec-header"><div class="subsec-title">放射線試験方法規格（TID / SEE / DDD）</div><div class="subsec-note">MIL-STD-883 / MIL-STD-750 / ESCC 22900 / ESCC 25100 / ESCC 22500</div></div>
+        <div class="cards">
+          <article class="card" data-text="mil-std-883 method 1019 – tid（ic） mil-std-883 method 1019: ionizing radiation (total dose) test procedure dla land and maritime · mil-std-883 · ic（集積回路）用 tid 試験方法 集積回路（ic）の総電離線量（tid）試験方法を規定する mil-std-883 の method 1019。co-60 ガンマ線源または x 線源を使用し、バイアス条件・線量率・評価パラメータ・試験レポート要件を定める。宇宙用 ic の tid 評価において最も広く参照される試験規格の一つ。">
+            <div class="card-tag"><span class="dot" style="background:#059669"></span>MIL-STD-883 Method 1019 – TID（IC）</div>
+            <div class="card-title">MIL-STD-883 Method 1019: Ionizing Radiation (Total Dose) Test Procedure</div>
+            <div class="card-meta">DLA Land and Maritime · MIL-STD-883 · IC（集積回路）用 TID 試験方法</div>
+            <p class="card-desc">集積回路（IC）の総電離線量（TID）試験方法を規定する MIL-STD-883 の Method 1019。Co-60 ガンマ線源または X 線源を使用し、バイアス条件・線量率・評価パラメータ・試験レポート要件を定める。宇宙用 IC の TID 評価において最も広く参照される試験規格の一つ。</p>
+            <a class="card-link" href="https://landandmaritimeapps.dla.mil/programs/MilSpec/ListDocs.aspx?BasicDoc=MIL-STD-883" target="_blank" rel="noopener"><span class="url-text">https://landandmaritimeapps.dla.mil/programs/MilSpec/ListDocs.aspx?BasicDoc=MIL-STD-883</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="mil-std-750 method 1019 – tid（ディスクリート） mil-std-750 method 1019: ionizing radiation (total dose) test procedure dla land and maritime · mil-std-750 · ディスクリート半導体デバイス用 tid 試験方法 ディスクリート半導体デバイス（トランジスタ・ダイオード等）の tid 試験方法を規定する mil-std-750 の method 1019。ic 向けの mil-std-883 method 1019 と対をなす規格で、ディスクリート品の放射線耐性評価に適用される。同文書内に see 試験の method 1080 も収録されている。">
+            <div class="card-tag"><span class="dot" style="background:#059669"></span>MIL-STD-750 Method 1019 – TID（ディスクリート）</div>
+            <div class="card-title">MIL-STD-750 Method 1019: Ionizing Radiation (Total Dose) Test Procedure</div>
+            <div class="card-meta">DLA Land and Maritime · MIL-STD-750 · ディスクリート半導体デバイス用 TID 試験方法</div>
+            <p class="card-desc">ディスクリート半導体デバイス（トランジスタ・ダイオード等）の TID 試験方法を規定する MIL-STD-750 の Method 1019。IC 向けの MIL-STD-883 Method 1019 と対をなす規格で、ディスクリート品の放射線耐性評価に適用される。同文書内に SEE 試験の Method 1080 も収録されている。</p>
+            <a class="card-link" href="https://landandmaritimeapps.dla.mil/programs/MilSpec/ListDocs.aspx?BasicDoc=MIL-STD-750" target="_blank" rel="noopener"><span class="url-text">https://landandmaritimeapps.dla.mil/programs/MilSpec/ListDocs.aspx?BasicDoc=MIL-STD-750</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="escc 22900 – tid 試験方法（欧州標準） escc basic specification no. 22900: total dose steady-state irradiation test method esa / european space components coordination · issue 5 · 2016年6月 esa が定める宇宙用部品の tid 試験標準。co-60 線源による定常照射試験の手順・バイアス条件・試験計画・評価・レポート要件を規定。escc 評価・認定品に求められる試験規格であり、欧州宇宙機器の tid 評価において mil-std-883 method 1019 に相当する位置づけ。">
+            <div class="card-tag"><span class="dot" style="background:#059669"></span>ESCC 22900 – TID 試験方法（欧州標準）</div>
+            <div class="card-title">ESCC Basic Specification No. 22900: Total Dose Steady-State Irradiation Test Method</div>
+            <div class="card-meta">ESA / European Space Components Coordination · Issue 5 · 2016年6月</div>
+            <p class="card-desc">ESA が定める宇宙用部品の TID 試験標準。Co-60 線源による定常照射試験の手順・バイアス条件・試験計画・評価・レポート要件を規定。ESCC 評価・認定品に求められる試験規格であり、欧州宇宙機器の TID 評価において MIL-STD-883 Method 1019 に相当する位置づけ。</p>
+            <a class="card-link" href="https://escies.org/escc-specs/published/22900.pdf" target="_blank" rel="noopener"><span class="url-text">https://escies.org/escc-specs/published/22900.pdf</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="escc 25100 – see 試験方法（欧州標準） escc basic specification no. 25100: single event effects test method and guidelines esa / european space components coordination esa が定める宇宙用部品の see 試験標準。重イオン・陽子による see（seu / sel / seb / sefi 等）の試験手順・let 範囲・フルエンス要件・評価方法・試験レポート要件を規定。escc 認定品の see 評価に必須の欧州標準規格。">
+            <div class="card-tag"><span class="dot" style="background:#059669"></span>ESCC 25100 – SEE 試験方法（欧州標準）</div>
+            <div class="card-title">ESCC Basic Specification No. 25100: Single Event Effects Test Method and Guidelines</div>
+            <div class="card-meta">ESA / European Space Components Coordination</div>
+            <p class="card-desc">ESA が定める宇宙用部品の SEE 試験標準。重イオン・陽子による SEE（SEU / SEL / SEB / SEFI 等）の試験手順・LET 範囲・フルエンス要件・評価方法・試験レポート要件を規定。ESCC 認定品の SEE 評価に必須の欧州標準規格。</p>
+            <a class="card-link" href="https://spacecomponents.org/specification/view?id=3095" target="_blank" rel="noopener"><span class="url-text">https://spacecomponents.org/specification/view?id=3095</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="escc 22500 – 変位損傷（ddd）試験ガイドライン escc basic specification no. 22500: guidelines for displacement damage irradiation testing esa / european space components coordination · issue 2 · 2021年10月 変位損傷線量（ddd）試験のガイドラインを定める escc 標準。陽子・中性子・電子・重イオンによる niel（非電離エネルギー損失）の評価方法・試験手順・等価フルエンスの計算方法を規定。太陽電池・光検出器・ccd など niel 感受性の高いデバイスの評価に適用。">
+            <div class="card-tag"><span class="dot" style="background:#059669"></span>ESCC 22500 – 変位損傷（DDD）試験ガイドライン</div>
+            <div class="card-title">ESCC Basic Specification No. 22500: Guidelines for Displacement Damage Irradiation Testing</div>
+            <div class="card-meta">ESA / European Space Components Coordination · Issue 2 · 2021年10月</div>
+            <p class="card-desc">変位損傷線量（DDD）試験のガイドラインを定める ESCC 標準。陽子・中性子・電子・重イオンによる NIEL（非電離エネルギー損失）の評価方法・試験手順・等価フルエンスの計算方法を規定。太陽電池・光検出器・CCD など NIEL 感受性の高いデバイスの評価に適用。</p>
+            <a class="card-link" href="https://escies.org/specification/viewapppub?id=4322" target="_blank" rel="noopener"><span class="url-text">https://escies.org/specification/viewapppub?id=4322</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
           </article>
         </div>
       </div>
     </section>
     <section class="group-section" id="g-facilities">
       <div class="group-header"><div class="group-color-bar" style="background:#7c3aed"></div><div class="group-header-text"><div class="group-title">放射線試験機関</div><div class="group-desc">CERN / BNL / Fermilab / SLAC / KEK / J-PARC における SEE・TID 試験環境と施設ガイド</div></div><div class="group-count">28 件</div></div>
+      <div class="subsection" id="co60-japan">
+        <div class="subsec-header"><div class="subsec-title">国内 Co-60 TID 試験施設</div><div class="subsec-note">ガンマ線 TID 試験専用施設（Co-60 線源）</div></div>
+        <div class="cards">
+          <article class="card" data-text="qst高崎 – コバルト棟 qst 高崎量子応用研究所 コバルト60 照射施設 量子科学技術研究開発機構（qst）高崎量子応用研究所 · 群馬県高崎市 qst 高崎（旧 jaea 高崎）のコバルト棟。co-60 線源によるガンマ線照射（総電離線量 tid 試験）施設。tiara の荷電粒子ビームと組み合わせることで、同一機関内で see と tid の両方を評価できる。宇宙用電子機器の放射線耐性評価に実績あり。施設利用申請制度あり。">
+            <div class="card-tag"><span class="dot" style="background:#7c3aed"></span>QST高崎 – コバルト棟</div>
+            <div class="card-title">QST 高崎量子応用研究所 コバルト60 照射施設</div>
+            <div class="card-meta">量子科学技術研究開発機構（QST）高崎量子応用研究所 · 群馬県高崎市</div>
+            <p class="card-desc">QST 高崎（旧 JAEA 高崎）のコバルト棟。Co-60 線源によるガンマ線照射（総電離線量 TID 試験）施設。TIARA の荷電粒子ビームと組み合わせることで、同一機関内で SEE と TID の両方を評価できる。宇宙用電子機器の放射線耐性評価に実績あり。施設利用申請制度あり。</p>
+            <a class="card-link" href="https://www.qst.go.jp/site/taka-shisetsuka/2103.html" target="_blank" rel="noopener"><span class="url-text">https://www.qst.go.jp/site/taka-shisetsuka/2103.html</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="東京科学大 – co-60 照射施設 東京科学大学 co-60 照射施設（工学院） 東京科学大学（旧 東京工業大学）· 工学院研究科 · 東京 東京科学大学の co-60 ガンマ線照射施設。ic・センサ・素子の tid 試験に利用されており、大学附属施設として学術研究から産業応用まで幅広く提供している。">
+            <div class="card-tag"><span class="dot" style="background:#7c3aed"></span>東京科学大 – Co-60 照射施設</div>
+            <div class="card-title">東京科学大学 Co-60 照射施設（工学院）</div>
+            <div class="card-meta">東京科学大学（旧 東京工業大学）· 工学院研究科 · 東京</div>
+            <p class="card-desc">東京科学大学の Co-60 ガンマ線照射施設。IC・センサ・素子の TID 試験に利用されており、大学附属施設として学術研究から産業応用まで幅広く提供している。</p>
+            <a class="card-link" href="https://www.zc.iir.titech.ac.jp/Co60/" target="_blank" rel="noopener"><span class="url-text">https://www.zc.iir.titech.ac.jp/Co60/</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="名古屋大学 – co-60 照射施設 名古屋大学 co-60 照射施設 名古屋大学 · 核理工学研究施設 · 名古屋 名古屋大学核理工学研究施設の co-60 ガンマ線照射施設。宇宙用・産業用デバイスの tid 試験に提供。線量率・総線量の調整が可能で、電子機器の放射線耐性評価に利用されている。">
+            <div class="card-tag"><span class="dot" style="background:#7c3aed"></span>名古屋大学 – Co-60 照射施設</div>
+            <div class="card-title">名古屋大学 Co-60 照射施設</div>
+            <div class="card-meta">名古屋大学 · 核理工学研究施設 · 名古屋</div>
+            <p class="card-desc">名古屋大学核理工学研究施設の Co-60 ガンマ線照射施設。宇宙用・産業用デバイスの TID 試験に提供。線量率・総線量の調整が可能で、電子機器の放射線耐性評価に利用されている。</p>
+            <a class="card-link" href="https://co60.nucl.nagoya-u.ac.jp/index.html" target="_blank" rel="noopener"><span class="url-text">https://co60.nucl.nagoya-u.ac.jp/index.html</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="九州大学 – co-60 照射施設 九州大学 co-60 照射施設（cabas） 九州大学 応用力学研究所 · 福岡 · cabas 九州大学応用力学研究所の co-60 ガンマ線照射施設 cabas。宇宙用部品・電子機器の tid 試験・材料の照射研究に提供。九州地区における主要な tid 試験施設。">
+            <div class="card-tag"><span class="dot" style="background:#7c3aed"></span>九州大学 – Co-60 照射施設</div>
+            <div class="card-title">九州大学 Co-60 照射施設（CABAS）</div>
+            <div class="card-meta">九州大学 応用力学研究所 · 福岡 · CABAS</div>
+            <p class="card-desc">九州大学応用力学研究所の Co-60 ガンマ線照射施設 CABAS。宇宙用部品・電子機器の TID 試験・材料の照射研究に提供。九州地区における主要な TID 試験施設。</p>
+            <a class="card-link" href="https://www.cabas.kyushu-u.ac.jp/cobalt/" target="_blank" rel="noopener"><span class="url-text">https://www.cabas.kyushu-u.ac.jp/cobalt/</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+        </div>
+      </div>
       <div class="subsection" id="japan-facilities">
         <div class="subsec-header"><div class="subsec-title">日本の放射線試験施設</div><div class="subsec-note">QST高崎 TIARA · 大阪大学 RCNP · 若狭湾エネルギー研究センター · 東北大学 RARiS · KEK / J-PARC</div></div>
         <div class="cards">
@@ -273,39 +545,6 @@
             <div class="card-meta">量子科学技術研究開発機構（QST）放射線医学研究所 · 千葉 · 重粒子線がん治療装置</div>
             <p class="card-desc">QST 放医研の重粒子線がん治療施設 HIMAC。炭素イオン（C-12）を中心に最大 800 MeV/u 相当の重イオンビームを提供。医療用途が主であるが、半導体デバイスの SEE 試験・放射線損傷評価への施設供用実績がある。高エネルギー重イオンを必要とする宇宙機器評価に利用可能。</p>
             <a class="card-link" href="https://www.qst.go.jp/site/iqms-kyoyo/1870.html" target="_blank" rel="noopener"><span class="url-text">https://www.qst.go.jp/site/iqms-kyoyo/1870.html</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
-          </article>
-        </div>
-      </div>
-      <div class="subsection" id="co60-japan">
-        <div class="subsec-header"><div class="subsec-title">国内 Co-60 TID 試験施設</div><div class="subsec-note">ガンマ線 TID 試験専用施設（Co-60 線源）</div></div>
-        <div class="cards">
-          <article class="card" data-text="qst高崎 – コバルト棟 qst 高崎量子応用研究所 コバルト60 照射施設 量子科学技術研究開発機構（qst）高崎量子応用研究所 · 群馬県高崎市 qst 高崎（旧 jaea 高崎）のコバルト棟。co-60 線源によるガンマ線照射（総電離線量 tid 試験）施設。tiara の荷電粒子ビームと組み合わせることで、同一機関内で see と tid の両方を評価できる。宇宙用電子機器の放射線耐性評価に実績あり。施設利用申請制度あり。">
-            <div class="card-tag"><span class="dot" style="background:#7c3aed"></span>QST高崎 – コバルト棟</div>
-            <div class="card-title">QST 高崎量子応用研究所 コバルト60 照射施設</div>
-            <div class="card-meta">量子科学技術研究開発機構（QST）高崎量子応用研究所 · 群馬県高崎市</div>
-            <p class="card-desc">QST 高崎（旧 JAEA 高崎）のコバルト棟。Co-60 線源によるガンマ線照射（総電離線量 TID 試験）施設。TIARA の荷電粒子ビームと組み合わせることで、同一機関内で SEE と TID の両方を評価できる。宇宙用電子機器の放射線耐性評価に実績あり。施設利用申請制度あり。</p>
-            <a class="card-link" href="https://www.qst.go.jp/site/taka-shisetsuka/2103.html" target="_blank" rel="noopener"><span class="url-text">https://www.qst.go.jp/site/taka-shisetsuka/2103.html</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
-          </article>
-          <article class="card" data-text="東京科学大 – co-60 照射施設 東京科学大学 co-60 照射施設（工学院） 東京科学大学（旧 東京工業大学）· 工学院研究科 · 東京 東京科学大学の co-60 ガンマ線照射施設。ic・センサ・素子の tid 試験に利用されており、大学附属施設として学術研究から産業応用まで幅広く提供している。">
-            <div class="card-tag"><span class="dot" style="background:#7c3aed"></span>東京科学大 – Co-60 照射施設</div>
-            <div class="card-title">東京科学大学 Co-60 照射施設（工学院）</div>
-            <div class="card-meta">東京科学大学（旧 東京工業大学）· 工学院研究科 · 東京</div>
-            <p class="card-desc">東京科学大学の Co-60 ガンマ線照射施設。IC・センサ・素子の TID 試験に利用されており、大学附属施設として学術研究から産業応用まで幅広く提供している。</p>
-            <a class="card-link" href="https://www.zc.iir.titech.ac.jp/Co60/" target="_blank" rel="noopener"><span class="url-text">https://www.zc.iir.titech.ac.jp/Co60/</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
-          </article>
-          <article class="card" data-text="名古屋大学 – co-60 照射施設 名古屋大学 co-60 照射施設 名古屋大学 · 核理工学研究施設 · 名古屋 名古屋大学核理工学研究施設の co-60 ガンマ線照射施設。宇宙用・産業用デバイスの tid 試験に提供。線量率・総線量の調整が可能で、電子機器の放射線耐性評価に利用されている。">
-            <div class="card-tag"><span class="dot" style="background:#7c3aed"></span>名古屋大学 – Co-60 照射施設</div>
-            <div class="card-title">名古屋大学 Co-60 照射施設</div>
-            <div class="card-meta">名古屋大学 · 核理工学研究施設 · 名古屋</div>
-            <p class="card-desc">名古屋大学核理工学研究施設の Co-60 ガンマ線照射施設。宇宙用・産業用デバイスの TID 試験に提供。線量率・総線量の調整が可能で、電子機器の放射線耐性評価に利用されている。</p>
-            <a class="card-link" href="https://co60.nucl.nagoya-u.ac.jp/index.html" target="_blank" rel="noopener"><span class="url-text">https://co60.nucl.nagoya-u.ac.jp/index.html</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
-          </article>
-          <article class="card" data-text="九州大学 – co-60 照射施設 九州大学 co-60 照射施設（cabas） 九州大学 応用力学研究所 · 福岡 · cabas 九州大学応用力学研究所の co-60 ガンマ線照射施設 cabas。宇宙用部品・電子機器の tid 試験・材料の照射研究に提供。九州地区における主要な tid 試験施設。">
-            <div class="card-tag"><span class="dot" style="background:#7c3aed"></span>九州大学 – Co-60 照射施設</div>
-            <div class="card-title">九州大学 Co-60 照射施設（CABAS）</div>
-            <div class="card-meta">九州大学 応用力学研究所 · 福岡 · CABAS</div>
-            <p class="card-desc">九州大学応用力学研究所の Co-60 ガンマ線照射施設 CABAS。宇宙用部品・電子機器の TID 試験・材料の照射研究に提供。九州地区における主要な TID 試験施設。</p>
-            <a class="card-link" href="https://www.cabas.kyushu-u.ac.jp/cobalt/" target="_blank" rel="noopener"><span class="url-text">https://www.cabas.kyushu-u.ac.jp/cobalt/</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
           </article>
         </div>
       </div>
@@ -447,157 +686,6 @@
             <div class="card-meta">J. Franco and J. Ross · 2021</div>
             <p class="card-desc">米国内の SEE 試験施設の不足と、高エネルギー重イオン照射施設の必要性に関する分析。</p>
             <a class="card-link" href="https://nepp.nasa.gov/workshops/dhesee2021/talks/6a_SEE%20AoA%20summary%20Nov%202020%20approved%20for%20release.pdf" target="_blank" rel="noopener"><span class="url-text">https://nepp.nasa.gov/workshops/dhesee2021/talks/6a_SEE%20AoA%20summary%20Nov%202020%20approved%20for%20release.pdf</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
-          </article>
-        </div>
-      </div>
-    </section>
-    <section class="group-section" id="g-standards">
-      <div class="group-header"><div class="group-color-bar" style="background:#059669"></div><div class="group-header-text"><div class="group-title">耐放射線関係標準文書</div><div class="group-desc">NASA / ECSS / JAXA / JEDEC による RHA・EEE Parts・宇宙環境に関する標準規格・設計ガイドライン</div></div><div class="group-count">19 件</div></div>
-      <div class="subsection" id="rha-standards">
-        <div class="subsec-header"><div class="subsec-title">RHA・放射線設計 標準規格</div><div class="subsec-note">NASA-STD / ECSS / JAXA-JERG / JEDEC – RHA・TID・SEE 設計要求</div></div>
-        <div class="cards">
-          <article class="card" data-text="ecss – rha ecss-q-st-60-15c – radiation hardness assurance (eee components) esa / ecss · rha · eee components eee 部品に対する radiation hardness assurance（rha）の標準。see / tid を踏まえた部品選定・試験・保証の枠組みを与え、cots 利用時の追加評価プロセスも規定する。">
-            <div class="card-tag"><span class="dot" style="background:#059669"></span>ECSS – RHA</div>
-            <div class="card-title">ECSS-Q-ST-60-15C – Radiation Hardness Assurance (EEE Components)</div>
-            <div class="card-meta">ESA / ECSS · RHA · EEE Components</div>
-            <p class="card-desc">EEE 部品に対する Radiation Hardness Assurance（RHA）の標準。SEE / TID を踏まえた部品選定・試験・保証の枠組みを与え、COTS 利用時の追加評価プロセスも規定する。</p>
-            <a class="card-link" href="https://ecss.nl/standard/ecss-q-st-60-15c-rev-1-radiation-hardness-assurance-20-march-2025/" target="_blank" rel="noopener"><span class="url-text">https://ecss.nl/standard/ecss-q-st-60-15c-rev-1-radiation-hardness-assurance-20-march-2025/</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
-          </article>
-          <article class="card" data-text="ecss – space environment ecss-e-st-10-04c – space environment esa / ecss · space environment models · gcr / spe / trapped esa ミッションで用いる宇宙環境モデル（gcr, spe, trapped radiation など）を定義した標準。see / tid 解析に用いる「環境モデル」の出発点となる文書。">
-            <div class="card-tag"><span class="dot" style="background:#059669"></span>ECSS – Space Environment</div>
-            <div class="card-title">ECSS-E-ST-10-04C – Space Environment</div>
-            <div class="card-meta">ESA / ECSS · Space Environment Models · GCR / SPE / Trapped</div>
-            <p class="card-desc">ESA ミッションで用いる宇宙環境モデル（GCR, SPE, trapped radiation など）を定義した標準。SEE / TID 解析に用いる「環境モデル」の出発点となる文書。</p>
-            <a class="card-link" href="https://ecss.nl/standard/ecss-e-st-10-04c-rev-1-space-environment-15-june-2020/" target="_blank" rel="noopener"><span class="url-text">https://ecss.nl/standard/ecss-e-st-10-04c-rev-1-space-environment-15-june-2020/</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
-          </article>
-          <article class="card" data-text="ecss – radiation effects ecss-e-st-10-12c – methods for the calculation of radiation received and its effects, and a policy for design margins esa / ecss · 2008年11月（corr.1: 2017年2月） 宇宙放射線の計算手法と設計マージンのポリシーを定める ecss 標準。tid / see / niel の影響をどう計算し、どのような放射線設計マージン（rdm）を取るかの規則に相当する。ecss-e-hb-10-12a ハンドブックと組み合わせて使用する。">
-            <div class="card-tag"><span class="dot" style="background:#059669"></span>ECSS – Radiation Effects</div>
-            <div class="card-title">ECSS-E-ST-10-12C – Methods for the Calculation of Radiation Received and Its Effects, and a Policy for Design Margins</div>
-            <div class="card-meta">ESA / ECSS · 2008年11月（Corr.1: 2017年2月）</div>
-            <p class="card-desc">宇宙放射線の計算手法と設計マージンのポリシーを定める ECSS 標準。TID / SEE / NIEL の影響をどう計算し、どのような放射線設計マージン（RDM）を取るかの規則に相当する。ECSS-E-HB-10-12A ハンドブックと組み合わせて使用する。</p>
-            <a class="card-link" href="https://ecss.nl/standard/ecss-e-st-10-12c-methods-for-the-calculation-of-radiation-received-and-its-effects-and-a-policy-for-design-margins/" target="_blank" rel="noopener"><span class="url-text">https://ecss.nl/standard/ecss-e-st-10-12c-methods-for-the-calculation-of-radiation-received-and-its-effects-and-a-policy-for-design-margins/</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
-          </article>
-          <article class="card" data-text="jaxa – 耐放射線設計標準 jaxa-jerg-2-143 耐宇宙環境設計標準（耐放射線設計標準） jaxa · 耐放射線設計標準 · 日本語版・英語版あり 宇宙機・衛星搭載機器の耐放射線設計のための基盤標準文書。tid マージン、see（seu/sel/seb/sefi）設計要求、放射線試験レベルと評価手順などを規定し、jerg-2-141 と組み合わせて具体的な rha 方針を与える。">
-            <div class="card-tag"><span class="dot" style="background:#059669"></span>JAXA – 耐放射線設計標準</div>
-            <div class="card-title">JAXA-JERG-2-143 耐宇宙環境設計標準（耐放射線設計標準）</div>
-            <div class="card-meta">JAXA · 耐放射線設計標準 · 日本語版・英語版あり</div>
-            <p class="card-desc">宇宙機・衛星搭載機器の耐放射線設計のための基盤標準文書。TID マージン、SEE（SEU/SEL/SEB/SEFI）設計要求、放射線試験レベルと評価手順などを規定し、JERG-2-141 と組み合わせて具体的な RHA 方針を与える。</p>
-            <a class="card-link" href="https://sma.jaxa.jp/TechDoc/Docs/JAXA-JERG-2-143A.pdf" target="_blank" rel="noopener"><span class="url-text">https://sma.jaxa.jp/TechDoc/Docs/JAXA-JERG-2-143A.pdf</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
-          </article>
-          <article class="card" data-text="jedec – see test standard test procedure for the management of single-event effects in semiconductor devices from heavy ion irradiation, jesd57a jedec solid state technology association · 2017 重イオン照射によるシングルイベント効果（see）試験の標準手順書。let の定義、照射条件、エラーカウント方法など see 試験の基本を定める。">
-            <div class="card-tag"><span class="dot" style="background:#059669"></span>JEDEC – SEE Test Standard</div>
-            <div class="card-title">Test Procedure for the Management of Single-Event Effects in Semiconductor Devices from Heavy Ion Irradiation, JESD57A</div>
-            <div class="card-meta">JEDEC Solid State Technology Association · 2017</div>
-            <p class="card-desc">重イオン照射によるシングルイベント効果（SEE）試験の標準手順書。LET の定義、照射条件、エラーカウント方法など SEE 試験の基本を定める。</p>
-            <a class="card-link" href="https://www.jedec.org/standards-documents/docs/jesd-57" target="_blank" rel="noopener"><span class="url-text">https://www.jedec.org/standards-documents/docs/jesd-57</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
-          </article>
-          <article class="card" data-text="nasa – r&amp;m standard nasa reliability and maintainability (r&amp;m) standard for spaceflight and support systems, nasa-std-8729.1a nasa · 2017 宇宙飛行システムにおける信頼性基準とリスク管理の基礎となる標準規格。">
-            <div class="card-tag"><span class="dot" style="background:#059669"></span>NASA – R&amp;M Standard</div>
-            <div class="card-title">NASA Reliability and Maintainability (R&amp;M) Standard for Spaceflight and Support Systems, NASA-STD-8729.1A</div>
-            <div class="card-meta">NASA · 2017</div>
-            <p class="card-desc">宇宙飛行システムにおける信頼性基準とリスク管理の基礎となる標準規格。</p>
-            <a class="card-link" href="https://standards.nasa.gov/standard/NASA/NASA-STD-87291" target="_blank" rel="noopener"><span class="url-text">https://standards.nasa.gov/standard/NASA/NASA-STD-87291</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
-          </article>
-          <article class="card" data-text="nasa – leo radiation space radiation effects on electronic components in low-earth orbit nasa preferred reliability practice no. pd-ed-1258 · 1996 低軌道（leo）における電子部品への宇宙放射線影響に関する基本ガイドライン。">
-            <div class="card-tag"><span class="dot" style="background:#059669"></span>NASA – LEO Radiation</div>
-            <div class="card-title">Space Radiation Effects on Electronic Components in Low-Earth Orbit</div>
-            <div class="card-meta">NASA Preferred Reliability Practice No. PD-ED-1258 · 1996</div>
-            <p class="card-desc">低軌道（LEO）における電子部品への宇宙放射線影響に関する基本ガイドライン。</p>
-            <a class="card-link" href="https://extapps.ksc.nasa.gov/Reliability/Documents/Preferred_Practices/1258.pdf" target="_blank" rel="noopener"><span class="url-text">https://extapps.ksc.nasa.gov/Reliability/Documents/Preferred_Practices/1258.pdf</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
-          </article>
-          <article class="card" data-text="nasa – radiation design margin radiation design margin requirement nasa preferred reliability practice no. pd-ed-1260 · 1996 放射線設計マージン（design margin）の要件定義に関する実務慣行文書。">
-            <div class="card-tag"><span class="dot" style="background:#059669"></span>NASA – Radiation Design Margin</div>
-            <div class="card-title">Radiation Design Margin Requirement</div>
-            <div class="card-meta">NASA Preferred Reliability Practice No. PD-ED-1260 · 1996</div>
-            <p class="card-desc">放射線設計マージン（Design Margin）の要件定義に関する実務慣行文書。</p>
-            <a class="card-link" href="https://extapps.ksc.nasa.gov/Reliability/Documents/Preferred_Practices/1260.pdf" target="_blank" rel="noopener"><span class="url-text">https://extapps.ksc.nasa.gov/Reliability/Documents/Preferred_Practices/1260.pdf</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
-          </article>
-          <article class="card" data-text="rha newspace – evolution radiation hardness assurance: evolving for newspace nasa technical reports server new space の台頭に伴う rha 手法の進化とリスク受容に関する主要な議論。民間宇宙開発に対応した保証手法の変化を論じている。">
-            <div class="card-tag"><span class="dot" style="background:#059669"></span>RHA NewSpace – Evolution</div>
-            <div class="card-title">Radiation Hardness Assurance: Evolving for NewSpace</div>
-            <div class="card-meta">NASA Technical Reports Server</div>
-            <p class="card-desc">New Space の台頭に伴う RHA 手法の進化とリスク受容に関する主要な議論。民間宇宙開発に対応した保証手法の変化を論じている。</p>
-            <a class="card-link" href="https://ntrs.nasa.gov/" target="_blank" rel="noopener"><span class="url-text">https://ntrs.nasa.gov/</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
-          </article>
-          <article class="card" data-text="meal – risk verification guidelines for verification strategies to minimize risk based on mission environment, -application and -lifetime (meal) o. gonzales · 2018 ミッションの環境・用途・寿命（meal）に基づいたリスク最小化のための検証戦略ガイドライン。">
-            <div class="card-tag"><span class="dot" style="background:#059669"></span>MEAL – Risk Verification</div>
-            <div class="card-title">Guidelines for Verification Strategies to Minimize RISK Based on Mission Environment, -Application and -Lifetime (MEAL)</div>
-            <div class="card-meta">O. Gonzales · 2018</div>
-            <p class="card-desc">ミッションの環境・用途・寿命（MEAL）に基づいたリスク最小化のための検証戦略ガイドライン。</p>
-            <a class="card-link" href="https://ntrs.nasa.gov/api/citations/20180007359/downloads/20180007359.pdf" target="_blank" rel="noopener"><span class="url-text">https://ntrs.nasa.gov/api/citations/20180007359/downloads/20180007359.pdf</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
-          </article>
-        </div>
-      </div>
-      <div class="subsection" id="eee-parts-std">
-        <div class="subsec-header"><div class="subsec-title">EEE Parts 保証標準</div><div class="subsec-note">NASA-STD-8739.10 · EEE-INST-002 · EEE 部品選定・調達・トレーサビリティ</div></div>
-        <div class="cards">
-          <article class="card" data-text="nasa – eee parts standard nasa-std-8739.10 – electrical, electronic, and electromechanical (eee) parts assurance standard nasa · eee parts assurance · cots / pems nasa の eee 部品保証標準。cots 品やプラスチック封止品（pems）を含めた選定・調達・トレーサビリティ・試験・保管・適用方法を定める。cots メモリ／マイコン利用時のリスク管理とパーツアシュアランスの前提文書。">
-            <div class="card-tag"><span class="dot" style="background:#059669"></span>NASA – EEE Parts Standard</div>
-            <div class="card-title">NASA-STD-8739.10 – Electrical, Electronic, and Electromechanical (EEE) Parts Assurance Standard</div>
-            <div class="card-meta">NASA · EEE Parts Assurance · COTS / PEMs</div>
-            <p class="card-desc">NASA の EEE 部品保証標準。COTS 品やプラスチック封止品（PEMs）を含めた選定・調達・トレーサビリティ・試験・保管・適用方法を定める。COTS メモリ／マイコン利用時のリスク管理とパーツアシュアランスの前提文書。</p>
-            <a class="card-link" href="https://standards.nasa.gov/standard/NASA/NASA-STD-873910" target="_blank" rel="noopener"><span class="url-text">https://standards.nasa.gov/standard/NASA/NASA-STD-873910</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
-          </article>
-          <article class="card" data-text="nasa – eee-inst-002（部品選定指針） eee-inst-002: instructions for eee parts selection, screening, qualification, and derating nasa gsfc · eee-inst-002 · rev. a · 2008年1月 nasa gsfc が発行する eee 部品の選定・スクリーニング・資格認定・ディレーティングに関する詳細指針書。放射線耐性評価（tid / see / ddd）要求を含む多くの評価要件が規定されており、放射線保証プログラムの実装手順書として機能する。宇宙グレード・mil グレード・cots 品のそれぞれに対する要求レベルを体系的に整理。">
-            <div class="card-tag"><span class="dot" style="background:#059669"></span>NASA – EEE-INST-002（部品選定指針）</div>
-            <div class="card-title">EEE-INST-002: Instructions for EEE Parts Selection, Screening, Qualification, and Derating</div>
-            <div class="card-meta">NASA GSFC · EEE-INST-002 · Rev. A · 2008年1月</div>
-            <p class="card-desc">NASA GSFC が発行する EEE 部品の選定・スクリーニング・資格認定・ディレーティングに関する詳細指針書。放射線耐性評価（TID / SEE / DDD）要求を含む多くの評価要件が規定されており、放射線保証プログラムの実装手順書として機能する。宇宙グレード・MIL グレード・COTS 品のそれぞれに対する要求レベルを体系的に整理。</p>
-            <a class="card-link" href="https://nepp.nasa.gov/pages/EEE-INST-002.cfm" target="_blank" rel="noopener"><span class="url-text">https://nepp.nasa.gov/pages/EEE-INST-002.cfm</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
-          </article>
-          <article class="card" data-text="rha – radiation assurance radiation assurance for the space environment j. l. barth, k. a. label and c. poivey · 2004 international conference on ic design and technology 宇宙環境における放射線保証の包括的なアプローチについて。">
-            <div class="card-tag"><span class="dot" style="background:#059669"></span>RHA – Radiation Assurance</div>
-            <div class="card-title">Radiation Assurance for the Space Environment</div>
-            <div class="card-meta">J. L. Barth, K. A. LaBel and C. Poivey · 2004 International Conference on IC Design and Technology</div>
-            <p class="card-desc">宇宙環境における放射線保証の包括的なアプローチについて。</p>
-            <a class="card-link" href="https://ntrs.nasa.gov/api/citations/20040070939/downloads/20040070939.pdf" target="_blank" rel="noopener"><span class="url-text">https://ntrs.nasa.gov/api/citations/20040070939/downloads/20040070939.pdf</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
-          </article>
-          <article class="card" data-text="see test – adequacy are current see test procedures adequate for modern devices and electronics technologies? k. a. label et al. · 2008 最新の半導体技術に対する既存の see 試験手順の妥当性を問う、試験法見直しのための重要資料。">
-            <div class="card-tag"><span class="dot" style="background:#059669"></span>SEE Test – Adequacy</div>
-            <div class="card-title">Are Current SEE Test Procedures Adequate for Modern Devices and Electronics Technologies?</div>
-            <div class="card-meta">K. A. LaBel et al. · 2008</div>
-            <p class="card-desc">最新の半導体技術に対する既存の SEE 試験手順の妥当性を問う、試験法見直しのための重要資料。</p>
-            <a class="card-link" href="https://radhome.gsfc.nasa.gov/radhome/papers/HEART08_LaBel.pdf" target="_blank" rel="noopener"><span class="url-text">https://radhome.gsfc.nasa.gov/radhome/papers/HEART08_LaBel.pdf</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
-          </article>
-        </div>
-      </div>
-      <div class="subsection" id="rad-test-methods">
-        <div class="subsec-header"><div class="subsec-title">放射線試験方法規格（TID / SEE / DDD）</div><div class="subsec-note">MIL-STD-883 / MIL-STD-750 / ESCC 22900 / ESCC 25100 / ESCC 22500</div></div>
-        <div class="cards">
-          <article class="card" data-text="mil-std-883 method 1019 – tid（ic） mil-std-883 method 1019: ionizing radiation (total dose) test procedure dla land and maritime · mil-std-883 · ic（集積回路）用 tid 試験方法 集積回路（ic）の総電離線量（tid）試験方法を規定する mil-std-883 の method 1019。co-60 ガンマ線源または x 線源を使用し、バイアス条件・線量率・評価パラメータ・試験レポート要件を定める。宇宙用 ic の tid 評価において最も広く参照される試験規格の一つ。">
-            <div class="card-tag"><span class="dot" style="background:#059669"></span>MIL-STD-883 Method 1019 – TID（IC）</div>
-            <div class="card-title">MIL-STD-883 Method 1019: Ionizing Radiation (Total Dose) Test Procedure</div>
-            <div class="card-meta">DLA Land and Maritime · MIL-STD-883 · IC（集積回路）用 TID 試験方法</div>
-            <p class="card-desc">集積回路（IC）の総電離線量（TID）試験方法を規定する MIL-STD-883 の Method 1019。Co-60 ガンマ線源または X 線源を使用し、バイアス条件・線量率・評価パラメータ・試験レポート要件を定める。宇宙用 IC の TID 評価において最も広く参照される試験規格の一つ。</p>
-            <a class="card-link" href="https://landandmaritimeapps.dla.mil/programs/MilSpec/ListDocs.aspx?BasicDoc=MIL-STD-883" target="_blank" rel="noopener"><span class="url-text">https://landandmaritimeapps.dla.mil/programs/MilSpec/ListDocs.aspx?BasicDoc=MIL-STD-883</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
-          </article>
-          <article class="card" data-text="mil-std-750 method 1019 – tid（ディスクリート） mil-std-750 method 1019: ionizing radiation (total dose) test procedure dla land and maritime · mil-std-750 · ディスクリート半導体デバイス用 tid 試験方法 ディスクリート半導体デバイス（トランジスタ・ダイオード等）の tid 試験方法を規定する mil-std-750 の method 1019。ic 向けの mil-std-883 method 1019 と対をなす規格で、ディスクリート品の放射線耐性評価に適用される。同文書内に see 試験の method 1080 も収録されている。">
-            <div class="card-tag"><span class="dot" style="background:#059669"></span>MIL-STD-750 Method 1019 – TID（ディスクリート）</div>
-            <div class="card-title">MIL-STD-750 Method 1019: Ionizing Radiation (Total Dose) Test Procedure</div>
-            <div class="card-meta">DLA Land and Maritime · MIL-STD-750 · ディスクリート半導体デバイス用 TID 試験方法</div>
-            <p class="card-desc">ディスクリート半導体デバイス（トランジスタ・ダイオード等）の TID 試験方法を規定する MIL-STD-750 の Method 1019。IC 向けの MIL-STD-883 Method 1019 と対をなす規格で、ディスクリート品の放射線耐性評価に適用される。同文書内に SEE 試験の Method 1080 も収録されている。</p>
-            <a class="card-link" href="https://landandmaritimeapps.dla.mil/programs/MilSpec/ListDocs.aspx?BasicDoc=MIL-STD-750" target="_blank" rel="noopener"><span class="url-text">https://landandmaritimeapps.dla.mil/programs/MilSpec/ListDocs.aspx?BasicDoc=MIL-STD-750</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
-          </article>
-          <article class="card" data-text="escc 22900 – tid 試験方法（欧州標準） escc basic specification no. 22900: total dose steady-state irradiation test method esa / european space components coordination · issue 5 · 2016年6月 esa が定める宇宙用部品の tid 試験標準。co-60 線源による定常照射試験の手順・バイアス条件・試験計画・評価・レポート要件を規定。escc 評価・認定品に求められる試験規格であり、欧州宇宙機器の tid 評価において mil-std-883 method 1019 に相当する位置づけ。">
-            <div class="card-tag"><span class="dot" style="background:#059669"></span>ESCC 22900 – TID 試験方法（欧州標準）</div>
-            <div class="card-title">ESCC Basic Specification No. 22900: Total Dose Steady-State Irradiation Test Method</div>
-            <div class="card-meta">ESA / European Space Components Coordination · Issue 5 · 2016年6月</div>
-            <p class="card-desc">ESA が定める宇宙用部品の TID 試験標準。Co-60 線源による定常照射試験の手順・バイアス条件・試験計画・評価・レポート要件を規定。ESCC 評価・認定品に求められる試験規格であり、欧州宇宙機器の TID 評価において MIL-STD-883 Method 1019 に相当する位置づけ。</p>
-            <a class="card-link" href="https://escies.org/escc-specs/published/22900.pdf" target="_blank" rel="noopener"><span class="url-text">https://escies.org/escc-specs/published/22900.pdf</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
-          </article>
-          <article class="card" data-text="escc 25100 – see 試験方法（欧州標準） escc basic specification no. 25100: single event effects test method and guidelines esa / european space components coordination esa が定める宇宙用部品の see 試験標準。重イオン・陽子による see（seu / sel / seb / sefi 等）の試験手順・let 範囲・フルエンス要件・評価方法・試験レポート要件を規定。escc 認定品の see 評価に必須の欧州標準規格。">
-            <div class="card-tag"><span class="dot" style="background:#059669"></span>ESCC 25100 – SEE 試験方法（欧州標準）</div>
-            <div class="card-title">ESCC Basic Specification No. 25100: Single Event Effects Test Method and Guidelines</div>
-            <div class="card-meta">ESA / European Space Components Coordination</div>
-            <p class="card-desc">ESA が定める宇宙用部品の SEE 試験標準。重イオン・陽子による SEE（SEU / SEL / SEB / SEFI 等）の試験手順・LET 範囲・フルエンス要件・評価方法・試験レポート要件を規定。ESCC 認定品の SEE 評価に必須の欧州標準規格。</p>
-            <a class="card-link" href="https://spacecomponents.org/specification/view?id=3095" target="_blank" rel="noopener"><span class="url-text">https://spacecomponents.org/specification/view?id=3095</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
-          </article>
-          <article class="card" data-text="escc 22500 – 変位損傷（ddd）試験ガイドライン escc basic specification no. 22500: guidelines for displacement damage irradiation testing esa / european space components coordination · issue 2 · 2021年10月 変位損傷線量（ddd）試験のガイドラインを定める escc 標準。陽子・中性子・電子・重イオンによる niel（非電離エネルギー損失）の評価方法・試験手順・等価フルエンスの計算方法を規定。太陽電池・光検出器・ccd など niel 感受性の高いデバイスの評価に適用。">
-            <div class="card-tag"><span class="dot" style="background:#059669"></span>ESCC 22500 – 変位損傷（DDD）試験ガイドライン</div>
-            <div class="card-title">ESCC Basic Specification No. 22500: Guidelines for Displacement Damage Irradiation Testing</div>
-            <div class="card-meta">ESA / European Space Components Coordination · Issue 2 · 2021年10月</div>
-            <p class="card-desc">変位損傷線量（DDD）試験のガイドラインを定める ESCC 標準。陽子・中性子・電子・重イオンによる NIEL（非電離エネルギー損失）の評価方法・試験手順・等価フルエンスの計算方法を規定。太陽電池・光検出器・CCD など NIEL 感受性の高いデバイスの評価に適用。</p>
-            <a class="card-link" href="https://escies.org/specification/viewapppub?id=4322" target="_blank" rel="noopener"><span class="url-text">https://escies.org/specification/viewapppub?id=4322</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
           </article>
         </div>
       </div>
@@ -847,81 +935,6 @@
             <div class="card-meta">IEEE Nuclear and Plasma Sciences Society · 1989年〜現在 · 欧州最大の放射線効果会議</div>
             <p class="card-desc">欧州最大の放射線効果学術会議 RADECS の全論文アーカイブ（IEEE Xplore）。TID・SEE・DDD・宇宙放射線環境・耐放射線回路設計・新材料・試験方法・COTS 部品評価に関する最新研究が発表される。NSREC と並ぶ世界最重要の放射線効果学術フォーラムであり、COTS 部品の放射線試験データが速報的に公開される場として広く参照されている。</p>
             <a class="card-link" href="https://ieeexplore.ieee.org/xpl/conhome/1000608/all-proceedings" target="_blank" rel="noopener"><span class="url-text">https://ieeexplore.ieee.org/xpl/conhome/1000608/all-proceedings</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
-          </article>
-        </div>
-      </div>
-    </section>
-    <section class="group-section" id="g-tools">
-      <div class="group-header"><div class="group-color-bar" style="background:#0f766e"></div><div class="group-header-text"><div class="group-title">有用なツール</div><div class="group-desc">放射線環境・影響・LET・シールド解析に用いられるシミュレーションツール・計算コード</div></div><div class="group-count">9 件</div></div>
-      <div class="subsection" id="rad-tools">
-        <div class="subsec-header"><div class="subsec-title">放射線・粒子輸送シミュレーションツール</div><div class="subsec-note">CREME-MC · SPENVIS · SRIM · PHITS · Geant4 – SEE / TID / シールド・粒子輸送解析</div></div>
-        <div class="cards">
-          <article class="card" data-text="creme-mc – 宇宙放射線・see レート計算 creme-mc: cosmic ray effects on micro-electronics (monte carlo) vanderbilt university isde · オンライン計算ツール · https://creme.isde.vanderbilt.edu/ 宇宙放射線環境における see レート（seu・sel 等）をモンテカルロ法で計算するオンラインツール。軌道・シールド・デバイスパラメータ（臨界電荷・感受体積）を入力し、gcr・sep 環境下での see 発生率を推定できる。creme96 の後継として広く使われており、宇宙機器の耐放射線設計における see レート評価の標準ツールの一つ。">
-            <div class="card-tag"><span class="dot" style="background:#0f766e"></span>CREME-MC – 宇宙放射線・SEE レート計算</div>
-            <div class="card-title">CREME-MC: Cosmic Ray Effects on Micro-Electronics (Monte Carlo)</div>
-            <div class="card-meta">Vanderbilt University ISDE · オンライン計算ツール · https://creme.isde.vanderbilt.edu/</div>
-            <p class="card-desc">宇宙放射線環境における SEE レート（SEU・SEL 等）をモンテカルロ法で計算するオンラインツール。軌道・シールド・デバイスパラメータ（臨界電荷・感受体積）を入力し、GCR・SEP 環境下での SEE 発生率を推定できる。CREME96 の後継として広く使われており、宇宙機器の耐放射線設計における SEE レート評価の標準ツールの一つ。</p>
-            <a class="card-link" href="https://creme.isde.vanderbilt.edu/" target="_blank" rel="noopener"><span class="url-text">https://creme.isde.vanderbilt.edu/</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
-          </article>
-          <article class="card" data-text="spenvis – 宇宙環境総合解析ポータル spenvis: space environment information system esa / bira-iasb · オンライン計算ツール · https://www.spenvis.oma.be/ esa が提供する宇宙環境の総合オンライン解析システム。軌道定義・放射線帯モデル（ap-9/ae-9・ap8/ae8・crrespro・flumic）・gcr / sep フラックス・シールド評価・tid 計算・太陽電池劣化（ddd）・デブリ環境など多様な計算モジュールを提供。宇宙機の放射線環境解析において世界標準のプラットフォーム。登録無料。">
-            <div class="card-tag"><span class="dot" style="background:#0f766e"></span>SPENVIS – 宇宙環境総合解析ポータル</div>
-            <div class="card-title">SPENVIS: Space Environment Information System</div>
-            <div class="card-meta">ESA / BIRA-IASB · オンライン計算ツール · https://www.spenvis.oma.be/</div>
-            <p class="card-desc">ESA が提供する宇宙環境の総合オンライン解析システム。軌道定義・放射線帯モデル（AP-9/AE-9・AP8/AE8・CRRESPRO・FLUMIC）・GCR / SEP フラックス・シールド評価・TID 計算・太陽電池劣化（DDD）・デブリ環境など多様な計算モジュールを提供。宇宙機の放射線環境解析において世界標準のプラットフォーム。登録無料。</p>
-            <a class="card-link" href="https://www.spenvis.oma.be/" target="_blank" rel="noopener"><span class="url-text">https://www.spenvis.oma.be/</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
-          </article>
-          <article class="card" data-text="srim – イオン・物質相互作用計算 srim (stopping and range of ions in matter) j. f. ziegler et al. · フリーウェア · http://www.srim.org/ イオンと物質の相互作用（阻止能・飛程・let・イオン散乱）を計算するモンテカルロシミュレーションコード。tid 評価でのシールド内エネルギー損失計算、see 試験でのイオン種・エネルギー選択時の let 計算に広く使用される。フリーウェアとして配布されており、放射線効果解析の入門ツールとしても広く普及。">
-            <div class="card-tag"><span class="dot" style="background:#0f766e"></span>SRIM – イオン・物質相互作用計算</div>
-            <div class="card-title">SRIM (Stopping and Range of Ions in Matter)</div>
-            <div class="card-meta">J. F. Ziegler et al. · フリーウェア · http://www.srim.org/</div>
-            <p class="card-desc">イオンと物質の相互作用（阻止能・飛程・LET・イオン散乱）を計算するモンテカルロシミュレーションコード。TID 評価でのシールド内エネルギー損失計算、SEE 試験でのイオン種・エネルギー選択時の LET 計算に広く使用される。フリーウェアとして配布されており、放射線効果解析の入門ツールとしても広く普及。</p>
-            <a class="card-link" href="http://www.srim.org/" target="_blank" rel="noopener"><span class="url-text">http://www.srim.org/</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
-          </article>
-          <article class="card" data-text="phits – 粒子輸送モンテカルロコード phits (particle and heavy ion transport code system) qst / jaea · 汎用粒子輸送コード · 日本発の国際標準 qst（量子科学技術研究開発機構）/ jaea が開発した汎用の粒子・重イオン輸送モンテカルロコード。陽子・中性子・重イオン・光子・電子など多種の粒子輸送を扱い、tid・ddd・see 解析のほか、加速器施設の遮蔽設計・宇宙線輸送・生物線量評価まで幅広い分野で使用される。jaeaコードセンター経由で登録配布。現在サーバメンテナンス中のためurlは省略。">
-            <div class="card-tag"><span class="dot" style="background:#0f766e"></span>PHITS – 粒子輸送モンテカルロコード</div>
-            <div class="card-title">PHITS (Particle and Heavy Ion Transport code System)</div>
-            <div class="card-meta">QST / JAEA · 汎用粒子輸送コード · 日本発の国際標準</div>
-            <p class="card-desc">QST（量子科学技術研究開発機構）/ JAEA が開発した汎用の粒子・重イオン輸送モンテカルロコード。陽子・中性子・重イオン・光子・電子など多種の粒子輸送を扱い、TID・DDD・SEE 解析のほか、加速器施設の遮蔽設計・宇宙線輸送・生物線量評価まで幅広い分野で使用される。JAEAコードセンター経由で登録配布。現在サーバメンテナンス中のためURLは省略。</p>
-          </article>
-          <article class="card" data-text="geant4 – 汎用粒子輸送モンテカルロ geant4: a simulation toolkit s. agostinelli et al. (geant4 collaboration) · nucl. instrum. methods a 506 · 2003 · doi: 10.1016/s0168-9002(03)01368-8 cern を中心とした国際コラボレーションが開発したオープンソースの汎用粒子・物質相互作用シミュレーションツール。電磁・ハドロン・光学過程を網羅し、ev から tev まで広いエネルギー範囲に対応。宇宙放射線シミュレーション（iss・月面・衛星内部の線量計算）・see 解析・シールド設計・検出器シミュレーション・医療物理まで幅広く使用される。phits と並ぶ世界標準の粒子輸送コードで、本文献集の midas・redmoon 等でも採用されている。論文引用数は10万件超（2024年）。">
-            <div class="card-tag"><span class="dot" style="background:#0f766e"></span>Geant4 – 汎用粒子輸送モンテカルロ</div>
-            <div class="card-title">Geant4: A Simulation Toolkit</div>
-            <div class="card-meta">S. Agostinelli et al. (Geant4 Collaboration) · Nucl. Instrum. Methods A 506 · 2003 · DOI: 10.1016/S0168-9002(03)01368-8</div>
-            <p class="card-desc">CERN を中心とした国際コラボレーションが開発したオープンソースの汎用粒子・物質相互作用シミュレーションツール。電磁・ハドロン・光学過程を網羅し、eV から TeV まで広いエネルギー範囲に対応。宇宙放射線シミュレーション（ISS・月面・衛星内部の線量計算）・SEE 解析・シールド設計・検出器シミュレーション・医療物理まで幅広く使用される。PHITS と並ぶ世界標準の粒子輸送コードで、本文献集の MIDAS・REDMoon 等でも採用されている。論文引用数は10万件超（2024年）。</p>
-            <a class="card-link" href="https://geant4.org/" target="_blank" rel="noopener"><span class="url-text">https://geant4.org/</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
-          </article>
-        </div>
-      </div>
-      <div class="subsection" id="rad-env-models">
-        <div class="subsec-header"><div class="subsec-title">宇宙放射線環境モデル（標準・規格）</div><div class="subsec-note">AP-9 / AE-9 捕捉放射線帯 · ISO 15390 GCR · ISO 15391 SEP</div></div>
-        <div class="cards">
-          <article class="card" data-text="ap-9 / ae-9 – 捕捉放射線帯モデル（現行標準） ae9, ap9 and spm: new models for specifying the trapped energetic particle and space plasma environment g. p. ginet et al. · afrl / mit ll / aerospace corp. · space science reviews 179 · 2013 · doi: 10.1007/s11214-013-9964-y ap-8 / ae-8 の後継として afrl・nasa が共同開発した捕捉放射線帯モデルの基礎論文。ae-9（電子）・ap-9（陽子）・spm（プラズマ）の3モデルセットで、van allen probes 等の最新データに基づく。統計的不確かさを monte carlo で定量化する点が ap-8 と根本的に異なり、設計マージン評価の精度が向上。ap-8 との差が tid・ddd 設計値に直接影響するため、モデルの選択根拠を示す上で必須の文献。spenvis・irene ポータルから利用可能。">
-            <div class="card-tag"><span class="dot" style="background:#0f766e"></span>AP-9 / AE-9 – 捕捉放射線帯モデル（現行標準）</div>
-            <div class="card-title">AE9, AP9 and SPM: New Models for Specifying the Trapped Energetic Particle and Space Plasma Environment</div>
-            <div class="card-meta">G. P. Ginet et al. · AFRL / MIT LL / Aerospace Corp. · Space Science Reviews 179 · 2013 · DOI: 10.1007/s11214-013-9964-y</div>
-            <p class="card-desc">AP-8 / AE-8 の後継として AFRL・NASA が共同開発した捕捉放射線帯モデルの基礎論文。AE-9（電子）・AP-9（陽子）・SPM（プラズマ）の3モデルセットで、Van Allen Probes 等の最新データに基づく。統計的不確かさを Monte Carlo で定量化する点が AP-8 と根本的に異なり、設計マージン評価の精度が向上。AP-8 との差が TID・DDD 設計値に直接影響するため、モデルの選択根拠を示す上で必須の文献。SPENVIS・IRENE ポータルから利用可能。</p>
-            <a class="card-link" href="https://www.vdl.afrl.af.mil/programs/ae9ap9/files/publications/AE9AP9SPM_SSR_Overview.pdf" target="_blank" rel="noopener"><span class="url-text">https://www.vdl.afrl.af.mil/programs/ae9ap9/files/publications/AE9AP9SPM_SSR_Overview.pdf</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
-          </article>
-          <article class="card" data-text="ap-9 / ae-9 – ダウンロードポータル（afrl） irene-ae9/ap9/spm radiation environment model – afrl portal afrl · vdl.afrl.af.mil · 配布サイト（無料・要登録） ap-9/ae-9/spm モデルのコード・データセット・ユーザーズガイドを無料配布する afrl 公式ポータル。windows 版実行ファイルとして提供されており、軌道パラメータを入力して電子・陽子フラックスと統計的不確かさを出力できる。将来バージョンで irene モデルへ発展予定。spenvis とは独立したスタンドアロン版として使用可能。">
-            <div class="card-tag"><span class="dot" style="background:#0f766e"></span>AP-9 / AE-9 – ダウンロードポータル（AFRL）</div>
-            <div class="card-title">IRENE-AE9/AP9/SPM Radiation Environment Model – AFRL Portal</div>
-            <div class="card-meta">AFRL · vdl.afrl.af.mil · 配布サイト（無料・要登録）</div>
-            <p class="card-desc">AP-9/AE-9/SPM モデルのコード・データセット・ユーザーズガイドを無料配布する AFRL 公式ポータル。Windows 版実行ファイルとして提供されており、軌道パラメータを入力して電子・陽子フラックスと統計的不確かさを出力できる。将来バージョンで IRENE モデルへ発展予定。SPENVIS とは独立したスタンドアロン版として使用可能。</p>
-            <a class="card-link" href="https://www.vdl.afrl.af.mil/programs/ae9ap9/" target="_blank" rel="noopener"><span class="url-text">https://www.vdl.afrl.af.mil/programs/ae9ap9/</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
-          </article>
-          <article class="card" data-text="iso 15390 – gcr モデル（国際標準） iso 15390:2004 – space environment: galactic cosmic ray model iso / tc 20/sc 14 · 国際標準化機構 · 2004年（2013年再確認） 銀河宇宙線（gcr）フラックスの国際標準モデル（nymmik モデルをベース）。101 mev〜10⁵ mev の電子・陽子・z=2〜92 原子核の近地球空間外でのスペクトルと太陽変調依存性を規定。spenvis・creme-mc が実装しており、宇宙機器の設計根拠文書化に使われる。有償規格だが iso.org で概要を確認できる。">
-            <div class="card-tag"><span class="dot" style="background:#0f766e"></span>ISO 15390 – GCR モデル（国際標準）</div>
-            <div class="card-title">ISO 15390:2004 – Space Environment: Galactic Cosmic Ray Model</div>
-            <div class="card-meta">ISO / TC 20/SC 14 · 国際標準化機構 · 2004年（2013年再確認）</div>
-            <p class="card-desc">銀河宇宙線（GCR）フラックスの国際標準モデル（Nymmik モデルをベース）。101 MeV〜10⁵ MeV の電子・陽子・Z=2〜92 原子核の近地球空間外でのスペクトルと太陽変調依存性を規定。SPENVIS・CREME-MC が実装しており、宇宙機器の設計根拠文書化に使われる。有償規格だが ISO.org で概要を確認できる。</p>
-            <a class="card-link" href="https://www.iso.org/standard/37095.html" target="_blank" rel="noopener"><span class="url-text">https://www.iso.org/standard/37095.html</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
-          </article>
-          <article class="card" data-text="iso/ts 15391 – sep モデル（国際標準） iso/ts 15391:2009 – space environment: probabilistic model of solar particle fluxes iso / tc 20/sc 14 · 国際標準化機構 · technical specification · 2009年 太陽エネルギー粒子（sep）フラックスの確率論的国際標準モデル。ミッション期間・軌道・信頼度を入力して sep フルエンス（陽子・重イオン）の累積分布関数を出力する nymmik 確率モデルを規定。spenvis が実装。jpl-91 モデルや esp モデルとともに sep 設計値の設定に用いられ、設計根拠文書化に不可欠な国際規格。iso 15390（gcr）と対をなす。">
-            <div class="card-tag"><span class="dot" style="background:#0f766e"></span>ISO/TS 15391 – SEP モデル（国際標準）</div>
-            <div class="card-title">ISO/TS 15391:2009 – Space Environment: Probabilistic Model of Solar Particle Fluxes</div>
-            <div class="card-meta">ISO / TC 20/SC 14 · 国際標準化機構 · Technical Specification · 2009年</div>
-            <p class="card-desc">太陽エネルギー粒子（SEP）フラックスの確率論的国際標準モデル。ミッション期間・軌道・信頼度を入力して SEP フルエンス（陽子・重イオン）の累積分布関数を出力する Nymmik 確率モデルを規定。SPENVIS が実装。JPL-91 モデルや ESP モデルとともに SEP 設計値の設定に用いられ、設計根拠文書化に不可欠な国際規格。ISO 15390（GCR）と対をなす。</p>
-            <a class="card-link" href="https://www.iso.org/standard/37096.html" target="_blank" rel="noopener"><span class="url-text">https://www.iso.org/standard/37096.html</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
           </article>
         </div>
       </div>
@@ -1266,6 +1279,44 @@
     </section>
     <section class="group-section" id="g-hep">
       <div class="group-header"><div class="group-color-bar" style="background:#dc2626"></div><div class="group-header-text"><div class="group-title">耐放射線半導体関連の研究</div><div class="group-desc">LHC / テバトロン / リニアック・KEK 実験周辺の混合放射線場が電子機器・検出器に与える影響、宇宙線ミュオン・中性子スペクトルの研究</div></div><div class="group-count">13 件</div></div>
+      <div class="subsection" id="cosmic-ray-ser">
+        <div class="subsec-header"><div class="subsec-title">地上・大気宇宙線による半導体ソフトエラー（スペクトル・SER）</div><div class="subsec-note">地上宇宙線スペクトル測定・SER 計算基礎・JEDEC 標準・シミュレーションツール</div></div>
+        <div class="cards">
+          <article class="card" data-text="ground neutron spectrum measurement of the flux and energy spectrum of cosmic-ray induced neutrons on the ground m. s. gordon et al. · ieee trans. nucl. sci. 51 · 2004 · doi: 10.1109/tns.2004.839134 地上における宇宙線誘起中性子のフラックスとエネルギースペクトルの精密測定。silicon と boron を用いた検出器でニューヨーク市（海抜 15 m）における中性子スペクトルを測定し、エネルギー範囲 0.1 mev–10 gev にわたる標準スペクトルデータを確立。半導体ソフトエラー率（ser）の計算基準として広く引用され、j-parc・rcnp 等の加速器施設における中性子 see 試験のスペクトル参照源でもある。">
+            <div class="card-tag"><span class="dot" style="background:#dc2626"></span>Ground Neutron Spectrum</div>
+            <div class="card-title">Measurement of the Flux and Energy Spectrum of Cosmic-Ray Induced Neutrons on the Ground</div>
+            <div class="card-meta">M. S. Gordon et al. · IEEE Trans. Nucl. Sci. 51 · 2004 · DOI: 10.1109/TNS.2004.839134</div>
+            <p class="card-desc">地上における宇宙線誘起中性子のフラックスとエネルギースペクトルの精密測定。Silicon と Boron を用いた検出器でニューヨーク市（海抜 15 m）における中性子スペクトルを測定し、エネルギー範囲 0.1 MeV–10 GeV にわたる標準スペクトルデータを確立。半導体ソフトエラー率（SER）の計算基準として広く引用され、J-PARC・RCNP 等の加速器施設における中性子 SEE 試験のスペクトル参照源でもある。</p>
+            <a class="card-link" href="https://ieeexplore.ieee.org/document/1369506/" target="_blank" rel="noopener"><span class="url-text">https://ieeexplore.ieee.org/document/1369506/</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="ibm – terrestrial cosmic rays (基礎) terrestrial cosmic rays j. f. ziegler · ibm journal of research and development 40(1) · 1996 · doi: 10.1147/rd.401.0019 地上宇宙線が電子機器に与える影響の物理を体系的にレビューした基礎論文。海面での粒子組成（中性子・陽子・パイオン・ミュオン・電子・光子）のフラックスと、緯度・高度・太陽活動・日変化による変動を定量化。ibm の大規模フィールド試験データに基づき、半導体 ser と宇宙線の因果関係を確立した先駆的論文。gordon 2004 の測定データ解釈の前提となる物理的基礎を与える。">
+            <div class="card-tag"><span class="dot" style="background:#dc2626"></span>IBM – Terrestrial Cosmic Rays (基礎)</div>
+            <div class="card-title">Terrestrial Cosmic Rays</div>
+            <div class="card-meta">J. F. Ziegler · IBM Journal of Research and Development 40(1) · 1996 · DOI: 10.1147/rd.401.0019</div>
+            <p class="card-desc">地上宇宙線が電子機器に与える影響の物理を体系的にレビューした基礎論文。海面での粒子組成（中性子・陽子・パイオン・ミュオン・電子・光子）のフラックスと、緯度・高度・太陽活動・日変化による変動を定量化。IBM の大規模フィールド試験データに基づき、半導体 SER と宇宙線の因果関係を確立した先駆的論文。Gordon 2004 の測定データ解釈の前提となる物理的基礎を与える。</p>
+            <a class="card-link" href="https://ieeexplore.ieee.org/document/5389443/" target="_blank" rel="noopener"><span class="url-text">https://ieeexplore.ieee.org/document/5389443/</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+        </div>
+      </div>
+      <div class="subsection" id="kek-hep">
+        <div class="subsec-header"><div class="subsec-title">KEK / J-PARC – 素粒子実験・ミュオン SEE</div><div class="subsec-note">カロリメータ中性子による放射線損傷・J-PARC ミュオン SEE</div></div>
+        <div class="cards">
+          <article class="card" data-text="j-parc mlf – muse（ミュオン see） j-parc mlf muse ビームラインを用いた半導体ミュオンソフトエラー試験 j-parc 物質・生命科学実験施設（mlf）· muse · kek / jaea / ソシオネクスト j-parc mlf の muse ビームラインは世界最高強度の正・負ミュオンビームを提供し、宇宙線ミュオン起因の半導体ソフトエラー試験に使われている。中性子ビームラインも23本あるが、物質・生命科学研究向けであり半導体 see 試験への一般開放はされていない。高エネルギー中性子ソフトエラー試験には大阪大学 rcnp、熱中性子には京都大学 kur が使われる。リンク先はミュオン vs. 中性子ソフトエラー比較研究（ソシオネクスト・kek 等、2021年）のプレスリリース。">
+            <div class="card-tag"><span class="dot" style="background:#dc2626"></span>J-PARC MLF – MUSE（ミュオン SEE）</div>
+            <div class="card-title">J-PARC MLF MUSE ビームラインを用いた半導体ミュオンソフトエラー試験</div>
+            <div class="card-meta">J-PARC 物質・生命科学実験施設（MLF）· MUSE · KEK / JAEA / ソシオネクスト</div>
+            <p class="card-desc">J-PARC MLF の MUSE ビームラインは世界最高強度の正・負ミュオンビームを提供し、宇宙線ミュオン起因の半導体ソフトエラー試験に使われている。中性子ビームラインも23本あるが、物質・生命科学研究向けであり半導体 SEE 試験への一般開放はされていない。高エネルギー中性子ソフトエラー試験には大阪大学 RCNP、熱中性子には京都大学 KUR が使われる。リンク先はミュオン vs. 中性子ソフトエラー比較研究（ソシオネクスト・KEK 等、2021年）のプレスリリース。</p>
+            <a class="card-link" href="https://j-parc.jp/c/press-release/2021/07/16000719.html" target="_blank" rel="noopener"><span class="url-text">https://j-parc.jp/c/press-release/2021/07/16000719.html</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+          <article class="card" data-text="kek – silicon detectors / calorimeter radiation damage effects on semiconductor detectors and electronics by neutrons produced in calorimeters kaken 報告 · 高エネルギー実験 · neutron-induced damage カロリメータで生成される中性子によるシリコン検出器および読み出し電子回路の放射線損傷を評価した日本の研究プロジェクト報告。calorimeter 近傍に設置される半導体検出器・asic の寿命評価の具体例として有用。kek の素粒子実験環境における耐放射線設計の参考文献。">
+            <div class="card-tag"><span class="dot" style="background:#dc2626"></span>KEK – Silicon Detectors / Calorimeter</div>
+            <div class="card-title">Radiation Damage Effects on Semiconductor Detectors and Electronics by Neutrons Produced in Calorimeters</div>
+            <div class="card-meta">KAKEN 報告 · 高エネルギー実験 · Neutron-Induced Damage</div>
+            <p class="card-desc">カロリメータで生成される中性子によるシリコン検出器および読み出し電子回路の放射線損傷を評価した日本の研究プロジェクト報告。Calorimeter 近傍に設置される半導体検出器・ASIC の寿命評価の具体例として有用。KEK の素粒子実験環境における耐放射線設計の参考文献。</p>
+            <a class="card-link" href="https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-17340070/" target="_blank" rel="noopener"><span class="url-text">https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-17340070/</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
+          </article>
+        </div>
+      </div>
       <div class="subsection" id="cern-see">
         <div class="subsec-header"><div class="subsec-title">CERN – R2E / CHARM / LHC</div><div class="subsec-note">LHC トンネル混合場 · R2E プログラム · CHARM 施設</div></div>
         <div class="cards">
@@ -1339,91 +1390,4 @@
           </article>
         </div>
       </div>
-      <div class="subsection" id="kek-hep">
-        <div class="subsec-header"><div class="subsec-title">KEK / J-PARC – 素粒子実験・ミュオン SEE</div><div class="subsec-note">カロリメータ中性子による放射線損傷・J-PARC ミュオン SEE</div></div>
-        <div class="cards">
-          <article class="card" data-text="j-parc mlf – muse（ミュオン see） j-parc mlf muse ビームラインを用いた半導体ミュオンソフトエラー試験 j-parc 物質・生命科学実験施設（mlf）· muse · kek / jaea / ソシオネクスト j-parc mlf の muse ビームラインは世界最高強度の正・負ミュオンビームを提供し、宇宙線ミュオン起因の半導体ソフトエラー試験に使われている。中性子ビームラインも23本あるが、物質・生命科学研究向けであり半導体 see 試験への一般開放はされていない。高エネルギー中性子ソフトエラー試験には大阪大学 rcnp、熱中性子には京都大学 kur が使われる。リンク先はミュオン vs. 中性子ソフトエラー比較研究（ソシオネクスト・kek 等、2021年）のプレスリリース。">
-            <div class="card-tag"><span class="dot" style="background:#dc2626"></span>J-PARC MLF – MUSE（ミュオン SEE）</div>
-            <div class="card-title">J-PARC MLF MUSE ビームラインを用いた半導体ミュオンソフトエラー試験</div>
-            <div class="card-meta">J-PARC 物質・生命科学実験施設（MLF）· MUSE · KEK / JAEA / ソシオネクスト</div>
-            <p class="card-desc">J-PARC MLF の MUSE ビームラインは世界最高強度の正・負ミュオンビームを提供し、宇宙線ミュオン起因の半導体ソフトエラー試験に使われている。中性子ビームラインも23本あるが、物質・生命科学研究向けであり半導体 SEE 試験への一般開放はされていない。高エネルギー中性子ソフトエラー試験には大阪大学 RCNP、熱中性子には京都大学 KUR が使われる。リンク先はミュオン vs. 中性子ソフトエラー比較研究（ソシオネクスト・KEK 等、2021年）のプレスリリース。</p>
-            <a class="card-link" href="https://j-parc.jp/c/press-release/2021/07/16000719.html" target="_blank" rel="noopener"><span class="url-text">https://j-parc.jp/c/press-release/2021/07/16000719.html</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
-          </article>
-          <article class="card" data-text="kek – silicon detectors / calorimeter radiation damage effects on semiconductor detectors and electronics by neutrons produced in calorimeters kaken 報告 · 高エネルギー実験 · neutron-induced damage カロリメータで生成される中性子によるシリコン検出器および読み出し電子回路の放射線損傷を評価した日本の研究プロジェクト報告。calorimeter 近傍に設置される半導体検出器・asic の寿命評価の具体例として有用。kek の素粒子実験環境における耐放射線設計の参考文献。">
-            <div class="card-tag"><span class="dot" style="background:#dc2626"></span>KEK – Silicon Detectors / Calorimeter</div>
-            <div class="card-title">Radiation Damage Effects on Semiconductor Detectors and Electronics by Neutrons Produced in Calorimeters</div>
-            <div class="card-meta">KAKEN 報告 · 高エネルギー実験 · Neutron-Induced Damage</div>
-            <p class="card-desc">カロリメータで生成される中性子によるシリコン検出器および読み出し電子回路の放射線損傷を評価した日本の研究プロジェクト報告。Calorimeter 近傍に設置される半導体検出器・ASIC の寿命評価の具体例として有用。KEK の素粒子実験環境における耐放射線設計の参考文献。</p>
-            <a class="card-link" href="https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-17340070/" target="_blank" rel="noopener"><span class="url-text">https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-17340070/</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
-          </article>
-        </div>
-      </div>
-      <div class="subsection" id="cosmic-ray-ser">
-        <div class="subsec-header"><div class="subsec-title">地上・大気宇宙線による半導体ソフトエラー（スペクトル・SER）</div><div class="subsec-note">地上宇宙線スペクトル測定・SER 計算基礎・JEDEC 標準・シミュレーションツール</div></div>
-        <div class="cards">
-          <article class="card" data-text="ground neutron spectrum measurement of the flux and energy spectrum of cosmic-ray induced neutrons on the ground m. s. gordon et al. · ieee trans. nucl. sci. 51 · 2004 · doi: 10.1109/tns.2004.839134 地上における宇宙線誘起中性子のフラックスとエネルギースペクトルの精密測定。silicon と boron を用いた検出器でニューヨーク市（海抜 15 m）における中性子スペクトルを測定し、エネルギー範囲 0.1 mev–10 gev にわたる標準スペクトルデータを確立。半導体ソフトエラー率（ser）の計算基準として広く引用され、j-parc・rcnp 等の加速器施設における中性子 see 試験のスペクトル参照源でもある。">
-            <div class="card-tag"><span class="dot" style="background:#dc2626"></span>Ground Neutron Spectrum</div>
-            <div class="card-title">Measurement of the Flux and Energy Spectrum of Cosmic-Ray Induced Neutrons on the Ground</div>
-            <div class="card-meta">M. S. Gordon et al. · IEEE Trans. Nucl. Sci. 51 · 2004 · DOI: 10.1109/TNS.2004.839134</div>
-            <p class="card-desc">地上における宇宙線誘起中性子のフラックスとエネルギースペクトルの精密測定。Silicon と Boron を用いた検出器でニューヨーク市（海抜 15 m）における中性子スペクトルを測定し、エネルギー範囲 0.1 MeV–10 GeV にわたる標準スペクトルデータを確立。半導体ソフトエラー率（SER）の計算基準として広く引用され、J-PARC・RCNP 等の加速器施設における中性子 SEE 試験のスペクトル参照源でもある。</p>
-            <a class="card-link" href="https://ieeexplore.ieee.org/document/1369506/" target="_blank" rel="noopener"><span class="url-text">https://ieeexplore.ieee.org/document/1369506/</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
-          </article>
-          <article class="card" data-text="ibm – terrestrial cosmic rays (基礎) terrestrial cosmic rays j. f. ziegler · ibm journal of research and development 40(1) · 1996 · doi: 10.1147/rd.401.0019 地上宇宙線が電子機器に与える影響の物理を体系的にレビューした基礎論文。海面での粒子組成（中性子・陽子・パイオン・ミュオン・電子・光子）のフラックスと、緯度・高度・太陽活動・日変化による変動を定量化。ibm の大規模フィールド試験データに基づき、半導体 ser と宇宙線の因果関係を確立した先駆的論文。gordon 2004 の測定データ解釈の前提となる物理的基礎を与える。">
-            <div class="card-tag"><span class="dot" style="background:#dc2626"></span>IBM – Terrestrial Cosmic Rays (基礎)</div>
-            <div class="card-title">Terrestrial Cosmic Rays</div>
-            <div class="card-meta">J. F. Ziegler · IBM Journal of Research and Development 40(1) · 1996 · DOI: 10.1147/rd.401.0019</div>
-            <p class="card-desc">地上宇宙線が電子機器に与える影響の物理を体系的にレビューした基礎論文。海面での粒子組成（中性子・陽子・パイオン・ミュオン・電子・光子）のフラックスと、緯度・高度・太陽活動・日変化による変動を定量化。IBM の大規模フィールド試験データに基づき、半導体 SER と宇宙線の因果関係を確立した先駆的論文。Gordon 2004 の測定データ解釈の前提となる物理的基礎を与える。</p>
-            <a class="card-link" href="https://ieeexplore.ieee.org/document/5389443/" target="_blank" rel="noopener"><span class="url-text">https://ieeexplore.ieee.org/document/5389443/</span><svg width="12" height="12" viewBox="0 0 20 20"><path fill="currentColor" d="M5 15.5a.75.75 0 0 1 0-1.06L13.44 6H9a.75.75 0 0 1 0-1.5h6.25A.75.75 0 0 1 16 5.25V11.5a.75.75 0 0 1-1.5 0V7.06L6.56 15.5a.75.75 0 0 1-1.06 0Z"/></svg></a>
-          </article>
-        </div>
-      </div>
-    </section>
-</div>
-<a class="back-top" href="#" title="トップへ">↑</a>
-<footer>
-  <p>Space Mission Reference Hub &nbsp;·&nbsp; 153 文献 &nbsp;·&nbsp; 最終更新: 2026年5月19日</p>
-</footer>
-<script>
-(function(){
-  var search=document.getElementById('search');var hint=document.getElementById('search-hint');
-  function escRe(s){return s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');}
-  function strip(el){el.innerHTML=el.innerHTML.replace(/<mark class="hl">([^<]*)<\/mark>/g,'$1');}
-  function addMarks(el,re){
-    ['.card-title','.card-meta','.card-desc','.card-tag'].forEach(function(sel){
-      var node=el.querySelector(sel);if(!node)return;
-      var tw=document.createTreeWalker(node,NodeFilter.SHOW_TEXT);var nodes=[];var n;
-      while((n=tw.nextNode()))nodes.push(n);
-      nodes.forEach(function(tn){
-        var parts=tn.nodeValue.split(re);if(parts.length<2)return;
-        var frag=document.createDocumentFragment();
-        parts.forEach(function(p,i){
-          if(i%2===0){frag.appendChild(document.createTextNode(p));}
-          else{var m=document.createElement('mark');m.className='hl';m.textContent=p;frag.appendChild(m);}
-        });
-        tn.parentNode.replaceChild(frag,tn);
-      });
-    });
-  }
-  search.addEventListener('input',function(){
-    var q=this.value.trim();var ql=q.toLowerCase();
-    var re=q?new RegExp('('+escRe(q)+')','gi'):null;
-    var cards=document.querySelectorAll('.card');var shown=0;
-    cards.forEach(function(card){
-      strip(card);var match=!q||(card.dataset.text||'').includes(ql);
-      card.classList.toggle('hidden',!match);
-      if(match){shown++;if(re)addMarks(card,re);}
-    });
-    document.querySelectorAll('.subsection').forEach(function(s){s.classList.toggle('hidden',s.querySelectorAll('.card:not(.hidden)').length===0);});
-    document.querySelectorAll('.group-section').forEach(function(g){g.classList.toggle('hidden',g.querySelectorAll('.card:not(.hidden)').length===0);});
-    hint.textContent=q?shown+' 件が一致':'';
-  });
-  document.querySelectorAll('.nav-pill[data-color]').forEach(function(pill){
-    var c=pill.dataset.color;
-    pill.style.color=c;pill.style.borderColor=c+'55';pill.style.background=c+'18';
-    pill.addEventListener('mouseenter',function(){this.style.background=c+'30';});
-    pill.addEventListener('mouseleave',function(){this.style.background=c+'18';});
-  });
-})();
-</script>
-</body>
-</html>
+    </section></div><a class="back-top" href="#" title="トップへ">↑</a><footer><p>Space Mission Reference Hub &nbsp;·&nbsp; 159 文献 &nbsp;·&nbsp; 最終更新: 2026年5月19日</p></footer><script>(function(){var s=document.getElementById('search'),h=document.getElementById('search-hint');function er(s){return s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');}function strip(el){el.innerHTML=el.innerHTML.replace(/<mark class="hl">([^<]*)<\/mark>/g,'$1');}function mark(el,re){['.card-title','.card-meta','.card-desc','.card-tag'].forEach(function(sel){var n=el.querySelector(sel);if(!n)return;var tw=document.createTreeWalker(n,NodeFilter.SHOW_TEXT);var ns=[],t;while((t=tw.nextNode()))ns.push(t);ns.forEach(function(tn){var p=tn.nodeValue.split(re);if(p.length<2)return;var f=document.createDocumentFragment();p.forEach(function(x,i){if(i%2===0){f.appendChild(document.createTextNode(x));}else{var m=document.createElement('mark');m.className='hl';m.textContent=x;f.appendChild(m);}});tn.parentNode.replaceChild(f,tn);});});}s.addEventListener('input',function(){var q=this.value.trim(),ql=q.toLowerCase(),re=q?new RegExp('('+er(q)+')','gi'):null,shown=0;document.querySelectorAll('.card').forEach(function(c){strip(c);var ok=!q||(c.dataset.text||'').includes(ql);c.classList.toggle('hidden',!ok);if(ok){shown++;if(re)mark(c,re);}});document.querySelectorAll('.subsection').forEach(function(x){x.classList.toggle('hidden',x.querySelectorAll('.card:not(.hidden)').length===0);});document.querySelectorAll('.group-section').forEach(function(x){x.classList.toggle('hidden',x.querySelectorAll('.card:not(.hidden)').length===0);});h.textContent=q?shown+' 件が一致':'';});document.querySelectorAll('.nav-pill[data-color]').forEach(function(p){var c=p.dataset.color;p.style.color=c;p.style.borderColor=c+'55';p.style.background=c+'18';p.addEventListener('mouseenter',function(){this.style.background=c+'30';});p.addEventListener('mouseleave',function(){this.style.background=c+'18';});});})();</script></body></html>
