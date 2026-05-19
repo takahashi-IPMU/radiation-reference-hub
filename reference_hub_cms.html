@@ -161,13 +161,20 @@ const INITIAL = {
   meta: { title:"Space Mission Reference Hub", subtitle:"月面放射線環境 · 放射線試験機関 · 耐放射線標準文書 · 耐放射線部品 · RadPC · 月面ミッション設計" },
   groups: [
     /* ═══════════════════════════════════════════════════
-       GROUP 1: 月面放射線環境
+       GROUP 1: 宇宙空間放射線環境
        ═══════════════════════════════════════════════════ */
-    { id:"g-lunar-rad", label:"月面放射線環境", color:"#2563eb",
-      desc:"月面・NRHO・LEO 軌道での放射線環境仕様・測定・モデリングに関する文献",
+    { id:"g-lunar-rad", label:"宇宙空間放射線環境", color:"#2563eb",
+      desc:"GCR・SEP の基礎・月面・LEO・深宇宙の放射線環境仕様・測定・モデリングに関する文献",
       collapsed: false,
       sections: [
-        { id:"env-specs", label:"環境仕様・設計基準文書",
+        { id:"gcr-sep-basics", label:"GCR・SEP 基礎文献",
+          note:"銀河宇宙線（GCR）・太陽エネルギー粒子（SEP）の物理・モデル・特性",
+          refs:[
+            {id:"gcr01",tag:"GCR – Flux Model (基礎)",title:"Galactic Cosmic Ray Flux Simulation and Prediction",meta:"W. R. Webber et al. · Advances in Space Research 17(2) · 1996 · DOI: 10.1016/0273-1177(95)00508-C",desc:"半導体デバイスへの影響評価に用いられる GCR モデルの古典的文献。Z=1〜28 のイオン種と電子について E=10〜10⁵ MeV/nucleon の範囲でフラックスをシミュレート・予測する動的 GCR モデルを提案。太陽活動（太陽黒点数）に連動した太陽変調・GCR の定常的な入射・重イオン成分を含む高エネルギースペクトルを定量化した基礎資料。SEE 解析で必要となる LET スペクトル計算の前提となるフラックスモデルの原典の一つ。",url:"https://www.sciencedirect.com/science/article/pii/027311779500508C"},
+            {id:"sep01",tag:"SEP – Modern Primer（教科書）",title:"Solar Energetic Particles: A Modern Primer on Understanding Sources, Acceleration and Propagation",meta:"D. Reames · Springer Nature · Lecture Notes in Physics 978 · 2021 · ISBN: 978-3-030-66402-2",desc:"太陽エネルギー粒子（SEP）の発生源・加速・伝播に関する現代的な入門教科書。SEP イベントの間欠的な発生・太陽距離依存性・大型フレア / CME 起源の大型 SEP イベント・粒子エネルギースペクトルのハード化と高エネルギー陽子・重イオン成分を体系的に解説。宇宙機電子機器の SEE リスク評価において GCR との根本的な違いを理解するための標準的な参考書。",url:"https://link.springer.com/book/10.1007/978-3-030-66402-2"}
+          ]
+        },
+        { id:"env-specs", label:"月面放射線環境",
           note:"DSNE / Lunar Surface Data Book / JAXA 宇宙環境標準 / Gateway 適用解説",
           refs:[
             {id:"s01",tag:"NASA – Environment Spec",title:"SLS-SPEC-159 Cross-Program Design Specification for Natural Environments (DSNE), Rev H",meta:"NASA · Natural Environments · SEE（GCR / SPE / Trapped）",desc:"NASA の自然環境設計基準書。ISS クラス LEO と geomagnetic-unshielded 環境（NRHO 等）における SEE 環境（GCR, SPE, trapped protons）や帯電環境が体系的に定義されている。NRHO / LEO / 月面の放射線比較のベース文書。",url:"https://ntrs.nasa.gov/api/citations/20205007447/downloads/SLS-SPEC-159%20Cross-Program%20Design%20Specification%20for%20Natural%20Environments%20(DSNE)%20REVISION%20H.pdf"},
@@ -187,6 +194,13 @@ const INITIAL = {
             {id:"l06",tag:"Model – Neutron/Gamma (Moon)",title:"Global Dose Distributions of Neutrons and Gamma-Rays on the Moon",meta:"M. Naito et al. · Scientific Reports 13, 13275 · 2023",desc:"GCR によって月面で生成される中性子・ガンマ線の全球線量分布を評価したシミュレーション研究。最大で年間 ~420 mSv 程度の線量となる可能性を示す。遮蔽設計を議論する上で重要なリファレンス。",url:"https://www.nature.com/articles/s41598-023-40405-0"},
             {id:"l07",tag:"Model – GEANT4 MIDAS",title:"GEANT4 Study of Miniature Radiation Detector Response in GCR and Inside Spacecraft",meta:"Karafasoulis et al. · SWSC (ESA) · 2022",desc:"小型線量計 MIDAS の GCR 応答を GEANT4 で評価し、月面 LND 測定値と比較して妥当性を検証。月面や宇宙機内部での小型検出器性能評価に直接関連する資料。",url:"https://www.swsc-journal.org/articles/swsc/full_html/2022/01/swsc210031/swsc210031.html"}
           ]
+        },
+        { id:"leo-env", label:"低軌道（LEO）放射線環境",
+          note:"ISS / LEO 軌道での放射線環境測定・モデリング・SAA",
+          refs:[
+            {id:"leo01",tag:"ISS – 放射線環境概説",title:"Space Radiation Environment on the International Space Station",meta:"T. Berger et al. · npj Microgravity 3, 2 · 2017 · DOI: 10.1038/s41526-017-0015-8",desc:"ISS における GCR・SAA（南大西洋異常域）・太陽粒子の 3 成分からなる LEO 放射線環境を包括的に概説。乗組員・電子機器それぞれへの寄与を定量化し、軌道高度・傾斜角・太陽活動依存性を議論。LEO ミッション放射線解析の標準的入門資料。",url:"https://www.nature.com/articles/s41526-017-0015-8"},
+            {id:"leo02",tag:"JAXA – 宇宙放射線環境 (JERG-2-141)",title:"JERG-2-141 宇宙環境計測データ集 – 軌道上放射線環境",meta:"JAXA 宇宙環境・エネルギー技術 · JERG-2-141",desc:"JAXA の宇宙環境データ集。LEO・GTO・GEO・月軌道等の電子・陽子・重イオンフラックスを軌道パラメータ別に整理したリファレンスデータ。日本の衛星・宇宙機の放射線設計に用いられる標準データソース。",url:"https://sma.jaxa.jp/TechDoc/Docs/JAXA-JERG-2-141.pdf"}
+          ]
         }
       ]
     },
@@ -203,7 +217,18 @@ const INITIAL = {
             {id:"qst01",tag:"QST高崎 – TIARA",title:"イオン照射研究施設（TIARA）– QST 高崎量子技術基盤研究所",meta:"QST 高崎量子技術基盤研究所 · TIARA · 施設供用制度",desc:"Takasaki Ion Accelerators for Advanced Radiation Application（TIARA）。AVFサイクロトロン・タンデム加速器・シングルエンド加速器・イオン注入装置の4種類のイオン加速器を備え、数万 eV から数億 eV の広いエネルギー範囲の多種イオンを供給できる。宇宙機器用半導体の SEE / TID 試験にも利用可能。外部利用は施設供用制度を通じて申請する。",url:"https://www.qst.go.jp/site/taka-riyoukanri/2163.html"},
             {id:"rcnp01",tag:"阪大 RCNP – サイクロトロン施設",title:"大阪大学 核物理研究センター（RCNP）サイクロトロン施設",meta:"Research Center for Nuclear Physics, Osaka University · AVF + Ring Cyclotron",desc:"K140 AVFサイクロトロン（1973年稼働）と K400 リングサイクロトロン（1991年稼働）の2段カスケード構成。陽子最大 420 MeV・重イオン最大 100 MeV/u を供給。エネルギー広がり ΔE/E ≈ 10⁻⁴ の高品質ビームが特長。半導体デバイスの SEE / NIEL 試験に利用可能な共同利用・共同研究拠点。",url:"https://www.rcnp.osaka-u.ac.jp/Divisions/np1-a/RCF/RCNPCF-ACj.html"},
             {id:"werc01",tag:"若狭湾エネルギー研究センター",title:"若狭湾エネルギー研究センター（WERC）イオン加速器施設",meta:"公益財団法人 若狭湾エネルギー研究センター · 福井県敦賀市 · タンデム加速器 + シンクロトロン",desc:"タンデム加速器（最大ターミナル電圧 5 MV）とシンクロトロン加速器（陽子 200 MeV）を中核装置とする多目的イオン加速器システムを保有。宇宙機器の放射線耐性評価研究に活用されており、JAXA との研究連携・協力覚書を締結。水素・ヘリウム・炭素等の荷電粒子イオンビームによる SEE / TID 試験が可能。外部利用は依頼照射制度による。",url:"https://www.werc.or.jp/outline/shisetsu/kasokuki/"},
-            {id:"raris01",tag:"東北大学 RARiS – 半導体照射試験装置",title:"東北大学 先端量子ビーム科学研究センター（RARiS）半導体照射試験装置",meta:"Research Center for Accelerator and Radioisotope Science, Tohoku University · 青葉山事業所 · AVFサイクロトロン",desc:"2024年4月に電子光理学研究センターとサイクロトロン・ラジオアイソトープセンターを統合して設置。青葉山事業所の AVFサイクロトロン（最大 100 MeV 重イオン）からの陽子・重イオン・中性子を用いた宇宙環境模擬半導体照射試験装置を備える。ビーム強度・均一性・エネルギー可変を確保した SEE 試験環境で、陽子 107 /cm²·s・重イオン 104 /cm²·s 程度のフルエンス率を実現。",url:"https://www.raris.tohoku.ac.jp/facility/aobayama/semiconductor/"}
+            {id:"raris01",tag:"東北大学 RARiS – 半導体照射試験装置",title:"東北大学 先端量子ビーム科学研究センター（RARiS）半導体照射試験装置",meta:"Research Center for Accelerator and Radioisotope Science, Tohoku University · 青葉山事業所 · AVFサイクロトロン",desc:"2024年4月に電子光理学研究センターとサイクロトロン・ラジオアイソトープセンターを統合して設置。青葉山事業所の AVFサイクロトロン（最大 100 MeV 重イオン）からの陽子・重イオン・中性子を用いた宇宙環境模擬半導体照射試験装置を備える。ビーム強度・均一性・エネルギー可変を確保した SEE 試験環境で、陽子 107 /cm²·s・重イオン 104 /cm²·s 程度のフルエンス率を実現。",url:"https://www.raris.tohoku.ac.jp/facility/aobayama/semiconductor/"},
+            {id:"ribf01",tag:"理研 RIBF – 重イオン SEE 施設供用",title:"理化学研究所 RIBF（RI ビームファクトリー）施設供用",meta:"理化学研究所 仁科加速器研究センター · 和光 · SRC / BigRIPS",desc:"世界最高強度の重イオンビームを提供する理研の RI ビームファクトリー（RIBF）。超伝導リングサイクロトロン（SRC）を核とし、最大 345 MeV/u の重イオン（Ar〜U）を生成。半導体・電子機器の放射線損傷評価（SEE・TID）での施設供用実績がある。一般共同研究・施設利用申請制度あり。",url:"https://ribf.riken.jp/sisetu-kyoyo/sisetsu/index.html"},
+            {id:"himac01",tag:"QST 放医研 HIMAC – 重粒子線照射",title:"QST 放射線医学研究所 HIMAC（Heavy Ion Medical Accelerator in Chiba）",meta:"量子科学技術研究開発機構（QST）放射線医学研究所 · 千葉 · 重粒子線がん治療装置",desc:"QST 放医研の重粒子線がん治療施設 HIMAC。炭素イオン（C-12）を中心に最大 800 MeV/u 相当の重イオンビームを提供。医療用途が主であるが、半導体デバイスの SEE 試験・放射線損傷評価への施設供用実績がある。高エネルギー重イオンを必要とする宇宙機器評価に利用可能。",url:"https://www.qst.go.jp/site/iqms-kyoyo/1870.html"}
+          ]
+        },
+        { id:"co60-japan", label:"国内 Co-60 TID 試験施設",
+          note:"ガンマ線 TID 試験専用施設（Co-60 線源）",
+          refs:[
+            {id:"co60-qst",tag:"QST高崎 – コバルト棟",title:"QST 高崎量子応用研究所 コバルト60 照射施設",meta:"量子科学技術研究開発機構（QST）高崎量子応用研究所 · 群馬県高崎市",desc:"QST 高崎（旧 JAEA 高崎）のコバルト棟。Co-60 線源によるガンマ線照射（総電離線量 TID 試験）施設。TIARA の荷電粒子ビームと組み合わせることで、同一機関内で SEE と TID の両方を評価できる。宇宙用電子機器の放射線耐性評価に実績あり。施設利用申請制度あり。",url:"https://www.qst.go.jp/site/taka-shisetsuka/2103.html"},
+            {id:"co60-titech",tag:"東京科学大 – Co-60 照射施設",title:"東京科学大学 Co-60 照射施設（工学院）",meta:"東京科学大学（旧 東京工業大学）· 工学院研究科 · 東京",desc:"東京科学大学の Co-60 ガンマ線照射施設。IC・センサ・素子の TID 試験に利用されており、大学附属施設として学術研究から産業応用まで幅広く提供している。",url:"https://www.zc.iir.titech.ac.jp/Co60/"},
+            {id:"co60-nagoya",tag:"名古屋大学 – Co-60 照射施設",title:"名古屋大学 Co-60 照射施設",meta:"名古屋大学 · 核理工学研究施設 · 名古屋",desc:"名古屋大学核理工学研究施設の Co-60 ガンマ線照射施設。宇宙用・産業用デバイスの TID 試験に提供。線量率・総線量の調整が可能で、電子機器の放射線耐性評価に利用されている。",url:"https://co60.nucl.nagoya-u.ac.jp/index.html"},
+            {id:"co60-kyushu",tag:"九州大学 – Co-60 照射施設",title:"九州大学 Co-60 照射施設（CABAS）",meta:"九州大学 応用力学研究所 · 福岡 · CABAS",desc:"九州大学応用力学研究所の Co-60 ガンマ線照射施設 CABAS。宇宙用部品・電子機器の TID 試験・材料の照射研究に提供。九州地区における主要な TID 試験施設。",url:"https://www.cabas.kyushu-u.ac.jp/cobalt/"}
           ]
         },
         { id:"us-facilities", label:"米国の放射線試験施設",
@@ -264,11 +289,22 @@ const INITIAL = {
           ]
         },
         { id:"eee-parts-std", label:"EEE Parts 保証標準",
-          note:"NASA-STD-8739.10 · EEE 部品選定・調達・トレーサビリティ",
+          note:"NASA-STD-8739.10 · EEE-INST-002 · EEE 部品選定・調達・トレーサビリティ",
           refs:[
             {id:"e01",tag:"NASA – EEE Parts Standard",title:"NASA-STD-8739.10 – Electrical, Electronic, and Electromechanical (EEE) Parts Assurance Standard",meta:"NASA · EEE Parts Assurance · COTS / PEMs",desc:"NASA の EEE 部品保証標準。COTS 品やプラスチック封止品（PEMs）を含めた選定・調達・トレーサビリティ・試験・保管・適用方法を定める。COTS メモリ／マイコン利用時のリスク管理とパーツアシュアランスの前提文書。",url:"https://standards.nasa.gov/standard/NASA/NASA-STD-873910"},
+            {id:"eee-inst002",tag:"NASA – EEE-INST-002（部品選定指針）",title:"EEE-INST-002: Instructions for EEE Parts Selection, Screening, Qualification, and Derating",meta:"NASA GSFC · EEE-INST-002 · Rev. A · 2008年1月",desc:"NASA GSFC が発行する EEE 部品の選定・スクリーニング・資格認定・ディレーティングに関する詳細指針書。放射線耐性評価（TID / SEE / DDD）要求を含む多くの評価要件が規定されており、放射線保証プログラムの実装手順書として機能する。宇宙グレード・MIL グレード・COTS 品のそれぞれに対する要求レベルを体系的に整理。",url:"https://nepp.nasa.gov/pages/EEE-INST-002.cfm"},
             {id:"q02",tag:"RHA – Radiation Assurance",title:"Radiation Assurance for the Space Environment",meta:"J. L. Barth, K. A. LaBel and C. Poivey · 2004 International Conference on IC Design and Technology",desc:"宇宙環境における放射線保証の包括的なアプローチについて。",url:"https://ntrs.nasa.gov/api/citations/20040070939/downloads/20040070939.pdf"},
             {id:"q07",tag:"SEE Test – Adequacy",title:"Are Current SEE Test Procedures Adequate for Modern Devices and Electronics Technologies?",meta:"K. A. LaBel et al. · 2008",desc:"最新の半導体技術に対する既存の SEE 試験手順の妥当性を問う、試験法見直しのための重要資料。",url:"https://radhome.gsfc.nasa.gov/radhome/papers/HEART08_LaBel.pdf"}
+          ]
+        },
+        { id:"rad-test-methods", label:"放射線試験方法規格（TID / SEE / DDD）",
+          note:"MIL-STD-883 / MIL-STD-750 / ESCC 22900 / ESCC 25100 / ESCC 22500",
+          refs:[
+            {id:"mil883-1019",tag:"MIL-STD-883 Method 1019 – TID（IC）",title:"MIL-STD-883 Method 1019: Ionizing Radiation (Total Dose) Test Procedure",meta:"DLA Land and Maritime · MIL-STD-883 · IC（集積回路）用 TID 試験方法",desc:"集積回路（IC）の総電離線量（TID）試験方法を規定する MIL-STD-883 の Method 1019。Co-60 ガンマ線源または X 線源を使用し、バイアス条件・線量率・評価パラメータ・試験レポート要件を定める。宇宙用 IC の TID 評価において最も広く参照される試験規格の一つ。",url:"https://landandmaritimeapps.dla.mil/programs/MilSpec/ListDocs.aspx?BasicDoc=MIL-STD-883"},
+            {id:"mil750-1019",tag:"MIL-STD-750 Method 1019 – TID（ディスクリート）",title:"MIL-STD-750 Method 1019: Ionizing Radiation (Total Dose) Test Procedure",meta:"DLA Land and Maritime · MIL-STD-750 · ディスクリート半導体デバイス用 TID 試験方法",desc:"ディスクリート半導体デバイス（トランジスタ・ダイオード等）の TID 試験方法を規定する MIL-STD-750 の Method 1019。IC 向けの MIL-STD-883 Method 1019 と対をなす規格で、ディスクリート品の放射線耐性評価に適用される。同文書内に SEE 試験の Method 1080 も収録されている。",url:"https://landandmaritimeapps.dla.mil/programs/MilSpec/ListDocs.aspx?BasicDoc=MIL-STD-750"},
+            {id:"escc22900",tag:"ESCC 22900 – TID 試験方法（欧州標準）",title:"ESCC Basic Specification No. 22900: Total Dose Steady-State Irradiation Test Method",meta:"ESA / European Space Components Coordination · Issue 5 · 2016年6月",desc:"ESA が定める宇宙用部品の TID 試験標準。Co-60 線源による定常照射試験の手順・バイアス条件・試験計画・評価・レポート要件を規定。ESCC 評価・認定品に求められる試験規格であり、欧州宇宙機器の TID 評価において MIL-STD-883 Method 1019 に相当する位置づけ。",url:"https://escies.org/escc-specs/published/22900.pdf"},
+            {id:"escc25100",tag:"ESCC 25100 – SEE 試験方法（欧州標準）",title:"ESCC Basic Specification No. 25100: Single Event Effects Test Method and Guidelines",meta:"ESA / European Space Components Coordination",desc:"ESA が定める宇宙用部品の SEE 試験標準。重イオン・陽子による SEE（SEU / SEL / SEB / SEFI 等）の試験手順・LET 範囲・フルエンス要件・評価方法・試験レポート要件を規定。ESCC 認定品の SEE 評価に必須の欧州標準規格。",url:"https://spacecomponents.org/specification/view?id=3095"},
+            {id:"escc22500",tag:"ESCC 22500 – 変位損傷（DDD）試験ガイドライン",title:"ESCC Basic Specification No. 22500: Guidelines for Displacement Damage Irradiation Testing",meta:"ESA / European Space Components Coordination · Issue 2 · 2021年10月",desc:"変位損傷線量（DDD）試験のガイドラインを定める ESCC 標準。陽子・中性子・電子・重イオンによる NIEL（非電離エネルギー損失）の評価方法・試験手順・等価フルエンスの計算方法を規定。太陽電池・光検出器・CCD など NIEL 感受性の高いデバイスの評価に適用。",url:"https://escies.org/specification/viewapppub?id=4322"}
           ]
         }
       ]
@@ -342,6 +378,48 @@ const INITIAL = {
             {id:"db07",tag:"Zero-G – COTS 放射線データベース（NewSpace）",title:"Zero-G Radiation Assurance – Radiation Database for COTS Electronics",meta:"Zero-G Radiation Assurance · 米国 · NewSpace / CubeSat / 商業衛星向け",desc:"NewSpace プログラム向けに特化した COTS 部品の放射線試験データベース。TID・SEE（重イオン・陽子）などの試験データを部品番号で検索でき、SWaP（Size Weight and Power）を重視する商業衛星設計者が放射線耐性 COTS 部品を選定するための主要ツール。従来の NASA GSFC データベースでカバーされていない最新 COTS デバイスのデータが充実。商用サービスだが一部の情報は無料で閲覧可能。",url:"https://www.zerogradiation.com/radiation-database"},
             {id:"db08",tag:"ESA Radiation Test Database（esarad）",title:"ESA Radiation Test Database – esarad.esa.int",meta:"European Space Agency · TEC-QEC · 2024年開設 · TRAD 等の COTS 試験結果収録",desc:"ESA が2024年に新設した公式の放射線試験データポータル。従来の ESCIES 放射線レポートを補完・拡張し、TRAD 等の欧州企業が ESA 契約のもとで実施した COTS 部品（電圧コンバータ・ADC・発振器・GaN FET・メモリなど）の TID・SEE 試験レポートを収録。CORHA 2024 プロジェクトの成果も掲載予定。情報利用には出典明示が必要であり、トレーサビリティの保証は利用者の責任とされている。",url:"https://esarad.esa.int/"},
             {id:"db09",tag:"TRAD R2COTS – COTS 放射線保証サービス",title:"R2COTS – Radiation & Reliability on Commercial-Off-The-Shelf (TRAD Tests & Radiations)",meta:"TRAD Tests & Radiations · フランス・ラベージュ · 100品超の COTS カタログ",desc:"フランスの放射線試験専門企業 TRAD が提供する COTS 専用放射線保証サービス。TID（Co-60）・重イオン SEE・レーザー照射による100品超の COTS 部品（電圧コンバータ・ADC・発振器・GaN FET・メモリ等）に対し、ダイ改版・マスクセット・ウェーハファブ・拡散ロット・組み立てロットまでのフルトレーサビリティを保証した「Class 3+」認定データを提供する。NewSpace 向けの実用的な COTS 調達・資格取得支援サービスとして ESA コミュニティでも参照されている。",url:"https://www.r2cots.com/"}
+          ]
+        },
+        { id:"approved-parts", label:"認定部品リスト",
+          note:"JAXA 認定部品 · ESA EPPL · NASA NPSL – 放射線耐性保証済み部品の選定基準",
+          refs:[
+            {id:"jaxa-parts",tag:"JAXA – 認定部品リスト",title:"JAXA 宇宙用電子部品認定品リスト（JAXA EEE Parts Pit）",meta:"JAXA 宇宙技術部門 · 宇宙用電子部品認定 · QML / QPL",desc:"JAXA が宇宙用途として認定した電子部品の認定品リスト。QML（Qualified Manufacturers List）および QPL（Qualified Parts List）に基づく認定品で、TID・SEE を含む放射線耐性が保証されている。国内の宇宙機器開発における部品選定の主要参照源。",url:"https://ssl.tksc.jaxa.jp/eeepitnl/jp/"},
+            {id:"eppl01",tag:"ESA EPPL – 欧州推奨部品リスト",title:"European Preferred Parts List (EPPL)",meta:"ESA / ESCIES · European Preferred Parts List · 欧州宇宙用推奨部品",desc:"ESA が管理する欧州宇宙用推奨部品リスト（EPPL）。ESCC 認定または ESA 評価済みの電子部品（IC・ディスクリート・受動部品）を収録し、放射線耐性・信頼性が確認された部品を検索できる。欧州宇宙機器の部品選定における標準参照リスト。",url:"https://escies.org/webdocument/showArticle?id=166"},
+            {id:"npsl01",tag:"NASA NPSL – NASA 部品選定リスト",title:"NASA Parts Selection List (NPSL)",meta:"NASA NEPP · NASA Parts Selection List · 宇宙用推奨部品",desc:"NASA NEPP が管理する宇宙用部品選定リスト（NPSL）。放射線耐性・信頼性・調達性を考慮した部品選定ガイダンスを提供。NASA のフライトプロジェクト向けに推奨される EEE 部品の包括的な参照源。",url:"https://nepp.nasa.gov/npsl/index.htm"}
+          ]
+        },
+        { id:"radecs-conf", label:"RADECS 会議論文集",
+          note:"COTS 部品の放射線試験データの速報・査読付き発表の場",
+          refs:[
+            {id:"radecs01",tag:"RADECS – IEEE 会議論文集",title:"RADECS – Radiation Effects on Components and Systems (IEEE Conference Proceedings)",meta:"IEEE Nuclear and Plasma Sciences Society · 1989年〜現在 · 欧州最大の放射線効果会議",desc:"欧州最大の放射線効果学術会議 RADECS の全論文アーカイブ（IEEE Xplore）。TID・SEE・DDD・宇宙放射線環境・耐放射線回路設計・新材料・試験方法・COTS 部品評価に関する最新研究が発表される。NSREC と並ぶ世界最重要の放射線効果学術フォーラムであり、COTS 部品の放射線試験データが速報的に公開される場として広く参照されている。",url:"https://ieeexplore.ieee.org/xpl/conhome/1000608/all-proceedings"}
+          ]
+        }
+      ]
+    },
+    /* ═══════════════════════════════════════════════════
+       GROUP NEW: 有用なツール
+       ═══════════════════════════════════════════════════ */
+    { id:"g-tools", label:"有用なツール", color:"#0f766e",
+      desc:"放射線環境・影響・LET・シールド解析に用いられるシミュレーションツール・計算コード",
+      collapsed: false,
+      sections: [
+        { id:"rad-tools", label:"放射線・粒子輸送シミュレーションツール",
+          note:"CREME-MC · SPENVIS · SRIM · PHITS · Geant4 – SEE / TID / シールド・粒子輸送解析",
+          refs:[
+            {id:"tool01",tag:"CREME-MC – 宇宙放射線・SEE レート計算",title:"CREME-MC: Cosmic Ray Effects on Micro-Electronics (Monte Carlo)",meta:"Vanderbilt University ISDE · オンライン計算ツール · https://creme.isde.vanderbilt.edu/",desc:"宇宙放射線環境における SEE レート（SEU・SEL 等）をモンテカルロ法で計算するオンラインツール。軌道・シールド・デバイスパラメータ（臨界電荷・感受体積）を入力し、GCR・SEP 環境下での SEE 発生率を推定できる。CREME96 の後継として広く使われており、宇宙機器の耐放射線設計における SEE レート評価の標準ツールの一つ。",url:"https://creme.isde.vanderbilt.edu/"},
+            {id:"tool02",tag:"SPENVIS – 宇宙環境総合解析ポータル",title:"SPENVIS: Space Environment Information System",meta:"ESA / BIRA-IASB · オンライン計算ツール · https://www.spenvis.oma.be/",desc:"ESA が提供する宇宙環境の総合オンライン解析システム。軌道定義・放射線帯モデル（AP-9/AE-9・AP8/AE8・CRRESPRO・FLUMIC）・GCR / SEP フラックス・シールド評価・TID 計算・太陽電池劣化（DDD）・デブリ環境など多様な計算モジュールを提供。宇宙機の放射線環境解析において世界標準のプラットフォーム。登録無料。",url:"https://www.spenvis.oma.be/"},
+            {id:"tool03",tag:"SRIM – イオン・物質相互作用計算",title:"SRIM (Stopping and Range of Ions in Matter)",meta:"J. F. Ziegler et al. · フリーウェア · http://www.srim.org/",desc:"イオンと物質の相互作用（阻止能・飛程・LET・イオン散乱）を計算するモンテカルロシミュレーションコード。TID 評価でのシールド内エネルギー損失計算、SEE 試験でのイオン種・エネルギー選択時の LET 計算に広く使用される。フリーウェアとして配布されており、放射線効果解析の入門ツールとしても広く普及。",url:"http://www.srim.org/"},
+            {id:"tool04",tag:"PHITS – 粒子輸送モンテカルロコード",title:"PHITS (Particle and Heavy Ion Transport code System)",meta:"QST / JAEA · 汎用粒子輸送コード · 日本発の国際標準",desc:"QST（量子科学技術研究開発機構）/ JAEA が開発した汎用の粒子・重イオン輸送モンテカルロコード。陽子・中性子・重イオン・光子・電子など多種の粒子輸送を扱い、TID・DDD・SEE 解析のほか、加速器施設の遮蔽設計・宇宙線輸送・生物線量評価まで幅広い分野で使用される。JAEAコードセンター経由で登録配布。現在サーバメンテナンス中のためURLは省略。",url:""},
+            {id:"tool05",tag:"Geant4 – 汎用粒子輸送モンテカルロ",title:"Geant4: A Simulation Toolkit",meta:"S. Agostinelli et al. (Geant4 Collaboration) · Nucl. Instrum. Methods A 506 · 2003 · DOI: 10.1016/S0168-9002(03)01368-8",desc:"CERN を中心とした国際コラボレーションが開発したオープンソースの汎用粒子・物質相互作用シミュレーションツール。電磁・ハドロン・光学過程を網羅し、eV から TeV まで広いエネルギー範囲に対応。宇宙放射線シミュレーション（ISS・月面・衛星内部の線量計算）・SEE 解析・シールド設計・検出器シミュレーション・医療物理まで幅広く使用される。PHITS と並ぶ世界標準の粒子輸送コードで、本文献集の MIDAS・REDMoon 等でも採用されている。論文引用数は10万件超（2024年）。",url:"https://geant4.org/"}
+          ]
+        },
+        { id:"rad-env-models", label:"宇宙放射線環境モデル（標準・規格）",
+          note:"AP-9 / AE-9 捕捉放射線帯 · ISO 15390 GCR · ISO 15391 SEP",
+          refs:[
+            {id:"ae9ap9",tag:"AP-9 / AE-9 – 捕捉放射線帯モデル（現行標準）",title:"AE9, AP9 and SPM: New Models for Specifying the Trapped Energetic Particle and Space Plasma Environment",meta:"G. P. Ginet et al. · AFRL / MIT LL / Aerospace Corp. · Space Science Reviews 179 · 2013 · DOI: 10.1007/s11214-013-9964-y",desc:"AP-8 / AE-8 の後継として AFRL・NASA が共同開発した捕捉放射線帯モデルの基礎論文。AE-9（電子）・AP-9（陽子）・SPM（プラズマ）の3モデルセットで、Van Allen Probes 等の最新データに基づく。統計的不確かさを Monte Carlo で定量化する点が AP-8 と根本的に異なり、設計マージン評価の精度が向上。AP-8 との差が TID・DDD 設計値に直接影響するため、モデルの選択根拠を示す上で必須の文献。SPENVIS・IRENE ポータルから利用可能。",url:"https://www.vdl.afrl.af.mil/programs/ae9ap9/files/publications/AE9AP9SPM_SSR_Overview.pdf"},
+            {id:"ae9ap9-portal",tag:"AP-9 / AE-9 – ダウンロードポータル（AFRL）",title:"IRENE-AE9/AP9/SPM Radiation Environment Model – AFRL Portal",meta:"AFRL · vdl.afrl.af.mil · 配布サイト（無料・要登録）",desc:"AP-9/AE-9/SPM モデルのコード・データセット・ユーザーズガイドを無料配布する AFRL 公式ポータル。Windows 版実行ファイルとして提供されており、軌道パラメータを入力して電子・陽子フラックスと統計的不確かさを出力できる。将来バージョンで IRENE モデルへ発展予定。SPENVIS とは独立したスタンドアロン版として使用可能。",url:"https://www.vdl.afrl.af.mil/programs/ae9ap9/"},
+            {id:"iso15390",tag:"ISO 15390 – GCR モデル（国際標準）",title:"ISO 15390:2004 – Space Environment: Galactic Cosmic Ray Model",meta:"ISO / TC 20/SC 14 · 国際標準化機構 · 2004年（2013年再確認）",desc:"銀河宇宙線（GCR）フラックスの国際標準モデル（Nymmik モデルをベース）。101 MeV〜10⁵ MeV の電子・陽子・Z=2〜92 原子核の近地球空間外でのスペクトルと太陽変調依存性を規定。SPENVIS・CREME-MC が実装しており、宇宙機器の設計根拠文書化に使われる。有償規格だが ISO.org で概要を確認できる。",url:"https://www.iso.org/standard/37095.html"},
+            {id:"iso15391",tag:"ISO/TS 15391 – SEP モデル（国際標準）",title:"ISO/TS 15391:2009 – Space Environment: Probabilistic Model of Solar Particle Fluxes",meta:"ISO / TC 20/SC 14 · 国際標準化機構 · Technical Specification · 2009年",desc:"太陽エネルギー粒子（SEP）フラックスの確率論的国際標準モデル。ミッション期間・軌道・信頼度を入力して SEP フルエンス（陽子・重イオン）の累積分布関数を出力する Nymmik 確率モデルを規定。SPENVIS が実装。JPL-91 モデルや ESP モデルとともに SEP 設計値の設定に用いられ、設計根拠文書化に不可欠な国際規格。ISO 15390（GCR）と対をなす。",url:"https://www.iso.org/standard/37096.html"}
           ]
         }
       ]
